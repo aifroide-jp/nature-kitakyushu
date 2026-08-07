@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州の自然共生を理解する。">
+  <meta name="description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州市の自然共生を理解する。">
   <meta name="keywords" content="アーバンネイチャー,北九州,生物多様性,ネイチャーポジティブ,都市と自然">
-
   <!-- ファビコン -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../favicon.svg">
-
   <!-- OGP -->
   <meta property="og:title" content="全体像 | アーバンネイチャー北九州">
-  <meta property="og:description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州の自然共生を理解する。">
+  <meta property="og:description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州市の自然共生を理解する。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ai-yoshitani.github.io/nature-kitakyushu/about/">
   <meta property="og:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/03/main1-scaled.jpg">
@@ -21,7 +19,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="全体像 | アーバンネイチャー北九州">
-  <meta name="twitter:description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州の自然共生を理解する。">
+  <meta name="twitter:description" content="アーバンネイチャー北九州の全体像。生物多様性、ネイチャーポジティブ、アーバンネイチャーの3層構造で北九州市の自然共生を理解する。">
   <meta name="twitter:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/03/main1-scaled.jpg">
   <title>全体像 | アーバンネイチャー北九州</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,24 +104,6 @@
       margin: -4px 0;
       z-index: 1;
     }
-
-    .highlight-box {
-      background: linear-gradient(135deg, rgba(44,95,45,0.06), rgba(151,188,98,0.1));
-      border-left: 4px solid var(--primary);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 24px 28px;
-      margin: 24px 0;
-    }
-    .highlight-box__title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-    .highlight-box p {
-      margin-bottom: 0;
-    }
-
     .nature-spots {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -162,7 +142,6 @@
       color: var(--text-light);
       line-height: 1.6;
     }
-
     .page-nav {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -205,7 +184,6 @@
       font-weight: 600;
       color: var(--accent);
     }
-
     @media (max-width: 480px) {
       .nature-spots {
         grid-template-columns: 1fr;
@@ -239,29 +217,12 @@
         grid-template-columns: 1fr;
       }
     }
-
     /* =========================================
        about-intro: 公式感を冒頭で立てるセクション
        ========================================= */
     .about-intro__inner {
       max-width: 860px;
       margin: 0 auto;
-    }
-    .about-intro__badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-    .about-intro__badge {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--primary);
-      border: 1.5px solid var(--primary);
-      border-radius: 100px;
-      padding: 4px 12px;
-      letter-spacing: 0.02em;
     }
     .about-intro__body {
       margin-bottom: 32px;
@@ -317,10 +278,10 @@
       color: var(--text-light);
       font-style: normal;
     }
-
     /* ネイチャーポジティブブロック */
     .about-intro__np-block {
       display: flex;
+      flex-direction: column;
       gap: 28px;
       align-items: center;
       background: linear-gradient(135deg, rgba(44,95,45,0.06), rgba(151,188,98,0.10));
@@ -329,7 +290,18 @@
       padding: 24px 28px;
       margin-top: 32px;
     }
-    .about-intro__np-visual { flex-shrink: 0; }
+    .about-intro__np-body {
+      width: 100%;
+    }
+    .about-intro__np-visual {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .about-intro__np-visual img {
+      max-width: 100%;
+      height: auto;
+    }
     .about-intro__np-title {
       font-size: 1.1rem;
       font-weight: 700;
@@ -341,80 +313,10 @@
       line-height: 1.75;
       margin: 0;
     }
-    @media (max-width: 640px) {
-      .about-intro__np-block { flex-direction: column; gap: 16px; }
-      .about-intro__np-visual svg { width: 100%; height: auto; }
-    }
-
-    /* 北九州市の特徴カード */
-    .kitakyu-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin-top: 40px;
-    }
-    .kitakyu-feature {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 32px 28px;
-      box-shadow: 0 2px 12px var(--shadow);
-      border-top: 4px solid var(--primary);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-    }
-    .kitakyu-feature__stat {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-    }
-    .kitakyu-feature__stat-label {
-      font-size: 0.82rem;
-      color: var(--primary);
-      font-weight: 600;
-      margin-top: -4px;
-    }
-    .kitakyu-feature__title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text);
-      border-bottom: 2px solid var(--secondary);
-      padding-bottom: 8px;
-      width: 100%;
-    }
-    .kitakyu-feature__body {
-      font-size: 0.87rem;
-      color: var(--text-light);
-      line-height: 1.78;
-      text-align: left;
-      flex: 1;
-    }
-    .kitakyu-feature__tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      justify-content: center;
-      margin-top: 4px;
-    }
-    .kitakyu-feature__tag {
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--primary);
-      border: 1.5px solid var(--primary);
-      border-radius: 100px;
-      padding: 3px 10px;
-    }
-    @media (max-width: 640px) {
-      .kitakyu-features { grid-template-columns: 1fr; }
-    }
-
     /* 世界的背景 */
     .world-context {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 24px;
       margin-top: 40px;
     }
@@ -463,18 +365,19 @@
     @media (max-width: 768px) {
       .world-context { grid-template-columns: 1fr; }
     }
-
     /* =========================================
        about-cycle: 取り組みサイクル（3ステップ）
        ========================================= */
     .cycle-cards {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       gap: 0;
       margin: 40px 0 0;
     }
     .cycle-card {
       flex: 1;
+      display: flex;
+      flex-direction: column;
       background: var(--bg-white);
       border-radius: var(--radius-lg);
       padding: 32px 24px;
@@ -499,6 +402,7 @@
       font-size: 1rem;
       font-weight: 800;
       margin-bottom: 12px;
+      align-self: center;
     }
     .cycle-card__icon {
       margin: 0 auto 12px;
@@ -525,13 +429,13 @@
       line-height: 1.65;
     }
     .cycle-card__arrow {
+      align-self: center;
       font-size: 1.6rem;
       color: var(--primary);
       padding: 0 12px;
       flex-shrink: 0;
       opacity: 0.4;
     }
-
     @media (max-width: 768px) {
       .about-intro__mayor {
         flex-direction: column;
@@ -557,7 +461,6 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
-
   <!-- ヘッダー -->
   <header class="header">
     <div class="header__inner">
@@ -565,6 +468,7 @@
         <img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160" height="40"><span class="header__logo-sub" aria-hidden="true">北九州市生物多様性戦略 2025–2030</span>
       </a>
             <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="../news/" >お知らせ</a>
         <div class="nav-item">
           <a href="../about/" class="active" >アーバンネイチャー北九州とは？</a>
           <ul class="dropdown">
@@ -572,35 +476,25 @@
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
             <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
             <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
-          </ul>
-        </div>
-        <div class="nav-item">
-          <a href="../center/" >活動拠点</a>
-          <ul class="dropdown">
-            <li><a href="../center/">拠点一覧</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/itouzu.html">到津の森公園</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/yamada.html">山田緑地</a></li>
+            <li><a href="../center/">活動拠点</a></li>
           </ul>
         </div>
         <div class="nav-item">
           <a href="../network/" >地域との繋がり</a>
           <ul class="dropdown">
             <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
-            <li><a href="../network/cases/">活動実績</a></li>
-            <li><a href="../blog/">活動ブログ</a></li>
             <li><a href="../join/">会員募集</a></li>
           </ul>
         </div>
+        <div class="nav-item">
+          <a href="../network/cases/">活動紹介</a>
+          <ul class="dropdown">
+            <li><a href="../network/cases/">NP実践事例</a></li>
+            <li><a href="../blog/">企業の活動ブログ</a></li>
+            <li><a href="../blog/">団体等の活動ブログ</a></li>
+          </ul>
+        </div>
         <a href="../events/" >イベントを探す</a>
-        <a href="../news/" >お知らせ</a>
         <a href="../photos/" >みんなの写真展</a>
       </nav>
       <div class="header__actions">
@@ -613,9 +507,9 @@
       </div>
     </div>
   </header>
-
   <!-- モバイルナビ -->
   <nav class="mobile-nav" id="js-mobile-nav">
+    <a href="../news/">お知らせ</a>
     <div class="mobile-nav__group">
       <div class="mobile-nav__parent">
         <a href="../about/">アーバンネイチャー北九州とは？</a>
@@ -628,27 +522,7 @@
         <a href="../about/biodiversity.html">生物多様性とは？</a>
         <a href="../about/strategy.html">北九州市の取り組み</a>
         <a href="../about/spots.html">北九州市の自然スポット</a>
-      </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
         <a href="../center/">活動拠点</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../center/">拠点一覧</a>
-        <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-        <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
-        <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-        <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-        <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-        <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-        <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-        <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-        <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-        <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
       </div>
     </div>
     <div class="mobile-nav__group">
@@ -660,19 +534,28 @@
       </div>
       <div class="mobile-nav__children">
         <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
-        <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
         <a href="../join/">会員募集</a>
       </div>
     </div>
+    <div class="mobile-nav__group">
+      <div class="mobile-nav__parent">
+        <a href="../network/cases/">活動紹介</a>
+        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
+          <span class="mobile-nav__toggle-icon"></span>
+        </button>
+      </div>
+      <div class="mobile-nav__children">
+        <a href="../network/cases/">NP実践事例</a>
+        <a href="../blog/">企業の活動ブログ</a>
+        <a href="../blog/">団体等の活動ブログ</a>
+      </div>
+    </div>
     <a href="../events/">イベントを探す</a>
-    <a href="../news/">お知らせ</a>
     <a href="../photos/">みんなの写真展</a>
     <div class="mobile-nav__cta">
       <a href="../join/" class="btn btn--primary btn--block">参加する</a>
     </div>
   </nav>
-
   <!-- パンくずリスト -->
   <div class="breadcrumb">
     <div class="container">
@@ -682,34 +565,23 @@
       </ol>
     </div>
   </div>
-
   <!-- ページヘッダー -->
   <section class="page-header" style="background-image: url('../images/2025/03/main1-scaled.jpg'); background-size: cover; background-position: center center;">
     <div class="container">
-      <h1 class="page-header__title">アーバンネイチャー北九州の全体像</h1>
-      <p class="page-header__desc">都市と自然が近接する北九州ならではの強みを活かし、ネイチャーポジティブな未来へ</p>
+      <h1 class="page-header__title">全体像</h1>
+      <p class="page-header__desc">都市と自然が近接する北九州市ならではの強みを活かし、ネイチャーポジティブな未来へ</p>
     </div>
   </section>
-
   <!-- メインコンテンツ -->
   <main id="main-content">
-
     <!-- 公式感を冒頭で立てるセクション -->
     <section class="section section--white about-intro" id="about-intro">
       <div class="container about-intro__inner">
-
-        <!-- バッジ行 -->
-        <div class="about-intro__badges">
-          <span class="about-intro__badge">北九州市公式</span>
-          <span class="about-intro__badge">北九州市生物多様性戦略 2025-2030</span>
-        </div>
-
         <!-- 見出し＋本文 -->
         <div class="about-intro__body">
           <h2 class="about-intro__heading">アーバンネイチャー北九州とは？</h2>
-          <p class="about-intro__lead">「アーバンネイチャー北九州」は北九州市の造語です。市域面積の約4割を森林が占め、響灘・周防灘・関門海峡の3つの海に囲まれ、豊かな生物多様性が息づく一方で、鉄鋼・化学工業の街として発展してきた北九州。都市と自然が近接するこの稀有な強みを活かし、<strong>世界目標「ネイチャーポジティブ」</strong>を市民・企業とともに実現するための北九州独自モデルとして生み出した言葉です。</p>
+          <p class="about-intro__lead">アーバンネイチャー北九州とは、北九州市の特徴である<strong>「都市と近接した豊かな自然」</strong>を表す言葉です。<br><br>北九州市は、市街地と豊かな自然が近接した全国でも特色ある都市です。鉄鋼・化学工業の街として発展してきた一方で、市域面積の約4割を森林が占め、響灘・周防灘・関門海峡の3つの海に囲まれるなど、豊かな自然環境に恵まれています。<br>このような<strong>「都市と近接した豊かな自然」</strong>を<strong>「アーバンネイチャー北九州」</strong>と名付け、都市と自然が近接する北九州市ならではの強みを活かし、世界目標「ネイチャーポジティブ」を市民・企業とともに実現することを目指しています。</p>
         </div>
-
         <!-- 市長メッセージ -->
         <!-- TODO: 公式マスコット画像が入手できた場合は figure 内に追加する -->
         <figure class="about-intro__mayor">
@@ -722,246 +594,24 @@
             <cite class="about-intro__mayor-cite">北九州市長 武内 和久｜出典：北九州市生物多様性戦略 2025-2030（令和7年5月）</cite>
           </figcaption>
         </figure>
-
         <!-- ネイチャーポジティブ説明 -->
         <div class="about-intro__np-block">
-          <div class="about-intro__np-visual">
-            <!-- Bend the Curve グラフ -->
-            <svg width="220" height="155" viewBox="0 0 220 155" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ネイチャーポジティブ：自然の損失を止め、回復に転換するグラフ">
-              <rect width="220" height="155" rx="10" fill="rgba(245,252,245,0.8)"/>
-              <!-- 軸 -->
-              <line x1="36" y1="18" x2="36" y2="128" stroke="#bbb" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="36" y1="128" x2="212" y2="128" stroke="#bbb" stroke-width="1.5" stroke-linecap="round"/>
-              <!-- Y軸ラベル -->
-              <text x="12" y="80" font-size="9" fill="#888" text-anchor="middle" transform="rotate(-90 12 80)" font-family="sans-serif">生物多様性</text>
-              <!-- X軸ラベル -->
-              <text x="124" y="145" font-size="8.5" fill="#888" text-anchor="middle" font-family="sans-serif">時間 →</text>
-              <!-- 2030縦線 -->
-              <line x1="162" y1="24" x2="162" y2="128" stroke="#97BC62" stroke-width="1.2" stroke-dasharray="4 3"/>
-              <text x="162" y="141" font-size="8.5" fill="#2C5F2D" text-anchor="middle" font-weight="700" font-family="sans-serif">2030</text>
-              <!-- 損失エリア（薄い赤） -->
-              <path d="M44 27 C76 32 112 72 140 110 L140 128 L36 128 L36 27Z" fill="rgba(208,64,64,0.07)"/>
-              <!-- 回復エリア（薄い緑） -->
-              <path d="M140 110 C160 100 180 74 210 42 L210 128 L140 128Z" fill="rgba(44,95,45,0.09)"/>
-              <!-- 減少曲線（赤） -->
-              <path d="M44 27 C76 32 112 72 140 110" stroke="#c94040" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-              <!-- 回復曲線（緑） -->
-              <path d="M140 110 C160 100 180 74 210 42" stroke="#2C5F2D" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-              <!-- 現在の点 -->
-              <circle cx="140" cy="110" r="5.5" fill="white" stroke="#c94040" stroke-width="2.5"/>
-              <text x="140" y="123" font-size="7.5" fill="#c94040" text-anchor="middle" font-family="sans-serif">現在</text>
-              <!-- ラベル -->
-              <text x="82" y="21" font-size="7.5" fill="#c94040" text-anchor="middle" font-family="sans-serif" opacity="0.85">生物多様性の損失</text>
-              <text x="182" y="67" font-size="7.5" fill="#2C5F2D" text-anchor="middle" font-family="sans-serif" font-weight="700">自然の回復</text>
-              <!-- 葉アイコン -->
-              <path d="M198 33 C205 22 215 30 206 40 C202 37 198 33 198 33Z" fill="#97BC62" opacity="0.9"/>
-              <line x1="202" y1="36" x2="208" y2="43" stroke="#2C5F2D" stroke-width="1.5" stroke-linecap="round"/>
-              <!-- 鳥（2羽） -->
-              <path d="M184 25 Q187 21 190 25" stroke="#2C5F2D" stroke-width="1.7" stroke-linecap="round" fill="none"/>
-              <path d="M190 25 Q193 21 196 25" stroke="#2C5F2D" stroke-width="1.7" stroke-linecap="round" fill="none"/>
-              <path d="M193 33 Q196 29 199 33" stroke="#2C5F2D" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.7"/>
-              <path d="M199 33 Q202 29 205 33" stroke="#2C5F2D" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.7"/>
-            </svg>
-          </div>
           <div class="about-intro__np-body">
             <div class="about-intro__np-title">ネイチャーポジティブとは？</div>
-            <p class="about-intro__np-text">2022年12月に採択された「昆明・モントリオール生物多様性枠組」が掲げる世界共通の目標です。<strong>「自然の損失を止め、回復の軌道に乗せる」</strong>ことを意味し、2030年までに生物多様性の減少傾向を反転させることが求められています。「自然を壊さない」だけでなく、「自然をより豊かにする」という積極的な姿勢を企業・行政・市民の全員に求める考え方です。</p>
-            <div class="highlight-box" style="margin-top: 16px;">
-              <div class="highlight-box__title">ネイチャーポジティブの3つの柱</div>
-              <p><strong>保全（<span lang="en">Protect</span>）：</strong>残された自然を守る。<strong>回復（<span lang="en">Restore</span>）：</strong>失われた自然を取り戻す。<strong>持続可能な利用（<span lang="en">Sustainable Use</span>）：</strong>自然の恵みを将来にわたって活用する。</p>
-            </div>
+            <p class="about-intro__np-text">ネイチャーポジティブとは、2022年12月に採択された「昆明・モントリオール生物多様性枠組（COP15）」で掲げられた世界共通の目標です。<strong>「自然の損失を止め、回復の軌道に乗せる」</strong>ことを意味し、2030年までに生物多様性の減少傾向を反転させることを目指しています。単に自然を守るだけでなく、自然をより豊かにしていく考え方であり、企業、行政、市民を含む社会全体に積極的な行動が求められています。</p>
           </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- コンセプト階層図 -->
-    <section class="section section--white">
-      <div class="container">
-        <h2 class="section__title">3つのキーコンセプト</h2>
-        <p class="section__subtitle">守るべき生物多様性から、世界共通の目標を経て、北九州独自の実装へ</p>
-
-        <!-- aria-label で北九州市生物多様性戦略を補足 -->
-        <div class="concept-pyramid" aria-label="北九州市生物多様性戦略の3層構造">
-          <!-- 上段（ベースが広い段）：生物多様性 — 守るべき対象 -->
-          <div class="concept-pyramid__level concept-pyramid__level--base">
-            <div class="concept-pyramid__icon">
-              <!-- 生物多様性: 木＋鳥＋蝶（生態系） -->
-              <svg width="64" height="56" viewBox="0 0 64 56" fill="none" aria-hidden="true">
-                <rect x="29" y="34" width="6" height="16" rx="3" fill="white" opacity="0.9"/>
-                <path d="M20 50 Q26 44 32 50 Q38 44 44 50" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.65"/>
-                <circle cx="32" cy="22" r="11" fill="white" opacity="0.92"/>
-                <circle cx="18" cy="27" r="8" fill="white" opacity="0.82"/>
-                <circle cx="46" cy="27" r="8" fill="white" opacity="0.82"/>
-                <path d="M6 10 Q10 6 14 10" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                <path d="M14 10 Q18 6 22 10" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                <path d="M44 8 Q48 4 52 8 Q48 12 44 8Z" fill="white" opacity="0.8"/>
-                <path d="M44 8 Q48 12 52 14 Q48 16 44 12 Q44 10 44 8Z" fill="white" opacity="0.65"/>
-                <line x1="48" y1="8" x2="48" y2="14" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
-              </svg>
-            </div>
-            <div class="concept-pyramid__title">生物多様性</div>
-            <div class="concept-pyramid__desc">守るべき対象：あらゆる生きものの「つながり」と「多様さ」。私たちの暮らしを支える基盤</div>
+          <div class="about-intro__np-visual">
+             <img src="../images/2026/07/nature-positive_graph.png" alt="ネイチャーポジティブ：自然の損失を止め、回復に転換するグラフ" loading="lazy">
           </div>
-          <div class="concept-pyramid__arrow">&#9660;</div>
-          <!-- 中段：ネイチャーポジティブ — 世界共通の目標 -->
-          <div class="concept-pyramid__level concept-pyramid__level--middle">
-            <div class="concept-pyramid__icon">
-              <!-- ネイチャーポジティブ: 植物＋上昇矢印 -->
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true">
-                <line x1="28" y1="50" x2="28" y2="14" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
-                <path d="M17 26 L28 12 L39 26" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                <path d="M28 38 C23 32 12 32 10 39 C17 39 23 37 28 38Z" fill="white" opacity="0.92"/>
-                <path d="M28 29 C33 23 44 23 46 30 C39 30 33 28 28 29Z" fill="white" opacity="0.92"/>
-              </svg>
-            </div>
-            <div class="concept-pyramid__title">ネイチャーポジティブ</div>
-            <div class="concept-pyramid__desc">世界共通の目標：自然の損失を止め、回復に向かわせる。2030年までに生物多様性の減少傾向を反転</div>
-          </div>
-          <div class="concept-pyramid__arrow">&#9660;</div>
-          <!-- 下段（先端）：アーバンネイチャー北九州 — 北九州市が選んだ手段 -->
-          <div class="concept-pyramid__level concept-pyramid__level--top">
-            <div class="concept-pyramid__icon">
-              <!-- アーバンネイチャー: ビル＋木の融合 -->
-              <svg width="64" height="52" viewBox="0 0 64 52" fill="none" aria-hidden="true">
-                <rect x="2" y="22" width="9" height="24" rx="1.5" fill="white" opacity="0.9"/>
-                <rect x="13" y="14" width="11" height="32" rx="1.5" fill="white" opacity="0.9"/>
-                <rect x="4" y="25" width="3" height="3" rx="0.5" fill="rgba(0,80,40,0.3)"/>
-                <rect x="4" y="31" width="3" height="3" rx="0.5" fill="rgba(0,80,40,0.3)"/>
-                <rect x="15" y="17" width="3" height="3" rx="0.5" fill="rgba(0,80,40,0.3)"/>
-                <rect x="15" y="23" width="3" height="3" rx="0.5" fill="rgba(0,80,40,0.3)"/>
-                <rect x="15" y="29" width="3" height="3" rx="0.5" fill="rgba(0,80,40,0.3)"/>
-                <circle cx="42" cy="20" r="12" fill="white" opacity="0.92"/>
-                <rect x="39" y="32" width="6" height="14" rx="3" fill="white" opacity="0.9"/>
-                <circle cx="58" cy="26" r="7" fill="white" opacity="0.82"/>
-                <rect x="56" y="33" width="4" height="10" rx="2" fill="white" opacity="0.8"/>
-                <line x1="2" y1="47" x2="62" y2="47" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
-              </svg>
-            </div>
-            <div class="concept-pyramid__title">アーバンネイチャー北九州</div>
-            <div class="concept-pyramid__desc">北九州市の手段：都市と自然が近接した強みを活かし、暮らしの中で自然と共生する独自モデル（北九州市の造語）</div>
-          </div>
-        </div>
-
-        <div class="highlight-box">
-          <div class="highlight-box__title">この3つはどう関係するの？</div>
-          <p>「生物多様性」は私たちが守るべき自然そのもの。それを回復させる世界共通の目標が「ネイチャーポジティブ」です。そして「アーバンネイチャー北九州」は、都市と自然が近接する北九州の強みを活かしてその目標を実現するために北九州市が生み出した独自の言葉と取り組みです。</p>
         </div>
       </div>
     </section>
-
-    <!-- 北九州市の特徴 -->
-    <section class="section section--gray">
-      <div class="container">
-        <h2 class="section__title">北九州市の特徴</h2>
-        <p class="section__subtitle">工業都市でありながら、北九州には際立った自然の豊かさがある</p>
-
-        <div class="kitakyu-features">
-
-          <!-- 工業都市イメージとのギャップ -->
-          <div class="kitakyu-feature">
-            <svg width="200" height="155" viewBox="0 0 200 155" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="市域面積のうち約4割が森林を示すドーナツグラフ">
-              <rect width="200" height="155" rx="10" fill="rgba(245,252,245,0.6)"/>
-              <!-- ドーナツ（森林40%=144°、上から時計回り） -->
-              <!-- 中心(85,78)、外径58、内径37 -->
-              <!-- 開始:(85,20) 終了:(119.1,124.9) -->
-              <path d="M 85 20 A 58 58 0 0 1 119.1 124.9 L 85 78 Z" fill="#2C5F2D" opacity="0.82"/>
-              <path d="M 119.1 124.9 A 58 58 0 1 1 85 20 L 85 78 Z" fill="#d4e8d4" opacity="0.7"/>
-              <circle cx="85" cy="78" r="37" fill="white"/>
-              <text x="85" y="73" font-size="15" fill="#2C5F2D" text-anchor="middle" font-weight="800" font-family="sans-serif">約4割</text>
-              <text x="85" y="88" font-size="9" fill="#555" text-anchor="middle" font-family="sans-serif">が森林</text>
-              <!-- 凡例 -->
-              <rect x="152" y="48" width="10" height="10" fill="#2C5F2D" rx="2" opacity="0.82"/>
-              <text x="166" y="57" font-size="8.5" fill="#2C5F2D" font-weight="700" font-family="sans-serif">森林 約40%</text>
-              <rect x="152" y="66" width="10" height="10" fill="#d4e8d4" rx="2" stroke="#aac8aa" stroke-width="1"/>
-              <text x="166" y="75" font-size="8.5" fill="#888" font-family="sans-serif">その他 約60%</text>
-              <!-- 木アイコン -->
-              <circle cx="30" cy="125" r="14" fill="#2C5F2D" opacity="0.55"/>
-              <circle cx="18" cy="130" r="10" fill="#2C5F2D" opacity="0.45"/>
-              <circle cx="44" cy="130" r="10" fill="#2C5F2D" opacity="0.45"/>
-              <rect x="28" y="136" width="4" height="12" rx="2" fill="#5a3e1b" opacity="0.55"/>
-              <!-- 工場アイコン -->
-              <rect x="150" y="112" width="20" height="26" rx="1.5" fill="#aaa" opacity="0.45"/>
-              <rect x="143" y="122" width="16" height="16" rx="1" fill="#bbb" opacity="0.4"/>
-              <rect x="163" y="104" width="7" height="14" rx="1" fill="#999" opacity="0.4"/>
-              <rect x="172" y="108" width="7" height="10" rx="1" fill="#999" opacity="0.4"/>
-              <path d="M 166 104 Q 164 99 166 94" stroke="#ccc" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
-              <path d="M 175 108 Q 173 103 175 98" stroke="#ccc" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.45"/>
-              <!-- 底線 -->
-              <line x1="5" y1="140" x2="195" y2="140" stroke="#c8d8c8" stroke-width="1" opacity="0.5"/>
-              <text x="30" y="151" font-size="7.5" fill="#2C5F2D" text-anchor="middle" font-family="sans-serif">豊かな自然</text>
-              <text x="163" y="151" font-size="7.5" fill="#888" text-anchor="middle" font-family="sans-serif">工業・市街地</text>
-            </svg>
-            <div class="kitakyu-feature__stat">面積の4割</div>
-            <div class="kitakyu-feature__stat-label">が森林——工業都市の意外な顔</div>
-            <h3 class="kitakyu-feature__title">工業都市イメージとのギャップ</h3>
-            <p class="kitakyu-feature__body">鉄鋼・化学工業の街として知られる北九州ですが、市域面積の約4割を森林が占めます。皿倉山（622m）など3つの国立・国定公園が市内外に広がり、曾根干潟や響灘ビオトープをはじめ希少種の生息地が都市に近接して残ります。「工業都市でありながら、豊かな自然にあふれる」——このギャップこそが北九州の最大の強みです。</p>
-            <div class="kitakyu-feature__tags">
-              <span class="kitakyu-feature__tag">国定公園×2・国立公園×1</span>
-              <span class="kitakyu-feature__tag">皿倉山 622m</span>
-              <span class="kitakyu-feature__tag">響灘ビオトープ 800種以上</span>
-            </div>
-          </div>
-
-          <!-- 海岸線の生物多様性 -->
-          <div class="kitakyu-feature">
-            <svg width="200" height="155" viewBox="0 0 200 155" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="3つの海に囲まれた北九州の海岸線と渡り鳥・カブトガニ">
-              <rect width="200" height="155" rx="10" fill="#eef6fb" opacity="0.8"/>
-              <!-- 海エリア -->
-              <path d="M 0 100 Q 50 93 100 100 Q 150 107 200 100 L 200 155 L 0 155 Z" fill="#b0d0e8" opacity="0.65"/>
-              <!-- 陸地 -->
-              <path d="M 0 100 Q 30 93 65 96 Q 100 99 135 92 Q 165 86 200 90 L 200 100 Q 150 107 100 100 Q 50 93 0 100 Z" fill="#c4dc96" opacity="0.8"/>
-              <!-- 森林 -->
-              <circle cx="42" cy="85" r="13" fill="#2C5F2D" opacity="0.55"/>
-              <circle cx="57" cy="80" r="10" fill="#2C5F2D" opacity="0.48"/>
-              <circle cx="75" cy="83" r="11" fill="#2C5F2D" opacity="0.55"/>
-              <circle cx="115" cy="77" r="12" fill="#2C5F2D" opacity="0.52"/>
-              <circle cx="130" cy="74" r="9" fill="#2C5F2D" opacity="0.48"/>
-              <circle cx="155" cy="78" r="10" fill="#2C5F2D" opacity="0.5"/>
-              <!-- 波 -->
-              <path d="M 0 110 Q 25 105 50 110 Q 75 115 100 110 Q 125 105 150 110 Q 175 115 200 110" stroke="#5a9fc4" stroke-width="1.8" fill="none" opacity="0.65" stroke-linecap="round"/>
-              <path d="M 0 124 Q 33 119 66 124 Q 99 129 132 124 Q 165 119 200 124" stroke="#3d7fa8" stroke-width="1.3" fill="none" opacity="0.45" stroke-linecap="round"/>
-              <!-- カブトガニ -->
-              <path d="M 138 140 C 138 132 144 127 152 127 C 160 127 166 132 166 140 C 166 148 160 153 152 153 C 144 153 138 148 138 140 Z" fill="#8b6914" opacity="0.65"/>
-              <path d="M 142 127 C 145 120 152 118 159 120 C 163 122 165 125 165 127" fill="#a07820" opacity="0.5"/>
-              <line x1="152" y1="153" x2="156" y2="162" stroke="#8b6914" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
-              <text x="152" y="150" font-size="7" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="700">カブトガニ</text>
-              <!-- 渡り鳥 -->
-              <path d="M 24 32 Q 31 25 38 32" stroke="#444" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-              <path d="M 38 32 Q 45 25 52 32" stroke="#444" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-              <path d="M 72 20 Q 78 14 84 20" stroke="#555" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              <path d="M 84 20 Q 90 14 96 20" stroke="#555" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              <path d="M 112 34 Q 116 29 120 34" stroke="#666" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
-              <path d="M 120 34 Q 124 29 128 34" stroke="#666" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
-              <!-- ラベル -->
-              <text x="76" y="52" font-size="8.5" fill="#333" text-anchor="middle" font-weight="700" font-family="sans-serif">渡り鳥の十字路</text>
-              <text x="26" y="140" font-size="8" fill="#2d608a" text-anchor="middle" font-family="sans-serif">響灘</text>
-              <text x="82" y="150" font-size="8" fill="#2d608a" text-anchor="middle" font-family="sans-serif">周防灘</text>
-            </svg>
-            <div class="kitakyu-feature__stat">3つの海</div>
-            <div class="kitakyu-feature__stat-label">響灘・周防灘・関門海峡</div>
-            <h3 class="kitakyu-feature__title">海岸線の生物多様性</h3>
-            <p class="kitakyu-feature__body">響灘・周防灘・関門海峡の3つの性質の異なる海に囲まれた北九州は、渡り鳥の「十字路」にも位置します。曾根干潟（517ha）は国内有数の砂泥干潟で、絶滅危惧Ⅰ類のカブトガニが産卵に訪れます。シオマネキ・スナメリなど希少な生きものが、都市に隣接する海岸線に今も暮らしています。</p>
-            <div class="kitakyu-feature__tags">
-              <span class="kitakyu-feature__tag">曾根干潟 517ha</span>
-              <span class="kitakyu-feature__tag">カブトガニ産卵地</span>
-              <span class="kitakyu-feature__tag">渡り鳥の十字路</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- 世界的背景 -->
     <section class="section section--white">
       <div class="container">
         <h2 class="section__title">世界的背景</h2>
-        <p class="section__subtitle">なぜ今、生物多様性が世界的な緊急課題なのか</p>
-
+        <p class="section__subtitle">なぜ今、ネイチャーポジティブが必要なのか</p>
         <div class="world-context">
-
           <!-- 生物多様性の危機 -->
           <div class="world-context__card world-context__card--crisis">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
@@ -976,7 +626,6 @@
             <h3 class="world-context__title">生物多様性の危機</h3>
             <p class="world-context__body">世界の野生生物の個体群は過去50年間で平均73%減少しています（WWF「生きている地球レポート2024」）。生息地の破壊・汚染・外来種・気候変動が重なり、今この瞬間も多くの種が地球上から失われ続けています。</p>
           </div>
-
           <!-- 第6の絶滅 -->
           <div class="world-context__card world-context__card--extinct">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
@@ -1001,51 +650,26 @@
             <h3 class="world-context__title">第6の大量絶滅</h3>
             <p class="world-context__body">現在の種の絶滅スピードは自然状態の約100〜1,000倍。隕石衝突や火山噴火が原因だった過去5度の大量絶滅と異なり、今回は<strong>人間活動が原因</strong>という点で前例のない危機です。食料・水・気候・健康など私たちの生活基盤に直結します。</p>
           </div>
-
-          <!-- ネイチャーポジティブの位置づけ -->
-          <div class="world-context__card world-context__card--positive">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" aria-hidden="true">
-              <circle cx="30" cy="30" r="28" fill="rgba(44,95,45,0.08)"/>
-              <line x1="8" y1="48" x2="52" y2="48" stroke="#ddd" stroke-width="1.5"/>
-              <line x1="8" y1="14" x2="8" y2="48" stroke="#ddd" stroke-width="1.5"/>
-              <!-- 目標ライン -->
-              <line x1="8" y1="20" x2="52" y2="20" stroke="#97BC62" stroke-width="1.2" stroke-dasharray="3 2.5"/>
-              <!-- 下降→回復カーブ -->
-              <path d="M 10 32 C 20 38 28 42 34 36 C 40 30 46 22 52 20" stroke="#2C5F2D" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-              <!-- 目標点 -->
-              <circle cx="52" cy="20" r="4" fill="#2C5F2D"/>
-              <!-- "2030"ラベル -->
-              <text x="34" y="48" font-size="8" fill="#2C5F2D" text-anchor="middle" font-weight="700" font-family="sans-serif">2030</text>
-            </svg>
-            <div class="world-context__num">2030年</div>
-            <div class="world-context__label">生物多様性損失の「反転」目標</div>
-            <h3 class="world-context__title">ネイチャーポジティブの位置づけ</h3>
-            <p class="world-context__body">2022年COP15で採択された「昆明・モントリオール生物多様性枠組」は、<strong>2030年までに損失を反転、2050年までに完全回復</strong>を掲げます。この国際合意が「ネイチャーポジティブ」を世界共通の目標に押し上げた歴史的な転換点です。</p>
-          </div>
-
         </div>
       </div>
     </section>
-
     <!-- ネイチャーポジティブとは -->
     <section class="section section--gray">
       <div class="container">
         <div class="content">
-          <h2>北九州市生物多様性戦略 2025–2030</h2>
-          <p>「アーバンネイチャー北九州」は、北九州市が策定した公式戦略<strong>「北九州市生物多様性戦略」</strong>と、市民・企業が参加しやすい実装プラットフォームの二層構造で成り立っています。</p>
-          <p>上位レイヤーの「北九州市生物多様性戦略」は行政としての公式戦略。実装レイヤーの「アーバンネイチャー北九州」は、その目標を市民・企業にわかりやすく届けるためのプラットフォームです。この2つは別物ではなく、<strong>同じ目的を異なる読者に届けるためのセット</strong>です。</p>
-
+          <h2><a href="strategy.html" class="hover-underline">北九州市生物多様性戦略 2025–2030</a></h2>
+          <p>北九州市では、「北九州市生物多様性戦略2025-2030」に基づき、生物多様性の保全と回復を通じてネイチャーポジティブの実現を目指しています。</p>
+          <p>「都市と近接した豊かな自然」＝「アーバンネイチャー北九州」という北九州市ならではの特徴を生かし、人と自然が共生する持続可能なまちづくりに、市民、企業、教育・研究機関、行政など多様な主体が連携しながら取り組みます。</p>
+          <p>この取組を推進する推進体制として<strong>「北九州ネイチャーポジティブセンター」</strong>と<strong>「北九州ネイチャーポジティブネットワーク」</strong>を構築しました。</p>
         </div>
       </div>
     </section>
-
     <!-- 取り組みサイクル -->
     <section class="section section--white about-cycle" id="about-cycle">
       <div class="container">
-        <h2 class="section__title">アーバンネイチャー北九州への関わり方</h2>
-        <p class="section__subtitle">関わり方は3段階に整理できる。自然への関心を育てることから始め、活動・ネットワークへの参加を経て、最終的には企業のCSR・ESG・人材育成に組み込むことで取り組みが継続する。個人・市民団体・企業それぞれに対応した入口がある。</p>
+        <h2 class="section__title">当サイトの活用方法</h2>
+        <p class="section__subtitle">当サイトでは、北九州市の魅力あふれる自然や各種イベント情報を発信しています。<br>ネットワーク参画団体の皆さまは、活動や取組の情報を掲載・発信することができます。ぜひ当サイトをご活用ください。</p>
         <div class="cycle-cards">
-
           <div class="cycle-card">
             <div class="cycle-card__step">1</div>
             <div class="cycle-card__icon">
@@ -1058,11 +682,9 @@
             </div>
             <p class="cycle-card__subtitle">ファンになる</p>
             <h3 class="cycle-card__title">知って・好きになる</h3>
-            <p class="cycle-card__desc">自然スポット紹介、写真展、イベント告知などで関心を持つ</p>
+            <p class="cycle-card__desc">自然スポット紹介、写真展、イベント告知などで関心を持つ。<br>（自然や生き物のフリー写真素材も利用できます）</p>
           </div>
-
           <div class="cycle-card__arrow" aria-hidden="true">&#8594;</div>
-
           <div class="cycle-card">
             <div class="cycle-card__step">2</div>
             <div class="cycle-card__icon">
@@ -1076,12 +698,12 @@
               </svg>
             </div>
             <p class="cycle-card__subtitle">活動する</p>
-            <h3 class="cycle-card__title">参加する・つながる</h3>
-            <p class="cycle-card__desc">ネットワーク参加、現場活動、勉強会への参加</p>
+            <h3 class="cycle-card__title">
+              <a href="/network/" class="hover-underline">参加する・つながる</a>
+            </h3>
+            <p class="cycle-card__desc">イベントや保全活動、勉強会への参加。<br>ネットワークへの加入など。</p>
           </div>
-
           <div class="cycle-card__arrow" aria-hidden="true">&#8594;</div>
-
           <div class="cycle-card">
             <div class="cycle-card__step">3</div>
             <div class="cycle-card__icon">
@@ -1097,25 +719,24 @@
                 <path d="M22 17 C26 15 30 19 22 27 C14 19 18 15 22 17Z" fill="#2C5F2D" opacity="0.25"/>
               </svg>
             </div>
-            <p class="cycle-card__subtitle">経営に組み込む</p>
-            <h3 class="cycle-card__title">持続する仕組みにする</h3>
-            <p class="cycle-card__desc">企業の事業活動・CSR・ESG・人材育成に統合する</p>
+            <p class="cycle-card__subtitle">継続する</p>
+            <h3 class="cycle-card__title">
+              <a href="/network/cases/" class="hover-underline">発信する・創出する</a>
+            </h3>
+            <p class="cycle-card__desc">取組や活動の紹介。ネットワークを活用した各主体間の連携事業の創出など。</p>
           </div>
-
         </div>
       </div>
     </section>
-
     <!-- 関連ページナビ -->
     <section class="section section--gray">
       <div class="container">
         <h2 class="section__title">さらに詳しく知る</h2>
         <p class="section__subtitle">アーバンネイチャー北九州を構成する2つの重要テーマ</p>
-
         <div class="page-nav">
           <a href="biodiversity.html" class="page-nav__card">
             <div class="page-nav__card-title">生物多様性</div>
-            <div class="page-nav__card-desc">なぜ生物多様性が重要なのか。生態系サービスの仕組み、国内外の動向、北九州の自然資源を詳しく解説します。</div>
+            <div class="page-nav__card-desc">なぜ生物多様性が重要なのか。生態系サービスの仕組み、国内外の動向、北九州市の自然資源を詳しく解説します。</div>
             <div class="page-nav__card-link">詳しく見る &rarr;</div>
           </a>
           <a href="strategy.html" class="page-nav__card">
@@ -1126,7 +747,6 @@
         </div>
       </div>
     </section>
-
   <!-- CTA -->
   <section class="cta-band" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/cta-bg.png'); background-size: cover; background-position: center;">
     <div class="container">
@@ -1136,17 +756,14 @@
       </div>
     </div>
   </section>
-
-
   </main>
-
   <!-- フッター -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div>
           <span class="footer__brand-name">アーバンネイチャー北九州</span>
-          <p class="footer__desc">都市と自然が近接する北九州の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
+          <p class="footer__desc">都市と自然が近接する北九州市の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
         </div>
         <div>
           <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
@@ -1159,17 +776,21 @@
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
             <a href="../network/">北九州NPネットワーク</a>
-            <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
+          <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
+          <div class="footer__links">
+            <a href="../network/cases/">NP実践事例</a>
+            <a href="../blog/">企業の活動ブログ</a>
+            <a href="../blog/">団体等の活動ブログ</a>
+          </div>
           <h3 class="footer__heading">活動拠点</h3>
           <div class="footer__links">
             <a href="../center/">拠点一覧</a>
             <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
+            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
             <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
             <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
             <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
@@ -1189,21 +810,14 @@
             <a href="../contact/">お問合せ</a>
             <a href="../privacy/">プライバシーポリシー</a>
           </div>
-          <h3 class="footer__heading" style="margin-top:24px">ソーシャル</h3>
-          <div class="footer__links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-          </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>&copy; 2026 アーバンネイチャー北九州</span>
+        <span>Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span>
         <a href="../privacy/">プライバシーポリシー</a>
       </div>
     </div>
   </footer>
-
   <script src="../js/main.js"></script>
 </body>
 </html>

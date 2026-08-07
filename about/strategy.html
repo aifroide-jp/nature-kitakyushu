@@ -1,1069 +1,1193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。アーバンネイチャー北九州が目指すネイチャーポジティブの実現。">
-  <meta name="keywords" content="生物多様性戦略,北九州市,ネイチャーポジティブ,基本目標,主要施策,2025-2030">
-
-  <!-- ファビコン -->
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../favicon.svg">
-
-  <!-- OGP -->
-  <meta property="og:title" content="北九州市の取り組み | アーバンネイチャー北九州">
-  <meta property="og:description" content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ai-yoshitani.github.io/nature-kitakyushu/about/strategy.html">
-  <meta property="og:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_9304-450x450.jpg">
-  <meta property="og:site_name" content="アーバンネイチャー北九州">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="北九州市の取り組み | アーバンネイチャー北九州">
-  <meta name="twitter:description" content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。">
-  <meta name="twitter:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_9304-450x450.jpg">
-  <title>北九州市の取り組み | アーバンネイチャー北九州</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    /* 戦略ページ固有スタイル */
-
-    /* ---- 概要バナー ---- */
-    .strategy-summary {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--accent) 100%);
-      border-radius: var(--radius-xl);
-      padding: 48px;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 0;
-    }
-    .strategy-summary__label {
-      display: inline-block;
-      background: rgba(255,255,255,0.25);
-      border-radius: 20px;
-      padding: 4px 16px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      margin-bottom: 16px;
-    }
-    .strategy-summary__title {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 16px;
-      line-height: 1.4;
-    }
-    .strategy-summary__desc {
-      font-size: 0.95rem;
-      opacity: 0.9;
-      line-height: 1.8;
-      max-width: 720px;
-      margin: 0 auto 24px;
-    }
-    .strategy-summary__tags {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .strategy-summary__tag {
-      background: rgba(255,255,255,0.2);
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 20px;
-      padding: 6px 16px;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    /* ---- サイクル図エリア ---- */
-    .cycle-intro {
-      background: var(--bg-white);
-      border-radius: var(--radius-xl);
-      padding: 40px;
-      margin: 40px 0;
-      box-shadow: 0 2px 16px var(--shadow);
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 0;
-    }
-    .cycle-item {
-      text-align: center;
-      padding: 24px 20px;
-      position: relative;
-    }
-    .cycle-item::after {
-      content: '→';
-      position: absolute;
-      right: -12px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      color: var(--primary);
-      font-weight: 700;
-    }
-    .cycle-item:last-child::after { display: none; }
-    .cycle-item__num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-    }
-    .cycle-item__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-    .cycle-item__desc {
-      font-size: 0.82rem;
-      color: var(--text-light);
-      line-height: 1.6;
-    }
-
-    /* ---- 基本目標カード ---- */
-    .goal-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin: 40px 0;
-    }
-    .goal-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: 0 2px 12px var(--shadow);
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .goal-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px var(--shadow-md);
-    }
-    .goal-card__header {
-      padding: 28px 24px 20px;
-    }
-    .goal-card__tag {
-      display: inline-block;
-      padding: 3px 12px;
-      border-radius: 12px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      margin-bottom: 12px;
-      color: #fff;
-    }
-    .goal-card__num {
-      font-size: 2.2rem;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .goal-card__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-    .goal-card__desc {
-      font-size: 0.85rem;
-      color: var(--text-light);
-      line-height: 1.7;
-    }
-    .goal-card__kpi {
-      border-top: 1px solid var(--border);
-      padding: 20px 24px;
-      margin-top: auto;
-      background: var(--bg-gray);
-    }
-    .goal-card__kpi-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--text-light);
-      letter-spacing: 0.06em;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-    }
-    .kpi-row {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .kpi-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-    }
-    .kpi-item__name {
-      font-size: 0.78rem;
-      color: var(--text-light);
-      flex: 1;
-      line-height: 1.4;
-    }
-    .kpi-item__value {
-      font-size: 1.1rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    /* ---- 推進体制 ---- */
-    .network-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin: 40px 0;
-    }
-    .network-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      box-shadow: 0 2px 12px var(--shadow);
-      border-left: 5px solid var(--primary);
-    }
-    .network-card--accent { border-left-color: var(--accent); }
-    .network-card__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 8px;
-    }
-    .network-card__sub {
-      font-size: 0.78rem;
-      color: var(--text-light);
-      margin-bottom: 14px;
-      line-height: 1.5;
-    }
-    .network-card__list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .network-card__list li {
-      font-size: 0.85rem;
-      color: var(--text);
-      padding-left: 16px;
-      position: relative;
-      line-height: 1.5;
-    }
-    .network-card__list li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--primary);
-      font-size: 0.7rem;
-      top: 3px;
-    }
-
-    /* ---- 5つのアクション ---- */
-    .action-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      margin: 40px 0;
-    }
-    .action-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: 0 2px 12px var(--shadow);
-      transition: all 0.3s ease;
-      text-align: center;
-    }
-    .action-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px var(--shadow-md);
-    }
-    .action-card__icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      aspect-ratio: 1;
-    }
-    .action-card__body { padding: 16px 12px; }
-    .action-card__num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-    .action-card__verb {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-      margin-bottom: 6px;
-      line-height: 1.2;
-    }
-    .action-card__sub {
-      font-size: 0.72rem;
-      color: var(--text-light);
-      line-height: 1.5;
-    }
-    .action-detail-row {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      margin-top: -8px;
-    }
-    .action-detail {
-      background: var(--bg-gray);
-      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-      padding: 14px 12px;
-      font-size: 0.78rem;
-      color: var(--text-light);
-      line-height: 1.6;
-    }
-
-    /* ---- 主要施策 ---- */
-    .measures-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin: 40px 0;
-    }
-    .measure-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: 0 2px 12px var(--shadow);
-    }
-    .measure-card__head {
-      padding: 20px 24px 16px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-    }
-    .measure-card__icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .measure-card__htitle {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      line-height: 1.4;
-    }
-    .measure-card__hdesc {
-      font-size: 0.78rem;
-      color: var(--text-light);
-      margin-top: 4px;
-      line-height: 1.5;
-    }
-    .measure-card__items {
-      border-top: 1px solid var(--border);
-      padding: 16px 24px;
-    }
-    .measure-item {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      padding: 5px 0;
-      font-size: 0.82rem;
-      color: var(--text);
-      line-height: 1.5;
-      border-bottom: 1px solid var(--border);
-    }
-    .measure-item:last-child { border-bottom: none; }
-    .measure-item__num {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--text-light);
-      min-width: 20px;
-    }
-    .measure-card__more {
-      padding: 8px 24px 16px;
-      font-size: 0.78rem;
-      color: var(--text-light);
-    }
-
-    /* ---- ビジョンバナー ---- */
-    .vision-banner {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--accent) 100%);
-      border-radius: var(--radius-xl);
-      padding: 48px;
-      color: #fff;
-      text-align: center;
-      margin: 0;
-    }
-    .vision-banner__title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-      color: #fff;
-    }
-    .vision-banner__desc {
-      font-size: 0.95rem;
-      opacity: 0.9;
-      line-height: 1.8;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    /* ---- レスポンシブ ---- */
-    @media (max-width: 1024px) {
-      .action-grid,
-      .action-detail-row { grid-template-columns: repeat(3, 1fr); }
-      .action-detail-row .action-detail:nth-child(n+4) { display: none; }
-    }
-    @media (max-width: 768px) {
-      .goal-cards,
-      .measures-grid,
-      .network-grid { grid-template-columns: 1fr; }
-      .cycle-intro {
-        grid-template-columns: 1fr;
-        padding: 24px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。アーバンネイチャー北九州が目指すネイチャーポジティブの実現。"
+    />
+    <meta
+      name="keywords"
+      content="生物多様性戦略,北九州市,ネイチャーポジティブ,基本目標,主要施策,2025-2030"
+    />
+    <!-- ファビコン -->
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../favicon.svg" />
+    <!-- OGP -->
+    <meta
+      property="og:title"
+      content="北九州市の取り組み | アーバンネイチャー北九州"
+    />
+    <meta
+      property="og:description"
+      content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/about/strategy.html"
+    />
+    <meta
+      property="og:image"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_9304-450x450.jpg"
+    />
+    <meta property="og:site_name" content="アーバンネイチャー北九州" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="北九州市の取り組み | アーバンネイチャー北九州"
+    />
+    <meta
+      name="twitter:description"
+      content="北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_9304-450x450.jpg"
+    />
+    <title>北九州市の取り組み | アーバンネイチャー北九州</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* 戦略ページ固有スタイル */
+      /* ---- 概要バナー ---- */
+      .strategy-summary {
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary) 60%,
+          var(--accent) 100%
+        );
+        border-radius: var(--radius-xl);
+        padding: 48px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0;
       }
-      .cycle-item::after { display: none; }
-      .action-grid,
-      .action-detail-row { grid-template-columns: repeat(2, 1fr); }
-      .strategy-summary { padding: 32px 24px; }
-      .strategy-summary__title { font-size: 1.25rem; }
-      .vision-banner { padding: 32px 24px; }
-      .vision-banner__title { font-size: 1.2rem; }
-    }
-    @media (max-width: 480px) {
-      .action-grid,
-      .action-detail-row { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
-
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="header__inner">
-      <a href="../" class="header__logo">
-        <img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160" height="40"><span class="header__logo-sub" aria-hidden="true">北九州市生物多様性戦略 2025–2030</span>
-      </a>
-            <nav class="header__nav" aria-label="メインナビゲーション">
-        <div class="nav-item">
-          <a href="../about/" class="active" >アーバンネイチャー北九州とは？</a>
-          <ul class="dropdown">
-            <li><a href="../about/">全体像</a></li>
-            <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-            <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
-            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
-          </ul>
+      .strategy-summary__label {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        padding: 4px 16px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        margin-bottom: 16px;
+      }
+      .strategy-summary__title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+      .strategy-summary__desc {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        line-height: 1.8;
+        max-width: 720px;
+        margin: 0 auto 24px;
+      }
+      .strategy-summary__tags {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .strategy-summary__tag {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      /* ---- サイクル図エリア ---- */
+      .cycle-intro {
+        background: var(--bg-white);
+        border-radius: var(--radius-xl);
+        padding: 40px;
+        margin: 40px 0;
+        box-shadow: 0 2px 16px var(--shadow);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+      }
+      .cycle-item {
+        text-align: center;
+        padding: 24px 20px;
+        position: relative;
+      }
+      .cycle-item::after {
+        content: "→";
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        color: var(--primary);
+        font-weight: 700;
+      }
+      .cycle-item:last-child::after {
+        display: none;
+      }
+      .cycle-item__num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 14px;
+      }
+      .cycle-item__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+      .cycle-item__desc {
+        font-size: 0.82rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      /* ---- 基本目標カード ---- */
+      .goal-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin: 40px 0;
+      }
+      .goal-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: 0 2px 12px var(--shadow);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+      .goal-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px var(--shadow-md);
+      }
+      .goal-card__header {
+        padding: 28px 24px 20px;
+      }
+      .goal-card__tag {
+        display: inline-block;
+        padding: 3px 12px;
+        border-radius: 12px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        margin-bottom: 12px;
+        color: #fff;
+      }
+      .goal-card__num {
+        font-size: 2.2rem;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .goal-card__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .goal-card__desc {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        line-height: 1.7;
+      }
+      .goal-card__kpi {
+        border-top: 1px solid var(--border);
+        padding: 20px 24px;
+        margin-top: auto;
+        background: var(--bg-gray);
+      }
+      .goal-card__kpi-label {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--text-light);
+        letter-spacing: 0.06em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .kpi-row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .kpi-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+      }
+      .kpi-item__name {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        flex: 1;
+        line-height: 1.4;
+      }
+      .kpi-item__value {
+        font-size: 1.1rem;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+      /* ---- 推進体制 ---- */
+      .network-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin: 40px 0;
+      }
+      .network-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        box-shadow: 0 2px 12px var(--shadow);
+        border-left: 5px solid var(--primary);
+      }
+      .network-card--accent {
+        border-left-color: var(--accent);
+      }
+      .network-card__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        margin-bottom: 8px;
+      }
+      .network-card__sub {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        margin-bottom: 14px;
+        line-height: 1.5;
+      }
+      .network-card__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .network-card__list li {
+        font-size: 0.85rem;
+        color: var(--text);
+        padding-left: 16px;
+        position: relative;
+        line-height: 1.5;
+      }
+      .network-card__list li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+        font-size: 0.7rem;
+        top: 3px;
+      }
+      /* ---- 5つのアクション ---- */
+      .action-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+        margin: 40px 0;
+      }
+      .action-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: 0 2px 12px var(--shadow);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+      .action-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px var(--shadow-md);
+      }
+      .action-card__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+      }
+      .action-card__body {
+        padding: 16px 12px;
+      }
+      .action-card__num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+      .action-card__verb {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: var(--primary-dark);
+        margin-bottom: 6px;
+        line-height: 1.2;
+      }
+      .action-card__sub {
+        font-size: 0.72rem;
+        color: var(--text-light);
+        line-height: 1.5;
+      }
+      .action-detail-row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+        margin-top: -8px;
+      }
+      .action-detail {
+        background: var(--bg-gray);
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+        padding: 14px 12px;
+        font-size: 0.78rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      /* ---- 主要施策 ---- */
+      .measures-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin: 40px 0;
+      }
+      .measure-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: 0 2px 12px var(--shadow);
+      }
+      .measure-card__head {
+        padding: 20px 24px 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .measure-card__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .measure-card__htitle {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--primary-dark);
+        line-height: 1.4;
+      }
+      .measure-card__hdesc {
+        font-size: 0.78rem;
+        color: var(--text-light);
+        margin-top: 4px;
+        line-height: 1.5;
+      }
+      .measure-card__items {
+        border-top: 1px solid var(--border);
+        padding: 16px 24px;
+      }
+      .measure-item {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        padding: 5px 0;
+        font-size: 0.82rem;
+        color: var(--text);
+        line-height: 1.5;
+        border-bottom: 1px solid var(--border);
+      }
+      .measure-item:last-child {
+        border-bottom: none;
+      }
+      .measure-item__num {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--text-light);
+        min-width: 20px;
+      }
+      .measure-card__more {
+        padding: 8px 24px 16px;
+        font-size: 0.78rem;
+        color: var(--text-light);
+      }
+      /* ---- ビジョンバナー ---- */
+      .vision-banner {
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-dark) 50%,
+          var(--accent) 100%
+        );
+        border-radius: var(--radius-xl);
+        padding: 48px;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+      }
+      .vision-banner__title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+      .vision-banner__desc {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      /* ---- レスポンシブ ---- */
+      @media (max-width: 1024px) {
+        .action-grid,
+        .action-detail-row {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .action-detail-row .action-detail:nth-child(n + 4) {
+          display: none;
+        }
+      }
+      @media (max-width: 768px) {
+        .goal-cards,
+        .measures-grid,
+        .network-grid {
+          grid-template-columns: 1fr;
+        }
+        .cycle-intro {
+          grid-template-columns: 1fr;
+          padding: 24px;
+        }
+        .cycle-item::after {
+          display: none;
+        }
+        .action-grid,
+        .action-detail-row {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .strategy-summary {
+          padding: 32px 24px;
+        }
+        .strategy-summary__title {
+          font-size: 1.25rem;
+        }
+        .vision-banner {
+          padding: 32px 24px;
+        }
+        .vision-banner__title {
+          font-size: 1.2rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .action-grid,
+        .action-detail-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="../" class="header__logo">
+          <img
+            src="../images/2026/02/logo.png"
+            alt="アーバンネイチャー北九州"
+            width="160"
+            height="40"
+          /><span class="header__logo-sub" aria-hidden="true"
+            >北九州市生物多様性戦略 2025–2030</span
+          >
+        </a>
+        <nav class="header__nav" aria-label="メインナビゲーション">
+          <a href="../news/">お知らせ</a>
+          <div class="nav-item">
+            <a href="../about/" class="active"
+              >アーバンネイチャー北九州とは？</a
+            >
+            <ul class="dropdown">
+              <li><a href="../about/">全体像</a></li>
+              <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
+              <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
+              <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+              <li><a href="../center/">活動拠点</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <a href="../network/">地域との繋がり</a>
+            <ul class="dropdown">
+              <li>
+                <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
+              </li>
+              <li><a href="../join/">会員募集</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <a href="../network/cases/">活動紹介</a>
+            <ul class="dropdown">
+              <li><a href="../network/cases/">NP実践事例</a></li>
+              <li><a href="../blog/">企業の活動ブログ</a></li>
+              <li><a href="../blog/">団体等の活動ブログ</a></li>
+            </ul>
+          </div>
+          <a href="../events/">イベントを探す</a>
+          <a href="../photos/">みんなの写真展</a>
+        </nav>
+        <div class="header__actions">
+          <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
+          <button
+            class="hamburger"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <div class="nav-item">
-          <a href="../center/" >活動拠点</a>
-          <ul class="dropdown">
-            <li><a href="../center/">拠点一覧</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/itouzu.html">到津の森公園</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/yamada.html">山田緑地</a></li>
-          </ul>
+      </div>
+    </header>
+    <!-- モバイルナビ -->
+    <nav class="mobile-nav" id="js-mobile-nav">
+      <a href="../news/">お知らせ</a>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
+          <a href="../about/">アーバンネイチャー北九州とは？</a>
+          <button
+            class="mobile-nav__toggle"
+            aria-expanded="false"
+            aria-label="サブメニューを開く"
+          >
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
         </div>
-        <div class="nav-item">
-          <a href="../network/" >地域との繋がり</a>
-          <ul class="dropdown">
-            <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
-            <li><a href="../network/cases/">活動実績</a></li>
-            <li><a href="../blog/">活動ブログ</a></li>
-            <li><a href="../join/">会員募集</a></li>
-          </ul>
+        <div class="mobile-nav__children">
+          <a href="../about/">全体像</a>
+          <a href="../about/biodiversity.html">生物多様性とは？</a>
+          <a href="../about/strategy.html">北九州市の取り組み</a>
+          <a href="../about/spots.html">北九州市の自然スポット</a>
+          <a href="../center/">活動拠点</a>
         </div>
-        <a href="../events/" >イベントを探す</a>
-        <a href="../news/" >お知らせ</a>
-        <a href="../photos/" >みんなの写真展</a>
-      </nav>
-      <div class="header__actions">
-        <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
-        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
-    </div>
-  </header>
-
-  <!-- モバイルナビ -->
-  <nav class="mobile-nav" id="js-mobile-nav">
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../about/">アーバンネイチャー北九州とは？</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
+          <a href="../network/">地域との繋がり</a>
+          <button
+            class="mobile-nav__toggle"
+            aria-expanded="false"
+            aria-label="サブメニューを開く"
+          >
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
+        </div>
+        <div class="mobile-nav__children">
+          <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
+          <a href="../join/">会員募集</a>
+        </div>
       </div>
-      <div class="mobile-nav__children">
-        <a href="../about/">全体像</a>
-        <a href="../about/biodiversity.html">生物多様性とは？</a>
-        <a href="../about/strategy.html">北九州市の取り組み</a>
-        <a href="../about/spots.html">北九州市の自然スポット</a>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
+          <a href="../network/cases/">活動紹介</a>
+          <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
+        </div>
+        <div class="mobile-nav__children">
+          <a href="../network/cases/">NP実践事例</a>
+          <a href="../blog/">企業の活動ブログ</a>
+          <a href="../blog/">団体等の活動ブログ</a>
+        </div>
       </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../center/">活動拠点</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
+      <a href="../events/">イベントを探す</a>
+      <a href="../photos/">みんなの写真展</a>
+      <div class="mobile-nav__cta">
+        <a href="../join/" class="btn btn--primary btn--block">参加する</a>
       </div>
-      <div class="mobile-nav__children">
-        <a href="../center/">拠点一覧</a>
-        <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-        <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
-        <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-        <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-        <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-        <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-        <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-        <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-        <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-        <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
-      </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../network/">地域との繋がり</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
-        <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
-        <a href="../join/">会員募集</a>
-      </div>
-    </div>
-    <a href="../events/">イベントを探す</a>
-    <a href="../news/">お知らせ</a>
-    <a href="../photos/">みんなの写真展</a>
-    <div class="mobile-nav__cta">
-      <a href="../join/" class="btn btn--primary btn--block">参加する</a>
-    </div>
-  </nav>
-
-  <!-- パンくずリスト -->
-  <div class="breadcrumb">
-    <div class="container">
-      <ol class="breadcrumb__list">
-        <li><a href="../">トップ</a></li>
-        <li><a href="./">アーバンネイチャー北九州とは？</a></li>
-        <li>北九州市の取り組み</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- ページヘッダー -->
-  <section class="page-header" style="background-image: url('../images/2025/03/sarakurayama.jpg'); background-size: cover; background-position: center 40%;">
-    <div class="container">
-      <h1 class="page-header__title">北九州市の取り組み</h1>
-      <p class="page-header__desc">北九州市生物多様性戦略 2025-2030 — アーバンネイチャー × ネイチャーポジティブ</p>
-    </div>
-  </section>
-
-  <!-- メインコンテンツ -->
-  <main id="main-content">
-
-    <!-- 戦略の概要 -->
-    <section class="section section--white">
+    </nav>
+    <!-- パンくずリスト -->
+    <div class="breadcrumb">
       <div class="container">
-        <div class="strategy-summary">
-          <div class="strategy-summary__label">令和7年5月策定</div>
-          <div class="strategy-summary__title">北九州市生物多様性戦略 2025–2030</div>
-          <p class="strategy-summary__desc">
-            都市に近接する豊かな自然「アーバンネイチャー北九州」を定義し、「都市と自然の共生」というネイチャーポジティブのグローバルモデルを目指します。市民・企業・行政が一体となり、自然の保全と回復、地域の魅力向上、そして持続可能な成長を同時に実現します。
+        <ol class="breadcrumb__list">
+          <li><a href="../">トップ</a></li>
+          <li><a href="./">アーバンネイチャー北九州とは？</a></li>
+          <li>北九州市の取り組み</li>
+        </ol>
+      </div>
+    </div>
+    <!-- ページヘッダー -->
+    <section
+      class="page-header"
+      style="
+        background-image: url(&quot;../images/2025/03/sarakurayama.jpg&quot;);
+        background-size: cover;
+        background-position: center 40%;
+      "
+    >
+      <div class="container">
+        <h1 class="page-header__title">北九州市の取り組み</h1>
+        <p class="page-header__desc">
+          北九州市生物多様性戦略 2025-2030 — アーバンネイチャー ×
+          ネイチャーポジティブ
+        </p>
+      </div>
+    </section>
+    <!-- メインコンテンツ -->
+    <main id="main-content">
+      <!-- 戦略の概要 -->
+      <section class="section section--white">
+        <div class="container">
+          <div class="strategy-summary">
+            <div class="strategy-summary__label">令和7年5月策定</div>
+            <div class="strategy-summary__title">
+              北九州市生物多様性戦略 2025–2030
+            </div>
+            <p class="strategy-summary__desc">
+              北九州市の都市に近接する豊かな自然を「アーバンネイチャー北九州」と定義し、「都市と自然との共生」というネイチャーポジティブのグローバルモデルを目指します。産学官民が一体となり、自然の保全と回復、地域の魅力向上、そして持続可能な成長を同時に実現します。
+            </p>
+            <div class="strategy-summary__tags">
+              <span class="strategy-summary__tag"
+                >対象期間：2025〜2030年度（6年間）</span
+              >
+              <span class="strategy-summary__tag"
+                >生物多様性基本法 第13条第1項に基づく地域戦略</span
+              >
+              <span class="strategy-summary__tag"
+                >生物多様性国家戦略 2023-2030 と連動</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3つの基本目標 -->
+      <section class="section section--gray">
+        <div class="container">
+          <h2 class="section__title">3つの基本目標</h2>
+          <p class="section__subtitle">
+            戦略が掲げる具体的な目標と、2030年までの数値指標
           </p>
-          <div class="strategy-summary__tags">
-            <span class="strategy-summary__tag">対象期間：2025〜2030年度（6年間）</span>
-            <span class="strategy-summary__tag">生物多様性基本法 第13条第1項に基づく地域戦略</span>
-            <span class="strategy-summary__tag">生物多様性国家戦略 2023-2030 と連動</span>
-          </div>
-        </div>
-
-        <!-- 北九州ネイチャーポジティブサイクル -->
-        <div class="cycle-intro">
-          <div class="cycle-item">
-            <!-- 人と自然のつながり：ハートを持つ人物 -->
-            <svg width="44" height="44" viewBox="0 0 64 64" fill="none" stroke="#2c5f2d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 10px">
-              <circle cx="32" cy="14" r="7"/>
-              <path d="M20 52 Q20 36 32 36 Q44 36 44 52"/>
-              <path d="M25 26 Q25 22 29 22 Q32 22 32 26 Q32 22 35 22 Q39 22 39 26 Q39 30 32 36 Q25 30 25 26Z" fill="#2c5f2d" stroke="none"/>
-            </svg>
-            <div class="cycle-item__num" style="background:linear-gradient(135deg,#2c5f2d,#5a8a3c)">1</div>
-            <div class="cycle-item__title">価値観の形成</div>
-            <div class="cycle-item__desc">市民一人ひとりが自然に気づき、大切にするファンを増やす。すべてのネイチャーポジティブはここから始まる。</div>
-          </div>
-          <div class="cycle-item">
-            <!-- 保全・回復：葉っぱと循環矢印 -->
-            <svg width="44" height="44" viewBox="0 0 64 64" fill="none" stroke="#028090" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 10px">
-              <path d="M32 56 L32 28"/>
-              <path d="M32 42 Q18 38 14 22 Q28 16 34 32"/>
-              <path d="M32 34 Q46 30 50 14 Q36 8 30 24"/>
-              <line x1="20" y1="56" x2="44" y2="56"/>
-            </svg>
-            <div class="cycle-item__num" style="background:linear-gradient(135deg,#028090,#2c5f2d)">2</div>
-            <div class="cycle-item__title">保全・回復</div>
-            <div class="cycle-item__desc">市民・企業・行政の「自然のファン」が一体となって、生物多様性の保全と回復を実践する。</div>
-          </div>
-          <div class="cycle-item">
-            <!-- 課題解決：右肩上がりグラフ -->
-            <svg width="44" height="44" viewBox="0 0 64 64" fill="none" stroke="#1a5276" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 10px">
-              <polyline points="8,54 20,40 30,46 44,26 56,12"/>
-              <polyline points="50,12 56,12 56,18"/>
-              <line x1="8" y1="58" x2="58" y2="58"/>
-              <line x1="8" y1="10" x2="8" y2="58"/>
-            </svg>
-            <div class="cycle-item__num" style="background:linear-gradient(135deg,#1a5276,#028090)">3</div>
-            <div class="cycle-item__title">課題解決・成長</div>
-            <div class="cycle-item__desc">豊かな自然が経済・社会課題の解決に役立ち、都市の魅力が向上してネイチャーポジティブの重要性が再認識される。</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3つの基本目標 -->
-    <section class="section section--gray">
-      <div class="container">
-        <h2 class="section__title">3つの基本目標</h2>
-        <p class="section__subtitle">戦略が掲げる具体的な目標と、2030年までの数値指標</p>
-
-        <div class="goal-cards">
-
-          <!-- 基本目標1 -->
-          <div class="goal-card">
-            <div class="goal-card__header">
-              <div class="goal-card__tag" style="background:#2c5f2d">基本目標 1</div>
-              <div class="goal-card__num" style="color:#2c5f2d">価値観の形成</div>
-              <div class="goal-card__title">生物多様性を大切にする価値観の形成</div>
-              <div class="goal-card__desc">民間企業、教育・研究機関、地域コミュニティ等と連携し、市民が自然や生き物と触れ合う機会を創出。生物多様性の保全・回復に貢献する行動やライフスタイル（食品ロスの減少、地産地消の推進など）への転換を促し、都市に近接した豊かな自然の魅力を発信します。</div>
+          <div class="goal-cards">
+            <!-- 基本目標1 -->
+            <div class="goal-card">
+              <div class="goal-card__header">
+                <div class="goal-card__tag" style="background: #2c5f2d">
+                  基本目標 1
+                </div>
+                <div class="goal-card__num" style="color: #2c5f2d">
+                  価値観の形成
+                </div>
+                <div class="goal-card__title">
+                  生物多様性を大切にする価値観の形成
+                </div>
+                <div class="goal-card__desc">
+                  民間企業、教育・研究機関、地域コミュニティ等と連携し、市民が自然や生き物と触れ合う機会を創出。生物多様性の保全・回復に貢献する行動やライフスタイル（食品ロスの減少、地産地消の推進など）への転換を促し、都市に近接した豊かな自然の魅力を発信します。
+                </div>
+              </div>
+              <div class="goal-card__kpi">
+                <div class="goal-card__kpi-label">2030年目標値</div>
+                <div class="kpi-row">
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >生物多様性に関する市民認知度</span
+                    >
+                    <span class="kpi-item__value" style="color: #2c5f2d"
+                      >60%</span
+                    >
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-item__name">保全活動への参加率</span>
+                    <span class="kpi-item__value" style="color: #2c5f2d"
+                      >50%</span
+                    >
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >市民1人1日あたりの家庭ごみ排出量</span
+                    >
+                    <span class="kpi-item__value" style="color: #2c5f2d"
+                      >420g以下</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="goal-card__kpi">
-              <div class="goal-card__kpi-label">2030年目標値</div>
-              <div class="kpi-row">
-                <div class="kpi-item">
-                  <span class="kpi-item__name">生物多様性に関する市民認知度</span>
-                  <span class="kpi-item__value" style="color:#2c5f2d">60%</span>
+            <!-- 基本目標2 -->
+            <div class="goal-card">
+              <div class="goal-card__header">
+                <div class="goal-card__tag" style="background: #028090">
+                  基本目標 2
                 </div>
-                <div class="kpi-item">
-                  <span class="kpi-item__name">保全活動への参加率</span>
-                  <span class="kpi-item__value" style="color:#2c5f2d">50%</span>
+                <div class="goal-card__num" style="color: #028090">
+                  保全・回復
                 </div>
-                <div class="kpi-item">
-                  <span class="kpi-item__name">市民1人1日あたりの家庭ごみ排出量</span>
-                  <span class="kpi-item__value" style="color:#2c5f2d">420g以下</span>
+                <div class="goal-card__title">生物多様性の適切な保全と回復</div>
+                <div class="goal-card__desc">
+                  民間企業等と連携してOECMの拡大を推進。里地里山の回復など、生物多様性の保全・回復に貢献する市民や民間企業等をサポートします。希少種の保全や特定外来生物の防除にも取り組みます。
+                </div>
+              </div>
+              <div class="goal-card__kpi">
+                <div class="goal-card__kpi-label">2030年目標値</div>
+                <div class="kpi-row">
+                  <div class="kpi-item">
+                    <span class="kpi-item__name">陸地の保全地域（最大）</span>
+                    <span class="kpi-item__value" style="color: #028090"
+                      >30%</span
+                    >
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >自然共生サイトの認定数（累計）</span
+                    >
+                    <span class="kpi-item__value" style="color: #028090"
+                      >5カ所</span
+                    >
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >保全活動への参加率（再掲）</span
+                    >
+                    <span class="kpi-item__value" style="color: #028090"
+                      >50%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 基本目標3 -->
+            <div class="goal-card">
+              <div class="goal-card__header">
+                <div class="goal-card__tag" style="background: #1a5276">
+                  基本目標 3
+                </div>
+                <div class="goal-card__num" style="color: #1a5276">
+                  課題解決
+                </div>
+                <div class="goal-card__title">
+                  自然を活用した多様な課題の解決
+                </div>
+                <div class="goal-card__desc">
+                  戦略を推進し、自然を切り口に多様な関係者が様々な課題解決のための拠点やネットワークを設置。カーボンニュートラルやサーキュラーエコノミーと統合的にネイチャーポジティブを推進。生物多様性の魅力を活かした観光や農林水産業等も振興します。
+                </div>
+              </div>
+              <div class="goal-card__kpi">
+                <div class="goal-card__kpi-label">2030年目標値</div>
+                <div class="kpi-row">
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >ネイチャーポジティブ宣言参加団体数</span
+                    >
+                    <span class="kpi-item__value" style="color: #1a5276"
+                      >30団体</span
+                    >
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-item__name"
+                      >NP経営に取り組む市内企業数</span
+                    >
+                    <span class="kpi-item__value" style="color: #1a5276"
+                      >30企業</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- 基本目標2 -->
-          <div class="goal-card">
-            <div class="goal-card__header">
-              <div class="goal-card__tag" style="background:#028090">基本目標 2</div>
-              <div class="goal-card__num" style="color:#028090">保全・回復</div>
-              <div class="goal-card__title">生物多様性の適切な保全と回復</div>
-              <div class="goal-card__desc">民間企業等と連携してOECMの拡大を推進。里地里山の回復など、生物多様性の保全・回復に貢献する市民や民間企業等をサポートします。希少種の保全や特定外来生物の防除にも取り組みます。</div>
-            </div>
-            <div class="goal-card__kpi">
-              <div class="goal-card__kpi-label">2030年目標値</div>
-              <div class="kpi-row">
-                <div class="kpi-item">
-                  <span class="kpi-item__name">陸地の保全地域（最大）</span>
-                  <span class="kpi-item__value" style="color:#028090">30%</span>
-                </div>
-                <div class="kpi-item">
-                  <span class="kpi-item__name">自然共生サイトの認定数（累計）</span>
-                  <span class="kpi-item__value" style="color:#028090">5カ所</span>
-                </div>
-                <div class="kpi-item">
-                  <span class="kpi-item__name">保全活動への参加率（再掲）</span>
-                  <span class="kpi-item__value" style="color:#028090">50%</span>
-                </div>
+          <!-- 北九州ネイチャーポジティブサイクル -->
+           <img src="images/nature-positive-cycle.png" alt="北九州ネイチャーポジティブサイクル" loading="lazy" style="display: block; max-width: 80%; margin: auto;">
+          </div>
+        </div>
+      </section>
+      <!-- 推進体制 -->
+      <section class="section section--white">
+        <div class="container">
+          <h2 class="section__title">推進体制</h2>
+          <div class="network-grid">
+            <div class="network-card network-card--accent">
+              <div class="network-card__title">
+                北九州ネイチャーポジティブセンター
               </div>
-            </div>
-          </div>
-
-          <!-- 基本目標3 -->
-          <div class="goal-card">
-            <div class="goal-card__header">
-              <div class="goal-card__tag" style="background:#1a5276">基本目標 3</div>
-              <div class="goal-card__num" style="color:#1a5276">課題解決</div>
-              <div class="goal-card__title">自然を活用した多様な課題の解決</div>
-              <div class="goal-card__desc">戦略を推進し、自然を切り口に多様な関係者が様々な課題解決のための拠点やネットワークを設置。カーボンニュートラルやサーキュラーエコノミーと統合的にネイチャーポジティブを推進。生物多様性の魅力を活かした観光や農林水産業等も振興します。</div>
-            </div>
-            <div class="goal-card__kpi">
-              <div class="goal-card__kpi-label">2030年目標値</div>
-              <div class="kpi-row">
-                <div class="kpi-item">
-                  <span class="kpi-item__name">ネイチャーポジティブ宣言参加団体数</span>
-                  <span class="kpi-item__value" style="color:#1a5276">30団体</span>
-                </div>
-                <div class="kpi-item">
-                  <span class="kpi-item__name">NP経営に取り組む市内企業数</span>
-                  <span class="kpi-item__value" style="color:#1a5276">30企業</span>
-                </div>
+              <div class="network-card__sub">
+                戦略の推進に向けた活動拠点の整備（響灘ビオトープ等の候補施設）
               </div>
+              <ul class="network-card__list">
+                <li>
+                  北九州市の10の自然関連施設を北九州ネイチャーポジティブセンターと位置づけ、戦略の推進拠点としています。市内の生物多様性に関する情報の収集・発信や普及啓発を行うとともに、市民や企業などによるネイチャーポジティブの取組を支援します。また、「北九州ネイチャーポジティブネットワーク」の事務局として、ネットワークの運営や連携の促進を担います。
+                </li>
+              </ul>
             </div>
-          </div>
+            <div class="network-card">
+              <div class="network-card__title">
+                北九州ネイチャーポジティブネットワーク
+              </div>
+              <div class="network-card__sub">
+                戦略の推進に向けて産学官民が連携し、取組を推進する体制の構築
+              </div>
+              <ul class="network-card__list">
+                <li>
+                  北九州ネイチャーポジティブネットワークは、多様な主体の連携・協働を促進するためのプラットフォームです。企業や団体、教育・研究機関、市民などがつながり、それぞれの知見や資源を生かしながら、連携・協働によるプロジェクトの創出や情報共有を進め、地域全体でネイチャーポジティブの取組を広げることを目的としています。
+                </li>
+              </ul>
+            </div>
 
+          </div>
+           <img src="images/nature-positive-network.png" alt="北九州ネイチャーポジティブネットワーク" loading="lazy" style="display: block; max-width: 80%; margin: auto;">
         </div>
-      </div>
-    </section>
-
-    <!-- 推進体制 -->
-    <section class="section section--white">
-      <div class="container">
-        <h2 class="section__title">推進体制</h2>
-        <p class="section__subtitle">産学官民が連携して戦略を推進する2つの組織</p>
-
-        <div class="network-grid">
-          <div class="network-card">
-            <div class="network-card__title">北九州ネイチャーポジティブネットワーク</div>
-            <div class="network-card__sub">戦略の推進に向けて産学官民が連携し、取組を推進する体制の構築</div>
-            <ul class="network-card__list">
-              <li>構成：事業者、教育・研究機関、コミュニティ（地域団体・NPOなど）、行政等</li>
-              <li>豊かな自然を活用し、市の魅力向上や持続可能な社会の実現等の課題解決</li>
-              <li>各主体が一体となり、相互に連携・補完しながら戦略の取組を推進</li>
-            </ul>
-          </div>
-          <div class="network-card network-card--accent">
-            <div class="network-card__title">北九州ネイチャーポジティブセンター</div>
-            <div class="network-card__sub">戦略の推進に向けた活動拠点の整備（響灘ビオトープ等の候補施設）</div>
-            <ul class="network-card__list">
-              <li>市内の生物多様性に関する情報の収集・整理・分析及び普及啓発・プロモーション</li>
-              <li>市民や企業のネイチャーポジティブ活動・経営に関する助言等を支援</li>
-              <li>ネイチャーポジティブネットワークの事務局としても機能</li>
-              <li>響灘ビオトープ：日本初のOECM登録（2024年8月）・約800種の生物が生息</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 私たちにできること -->
-    <section class="section section--gray">
-      <div class="container">
-        <h2 class="section__title">私たちにできること</h2>
-        <p class="section__subtitle">日々の暮らしの中で、一人ひとりが無理なくできる5つのアクション</p>
-
-        <div class="action-grid">
-          <div class="action-card">
-            <div class="action-card__icon" style="background:linear-gradient(135deg,#2c5f2d,#5a8a3c)">
-              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 10 Q20 6 24 6 L40 6 Q44 6 44 10 L44 20 Q44 30 32 36 Q20 30 20 20 Z" fill="rgba(255,255,255,0.2)"/>
-                <line x1="32" y1="36" x2="32" y2="52"/>
-                <line x1="22" y1="52" x2="42" y2="52"/>
-                <path d="M28 18 L30 22 L36 22 L32 26 L34 32 L28 28 L22 32 L24 26 L20 22 L26 22 Z" fill="rgba(255,255,255,0.7)" stroke="none"/>
-              </svg>
-            </div>
-            <div class="action-card__body">
-              <div class="action-card__num" style="background:#2c5f2d">1</div>
-              <div class="action-card__verb">たべよう</div>
-              <div class="action-card__sub">地元でとれたものを食べ、旬のものを味わう</div>
-            </div>
-          </div>
-          <div class="action-card">
-            <div class="action-card__icon" style="background:linear-gradient(135deg,#5a8a3c,#97bc62)">
-              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="4,54 20,22 34,42 46,28 60,54"/>
-                <line x1="4" y1="54" x2="60" y2="54"/>
-                <circle cx="48" cy="14" r="8" fill="rgba(255,255,255,0.2)"/>
-                <line x1="48" y1="4" x2="48" y2="6"/>
-                <line x1="56" y1="8" x2="58" y2="6"/>
-                <line x1="58" y1="14" x2="60" y2="14"/>
-              </svg>
-            </div>
-            <div class="action-card__body">
-              <div class="action-card__num" style="background:#5a8a3c">2</div>
-              <div class="action-card__verb">ふれよう</div>
-              <div class="action-card__sub">自然の中へ出かけ、生きものに触れる</div>
-            </div>
-          </div>
-          <div class="action-card">
-            <div class="action-card__icon" style="background:linear-gradient(135deg,#028090,#2c5f2d)">
-              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 10 Q8 6 12 6 L52 6 Q56 6 56 10 L56 36 Q56 40 52 40 L24 40 L14 50 L14 40 Q8 40 8 36 Z" fill="rgba(255,255,255,0.15)"/>
-                <path d="M25 20 Q25 16 29 16 Q32 16 32 20 Q32 16 35 16 Q39 16 39 20 Q39 24 32 30 Q25 24 25 20Z" fill="rgba(255,255,255,0.8)" stroke="none"/>
-              </svg>
-            </div>
-            <div class="action-card__body">
-              <div class="action-card__num" style="background:#028090">3</div>
-              <div class="action-card__verb">つたえよう</div>
-              <div class="action-card__sub">写真・絵・文章で自然の素晴らしさを伝える</div>
-            </div>
-          </div>
-          <div class="action-card">
-            <div class="action-card__icon" style="background:linear-gradient(135deg,#1a5276,#028090)">
-              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="32" cy="14" r="8" fill="rgba(255,255,255,0.2)"/>
-                <path d="M18 52 Q18 38 32 38 Q46 38 46 52"/>
-                <circle cx="10" cy="20" r="6" fill="rgba(255,255,255,0.15)"/>
-                <path d="M2 48 Q2 36 10 36 Q18 36 18 48"/>
-                <circle cx="54" cy="20" r="6" fill="rgba(255,255,255,0.15)"/>
-                <path d="M46 48 Q46 36 54 36 Q62 36 62 48"/>
-              </svg>
-            </div>
-            <div class="action-card__body">
-              <div class="action-card__num" style="background:#1a5276">4</div>
-              <div class="action-card__verb">まもろう</div>
-              <div class="action-card__sub">地域や全国の保全活動に参加する</div>
-            </div>
-          </div>
-          <div class="action-card">
-            <div class="action-card__icon" style="background:linear-gradient(135deg,#97bc62,#5a8a3c)">
-              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 20 L16 54 Q16 58 20 58 L44 58 Q48 58 48 54 L52 20"/>
-                <line x1="8" y1="20" x2="56" y2="20"/>
-                <path d="M24 16 L24 12 Q24 8 28 8 L36 8 Q40 8 40 12 L40 16"/>
-                <line x1="28" y1="30" x2="28" y2="50"/>
-                <line x1="36" y1="30" x2="36" y2="50"/>
-                <path d="M40 36 Q50 32 52 40 Q46 46 40 42 Q44 38 40 36Z" fill="rgba(255,255,255,0.7)" stroke="none"/>
-              </svg>
-            </div>
-            <div class="action-card__body">
-              <div class="action-card__num" style="background:#97bc62">5</div>
-              <div class="action-card__verb">えらぼう</div>
-              <div class="action-card__sub">日々の生活で環境に優しい行動を選ぶ</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 詳細説明行 -->
-        <div class="action-detail-row">
-          <div class="action-detail">
-            <strong>地元の食材・旬の食材を選ぼう。</strong>田んぼや畑を支える生きものを守るほか、地域の食文化を理解することや生産・輸送に必要なエネルギーを削減することにつながります。
-          </div>
-          <div class="action-detail">
-            <strong>自然や生きものに触れよう。</strong>公園・動物園・水族館などを訪ね、自然の中で過ごす楽しさや生きものの面白さを体験。庭やベランダで緑や花を育てることも大切です。
-          </div>
-          <div class="action-detail">
-            <strong>みんなに伝えよう。</strong>自然や生きものに触れて感じたことを家族・友人に話したり、写真や絵で伝えることで生物多様性の輪が広がります。
-          </div>
-          <div class="action-detail">
-            <strong>保全活動に参加しよう。</strong>農業体験・エコツアー・ワークショップ・清掃ボランティアなど、市が企画する様々な参加型イベントを通じて保全を実践しましょう。
-          </div>
-          <div class="action-detail">
-            <strong>環境に優しい商品を選ぼう・ごみを減らそう。</strong>エコラベルの商品選択やマイバッグ持参でプラスチックを削減。食品ロスを出さない工夫も生物多様性の保全につながります。
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 主要施策 -->
-    <section class="section section--white">
-      <div class="container">
-        <h2 class="section__title">主要施策一覧</h2>
-        <p class="section__subtitle">3つの基本目標を実現するための具体的な取り組み</p>
-
-        <div class="measures-grid">
-
-          <!-- 目標1 施策 -->
-          <div class="measure-card">
-            <div class="measure-card__head">
-              <div class="measure-card__icon" style="background:rgba(44,95,45,0.12)">
-                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="#2c5f2d" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M32 8 A14 14 0 0 1 46 22 C46 30 42 34 40 38 L24 38 C22 34 18 30 18 22 A14 14 0 0 1 32 8Z"/>
-                  <path d="M24 44 L40 44"/><path d="M26 50 L38 50"/><path d="M30 56 L34 56"/>
+      </section>
+      <!-- 私たちにできること -->
+      <section class="section section--gray">
+        <div class="container">
+          <h2 class="section__title">私たちにできること</h2>
+          <p class="section__subtitle">
+            日々の暮らしの中で、一人ひとりが無理なくできる5つのアクション
+          </p>
+          <div class="action-grid">
+            <div class="action-card">
+              <div
+                class="action-card__icon"
+                style="background: linear-gradient(135deg, #2c5f2d, #5a8a3c)"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20 10 Q20 6 24 6 L40 6 Q44 6 44 10 L44 20 Q44 30 32 36 Q20 30 20 20 Z"
+                    fill="rgba(255,255,255,0.2)"
+                  />
+                  <line x1="32" y1="36" x2="32" y2="52" />
+                  <line x1="22" y1="52" x2="42" y2="52" />
+                  <path
+                    d="M28 18 L30 22 L36 22 L32 26 L34 32 L28 28 L22 32 L24 26 L20 22 L26 22 Z"
+                    fill="rgba(255,255,255,0.7)"
+                    stroke="none"
+                  />
                 </svg>
               </div>
-              <div>
-                <div class="measure-card__htitle">基本目標1：価値観の形成（全19施策）</div>
-                <div class="measure-card__hdesc">市民の理解を深め、人と自然のつながりを大切にする価値観を醸成</div>
+              <div class="action-card__body">
+                <div class="action-card__num" style="background: #2c5f2d">
+                  1
+                </div>
+                <div class="action-card__verb">たべよう</div>
+                <div class="action-card__sub">
+                  地元でとれたものを食べ、旬のものを味わう
+                </div>
               </div>
             </div>
-            <div class="measure-card__items">
-              <div class="measure-item"><span class="measure-item__num">01</span>学校教育における環境教育・SDGsの推進</div>
-              <div class="measure-item"><span class="measure-item__num">02</span>自然教室の実施（小学生向け市内自然の家宿泊体験）</div>
-              <div class="measure-item"><span class="measure-item__num">03</span>桂根川水辺の親水活動の実施</div>
-              <div class="measure-item"><span class="measure-item__num">04</span>自然史の普及啓発（いのちのたび博物館）</div>
-              <div class="measure-item"><span class="measure-item__num">05</span>環境ミュージアムによるエコツアー等の促進</div>
-              <div class="measure-item"><span class="measure-item__num">06</span>自然環境学習の場としての里地里山の活用</div>
-              <div class="measure-item"><span class="measure-item__num">08</span>平尾台の保全と利用</div>
-              <div class="measure-item"><span class="measure-item__num">13</span>地産地消の推進</div>
-              <div class="measure-item"><span class="measure-item__num">16</span>エコツアー・エコツーリズムの推進</div>
-              <div class="measure-item"><span class="measure-item__num">17</span>響灘ビオトープの運営と環境学習活動の推進</div>
-            </div>
-            <div class="measure-card__more">他9施策（ふれあい花壇・花と緑のまちづくり・道路緑化・プラスチックごみ対策 等）</div>
-          </div>
-
-          <!-- 目標2 施策 -->
-          <div class="measure-card">
-            <div class="measure-card__head">
-              <div class="measure-card__icon" style="background:rgba(2,128,144,0.12)">
-                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="#028090" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M32 58 L32 30"/>
-                  <path d="M32 44 Q18 40 14 24 Q28 18 34 34"/>
-                  <path d="M32 36 Q46 32 50 16 Q36 10 30 26"/>
-                  <line x1="20" y1="58" x2="44" y2="58"/>
+            <div class="action-card">
+              <div
+                class="action-card__icon"
+                style="background: linear-gradient(135deg, #5a8a3c, #97bc62)"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="4,54 20,22 34,42 46,28 60,54" />
+                  <line x1="4" y1="54" x2="60" y2="54" />
+                  <circle cx="48" cy="14" r="8" fill="rgba(255,255,255,0.2)" />
+                  <line x1="48" y1="4" x2="48" y2="6" />
+                  <line x1="56" y1="8" x2="58" y2="6" />
+                  <line x1="58" y1="14" x2="60" y2="14" />
                 </svg>
               </div>
-              <div>
-                <div class="measure-card__htitle">基本目標2：保全と回復（全20施策）</div>
-                <div class="measure-card__hdesc">北九州市の生物多様性を保全するだけでなく、回復に向けた取組を推進</div>
+              <div class="action-card__body">
+                <div class="action-card__num" style="background: #5a8a3c">
+                  2
+                </div>
+                <div class="action-card__verb">ふれよう</div>
+                <div class="action-card__sub">
+                  自然の中へ出かけ、生きものに触れる
+                </div>
               </div>
             </div>
-            <div class="measure-card__items">
-              <div class="measure-item"><span class="measure-item__num">01</span>平尾台の保全（国指定天然記念物・北九州国定公園）</div>
-              <div class="measure-item"><span class="measure-item__num">02</span>紫川周辺の河川環境整備の推進</div>
-              <div class="measure-item"><span class="measure-item__num">03</span>ほたるのふるさとづくり</div>
-              <div class="measure-item"><span class="measure-item__num">08</span>緑地の保全と緑化の推進</div>
-              <div class="measure-item"><span class="measure-item__num">09</span>森林の保全（自然公園法・緑地保全地区制度等）</div>
-              <div class="measure-item"><span class="measure-item__num">11</span>放置竹林対策</div>
-              <div class="measure-item"><span class="measure-item__num">12</span>水産環境の保全と水産業の振興</div>
-              <div class="measure-item"><span class="measure-item__num">16</span>外来種対策（特定外来生物の水際対策）</div>
-              <div class="measure-item"><span class="measure-item__num">18</span>自然環境調査の実施</div>
-              <div class="measure-item"><span class="measure-item__num">20</span>市内企業等と連携したOECMの登録の拡大</div>
-            </div>
-            <div class="measure-card__more">他10施策（河川管理・自然公園適正利用・農地保全・環境影響評価・鳥獣被害対策 等）</div>
-          </div>
-
-          <!-- 目標3 施策 -->
-          <div class="measure-card">
-            <div class="measure-card__head">
-              <div class="measure-card__icon" style="background:rgba(26,82,118,0.12)">
-                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="#1a5276" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="8,54 20,40 30,46 44,26 56,12"/>
-                  <polyline points="50,12 56,12 56,18"/>
-                  <line x1="8" y1="58" x2="58" y2="58"/>
-                  <line x1="8" y1="10" x2="8" y2="58"/>
+            <div class="action-card">
+              <div
+                class="action-card__icon"
+                style="background: linear-gradient(135deg, #028090, #2c5f2d)"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M8 10 Q8 6 12 6 L52 6 Q56 6 56 10 L56 36 Q56 40 52 40 L24 40 L14 50 L14 40 Q8 40 8 36 Z"
+                    fill="rgba(255,255,255,0.15)"
+                  />
+                  <path
+                    d="M25 20 Q25 16 29 16 Q32 16 32 20 Q32 16 35 16 Q39 16 39 20 Q39 24 32 30 Q25 24 25 20Z"
+                    fill="rgba(255,255,255,0.8)"
+                    stroke="none"
+                  />
                 </svg>
               </div>
-              <div>
-                <div class="measure-card__htitle">基本目標3：課題解決・成長（全14施策）</div>
-                <div class="measure-card__hdesc">豊かな自然を活用し、市の魅力向上や持続可能な社会の実現を通じて市の成長へ</div>
+              <div class="action-card__body">
+                <div class="action-card__num" style="background: #028090">
+                  3
+                </div>
+                <div class="action-card__verb">つたえよう</div>
+                <div class="action-card__sub">
+                  写真・絵・文章で自然の素晴らしさを伝える
+                </div>
               </div>
             </div>
-            <div class="measure-card__items">
-              <div class="measure-item"><span class="measure-item__num">01</span>北九州ネイチャーポジティブネットワークの構築</div>
-              <div class="measure-item"><span class="measure-item__num">02</span>北九州ネイチャーポジティブセンターの設置と運営</div>
-              <div class="measure-item"><span class="measure-item__num">03</span>ネイチャーポジティブ経営への移行支援</div>
-              <div class="measure-item"><span class="measure-item__num">04</span>有機農業の推進</div>
-              <div class="measure-item"><span class="measure-item__num">07</span>グリーンインフラを活用した防災・減災機能の強化</div>
-              <div class="measure-item"><span class="measure-item__num">08</span>脱炭素（カーボンニュートラル）社会実現への取組推進</div>
-              <div class="measure-item"><span class="measure-item__num">09</span>循環経済（サーキュラーエコノミー）システムの構築</div>
-              <div class="measure-item"><span class="measure-item__num">10</span>上下水道資源を活用したホップ栽培と地ビールの製造</div>
-              <div class="measure-item"><span class="measure-item__num">11</span>ホタルを通じた地域コミュニティの活性化</div>
-              <div class="measure-item"><span class="measure-item__num">12</span>水環境館の管理・運営</div>
+            <div class="action-card">
+              <div
+                class="action-card__icon"
+                style="background: linear-gradient(135deg, #1a5276, #028090)"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="32" cy="14" r="8" fill="rgba(255,255,255,0.2)" />
+                  <path d="M18 52 Q18 38 32 38 Q46 38 46 52" />
+                  <circle cx="10" cy="20" r="6" fill="rgba(255,255,255,0.15)" />
+                  <path d="M2 48 Q2 36 10 36 Q18 36 18 48" />
+                  <circle cx="54" cy="20" r="6" fill="rgba(255,255,255,0.15)" />
+                  <path d="M46 48 Q46 36 54 36 Q62 36 62 48" />
+                </svg>
+              </div>
+              <div class="action-card__body">
+                <div class="action-card__num" style="background: #1a5276">
+                  4
+                </div>
+                <div class="action-card__verb">まもろう</div>
+                <div class="action-card__sub">
+                  地域や全国の保全活動に参加する
+                </div>
+              </div>
             </div>
-            <div class="measure-card__more">他4施策（林業振興・水産業振興・石けん系泡消火剤の活用・食品廃棄物リサイクル 等）</div>
+            <div class="action-card">
+              <div
+                class="action-card__icon"
+                style="background: linear-gradient(135deg, #97bc62, #5a8a3c)"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.9)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 20 L16 54 Q16 58 20 58 L44 58 Q48 58 48 54 L52 20"
+                  />
+                  <line x1="8" y1="20" x2="56" y2="20" />
+                  <path d="M24 16 L24 12 Q24 8 28 8 L36 8 Q40 8 40 12 L40 16" />
+                  <line x1="28" y1="30" x2="28" y2="50" />
+                  <line x1="36" y1="30" x2="36" y2="50" />
+                  <path
+                    d="M40 36 Q50 32 52 40 Q46 46 40 42 Q44 38 40 36Z"
+                    fill="rgba(255,255,255,0.7)"
+                    stroke="none"
+                  />
+                </svg>
+              </div>
+              <div class="action-card__body">
+                <div class="action-card__num" style="background: #97bc62">
+                  5
+                </div>
+                <div class="action-card__verb">えらぼう</div>
+                <div class="action-card__sub">
+                  日々の生活で環境に優しい行動を選ぶ
+                </div>
+              </div>
+            </div>
           </div>
-
+          <!-- 詳細説明行 -->
+          <div class="action-detail-row">
+            <div class="action-detail">
+              <strong>地元の食材・旬の食材を選ぼう。</strong
+              >田んぼや畑を支える生きものを守るほか、地域の食文化を理解することや生産・輸送に必要なエネルギーを削減することにつながります。
+            </div>
+            <div class="action-detail">
+              <strong>自然や生きものに触れよう。</strong
+              >公園・動物園・水族館などを訪ね、自然の中で過ごす楽しさや生きものの面白さを体験。庭やベランダで緑や花を育てることも大切です。
+            </div>
+            <div class="action-detail">
+              <strong>みんなに伝えよう。</strong
+              >自然や生きものに触れて感じたことを家族・友人に話したり、写真や絵で伝えることで生物多様性の輪が広がります。
+            </div>
+            <div class="action-detail">
+              <strong>保全活動に参加しよう。</strong
+              >農業体験・エコツアー・ワークショップ・清掃ボランティアなど、市が企画する様々な参加型イベントを通じて保全を実践しましょう。
+            </div>
+            <div class="action-detail">
+              <strong>環境に優しい商品を選ぼう・ごみを減らそう。</strong
+              >エコラベルの商品選択やマイバッグ持参でプラスチックを削減。食品ロスを出さない工夫も生物多様性の保全につながります。
+            </div>
+          </div>
         </div>
-
-        <!-- ビジョンバナー -->
-        <div class="vision-banner">
-          <div class="vision-banner__title">「アーバンネイチャー北九州」を世界に発信し、都市と自然の共生を実現する</div>
-          <p class="vision-banner__desc">つながりと情熱と技術で「一歩先の価値観」を体現するグローバル挑戦都市・北九州市。市民・企業・行政が一体となって、ネイチャーポジティブな未来をともにつくりましょう。</p>
+      </section>
+      <!-- 主要施策 -->
+      <section class="section section--white">
+        <div class="container">
+          <!-- ビジョンバナー -->
+          <div class="vision-banner">
+            <div class="vision-banner__title">
+              「アーバンネイチャー北九州」を世界に発信し、都市と自然との共生を実現する
+            </div>
+            <p class="vision-banner__desc">
+              つながりと情熱と技術で「一歩先の価値観」を体現するグローバル挑戦都市・北九州市。産学官民が一体となって、ネイチャーポジティブな未来をともにつくりましょう。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section
+        class="cta-band"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url(&quot;../images/cta-bg.png&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="container">
+          <h2 class="cta-band__title">お気軽にお問合せください</h2>
+          <div class="cta-band__buttons">
+            <a href="../contact/" class="btn btn--solid-white btn--lg"
+              >お問合せ</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <span class="footer__brand-name">アーバンネイチャー北九州</span>
+            <p class="footer__desc">
+              都市と自然が近接する北九州市の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。
+            </p>
+          </div>
+          <div>
+            <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
+            <div class="footer__links">
+              <a href="../about/">全体像</a>
+              <a href="../about/biodiversity.html">生物多様性とは？</a>
+              <a href="../about/strategy.html">北九州市の取り組み</a>
+              <a href="../about/spots.html">北九州市の自然スポット</a>
+            </div>
+            <h3 class="footer__heading" style="margin-top: 24px">
+              地域との繋がり
+            </h3>
+            <div class="footer__links">
+              <a href="../network/">北九州NPネットワーク</a>
+              <a href="../join/">会員募集</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
+            <div class="footer__links">
+              <a href="../network/cases/">NP実践事例</a>
+              <a href="../blog/">企業の活動ブログ</a>
+              <a href="../blog/">団体等の活動ブログ</a>
+            </div>
+            <h3 class="footer__heading">活動拠点</h3>
+            <div class="footer__links">
+              <a href="../center/">拠点一覧</a>
+              <a class="nav-sub" href="../center/biotope.html"
+                >響灘ビオトープ</a
+              >
+              <a class="nav-sub" href="../center/greenpark.html"
+                >響灘緑地グリーンパーク</a
+              >
+              <a class="nav-sub" href="../center/hotarukan.html"
+                >北九州市ほたる館</a
+              >
+              <a class="nav-sub" href="../center/inochi.html"
+                >いのちのたび博物館</a
+              >
+              <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
+              <a class="nav-sub" href="../center/katsuki-hotaru.html"
+                >香月・黒川ほたる館</a
+              >
+              <a class="nav-sub" href="../center/mizukankyokan.html"
+                >水環境館</a
+              >
+              <a class="nav-sub" href="../center/soraland.html"
+                >ソラランド平尾台</a
+              >
+              <a class="nav-sub" href="../center/takamiya.html"
+                >タカミヤ環境ミュージアム</a
+              >
+              <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer__heading">その他</h3>
+            <div class="footer__links">
+              <a href="../events/">イベントを探す</a>
+              <a href="../news/">お知らせ</a>
+              <a href="../photos/">みんなの写真展</a>
+              <a href="../contact/">お問合せ</a>
+              <a href="../privacy/">プライバシーポリシー</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span>
+          <a href="../privacy/">プライバシーポリシー</a>
         </div>
       </div>
-    </section>
-
-  <!-- CTA -->
-  <section class="cta-band" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/cta-bg.png'); background-size: cover; background-position: center;">
-    <div class="container">
-      <h2 class="cta-band__title">お気軽にお問合せください</h2>
-      <div class="cta-band__buttons">
-        <a href="../contact/" class="btn btn--solid-white btn--lg">お問合せ</a>
-      </div>
-    </div>
-  </section>
-
-
-  </main>
-
-  <!-- フッター -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <span class="footer__brand-name">アーバンネイチャー北九州</span>
-          <p class="footer__desc">都市と自然が近接する北九州の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
-        </div>
-        <div>
-          <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
-          <div class="footer__links">
-            <a href="../about/">全体像</a>
-            <a href="../about/biodiversity.html">生物多様性とは？</a>
-            <a href="../about/strategy.html">北九州市の取り組み</a>
-            <a href="../about/spots.html">北九州市の自然スポット</a>
-          </div>
-          <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
-          <div class="footer__links">
-            <a href="../network/">北九州NPネットワーク</a>
-            <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
-            <a href="../join/">会員募集</a>
-          </div>
-        </div>
-        <div>
-          <h3 class="footer__heading">活動拠点</h3>
-          <div class="footer__links">
-            <a href="../center/">拠点一覧</a>
-            <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
-            <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-            <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-            <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-            <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-            <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-            <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-            <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-            <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
-          </div>
-        </div>
-        <div>
-          <h3 class="footer__heading">その他</h3>
-          <div class="footer__links">
-            <a href="../events/">イベントを探す</a>
-            <a href="../news/">お知らせ</a>
-            <a href="../photos/">みんなの写真展</a>
-            <a href="../contact/">お問合せ</a>
-            <a href="../privacy/">プライバシーポリシー</a>
-          </div>
-          <h3 class="footer__heading" style="margin-top:24px">ソーシャル</h3>
-          <div class="footer__links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>&copy; 2026 アーバンネイチャー北九州</span>
-        <a href="../privacy/">プライバシーポリシー</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/main.js"></script>
-</body>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
 </html>

@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- ファビコン -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../favicon.svg">
-
   <!-- OGP -->
   <meta property="og:title" content="会員募集 | アーバンネイチャー北九州">
   <meta property="og:description" content="">
@@ -27,6 +25,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
+    /* 参加メリット */
+    .benefit-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .benefit-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .benefit-item__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--primary, #2C5F2D);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .benefit-item__icon svg {
+      width: 26px;
+      height: 26px;
+    }
+    .benefit-item__title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary, #2C5F2D);
+      margin-bottom: 6px;
+    }
+    .benefit-item__desc {
+      font-size: 0.85rem;
+      color: var(--text-light, #666);
+      line-height: 1.7;
+    }
     /* 会員タブ切り替え */
     .member-tabs { display: flex; gap: 0; margin-bottom: 40px; border-bottom: 2px solid var(--border); }
     .member-tab { padding: 14px 32px; font-size: 1rem; font-weight: 700; cursor: pointer; border: none; background: none; color: var(--text-light); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all var(--transition); }
@@ -60,6 +99,7 @@
         <img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160" height="40"><span class="header__logo-sub" aria-hidden="true">北九州市生物多様性戦略 2025–2030</span>
       </a>
             <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="../news/" >お知らせ</a>
         <div class="nav-item">
           <a href="../about/" >アーバンネイチャー北九州とは？</a>
           <ul class="dropdown">
@@ -67,49 +107,38 @@
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
             <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
             <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
-          </ul>
-        </div>
-        <div class="nav-item">
-          <a href="../center/" >活動拠点</a>
-          <ul class="dropdown">
-            <li><a href="../center/">拠点一覧</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/itouzu.html">到津の森公園</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a></li>
-            <li class="nav-sub"><a class="nav-sub" href="../center/yamada.html">山田緑地</a></li>
+            <li><a href="../center/">活動拠点</a></li>
           </ul>
         </div>
         <div class="nav-item">
           <a href="../network/" >地域との繋がり</a>
           <ul class="dropdown">
             <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
-            <li><a href="../network/cases/">活動実績</a></li>
-            <li><a href="../blog/">活動ブログ</a></li>
             <li><a href="../join/">会員募集</a></li>
           </ul>
         </div>
+        <div class="nav-item">
+          <a href="../network/cases/">活動紹介</a>
+          <ul class="dropdown">
+            <li><a href="../network/cases/">NP実践事例</a></li>
+            <li><a href="../blog/">企業の活動ブログ</a></li>
+            <li><a href="../blog/">団体等の活動ブログ</a></li>
+          </ul>
+        </div>
         <a href="../events/" >イベントを探す</a>
-        <a href="../news/" >お知らせ</a>
         <a href="../photos/" >みんなの写真展</a>
       </nav>
       <div class="header__actions">
         <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
-      
         <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
-
   <!-- モバイルナビ -->
   <nav class="mobile-nav" id="js-mobile-nav">
+    <a href="../news/">お知らせ</a>
     <div class="mobile-nav__group">
       <div class="mobile-nav__parent">
         <a href="../about/">アーバンネイチャー北九州とは？</a>
@@ -122,27 +151,7 @@
         <a href="../about/biodiversity.html">生物多様性とは？</a>
         <a href="../about/strategy.html">北九州市の取り組み</a>
         <a href="../about/spots.html">北九州市の自然スポット</a>
-      </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
         <a href="../center/">活動拠点</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../center/">拠点一覧</a>
-        <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-        <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
-        <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-        <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-        <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-        <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-        <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-        <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-        <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-        <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
       </div>
     </div>
     <div class="mobile-nav__group">
@@ -154,29 +163,82 @@
       </div>
       <div class="mobile-nav__children">
         <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
-        <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
         <a href="../join/">会員募集</a>
       </div>
     </div>
+    <div class="mobile-nav__group">
+      <div class="mobile-nav__parent">
+        <a href="../network/cases/">活動紹介</a>
+        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
+          <span class="mobile-nav__toggle-icon"></span>
+        </button>
+      </div>
+      <div class="mobile-nav__children">
+        <a href="../network/cases/">NP実践事例</a>
+        <a href="../blog/">企業の活動ブログ</a>
+        <a href="../blog/">団体等の活動ブログ</a>
+      </div>
+    </div>
     <a href="../events/">イベントを探す</a>
-    <a href="../news/">お知らせ</a>
     <a href="../photos/">みんなの写真展</a>
     <div class="mobile-nav__cta">
       <a href="../join/" class="btn btn--primary btn--block">参加する</a>
     </div>
   </nav>
-
   <!-- ページヘッダー -->
   <div class="page-header" id="main-content" style="background-image: url('../images/2025/03/join-hero.jpg'); background-size: cover; background-position: center center;">
     <div class="container">
       <h1 class="page-header__title">会員募集</h1>
-      <p class="page-header__desc">北九州の自然と共に歩む仲間を募集しています</p>
+      <p class="page-header__desc">北九州市の自然と共に歩む仲間を募集しています</p>
     </div>
   </div>
-
+  <!-- メリット -->
+  <section class="section section--gray">
+    <div class="container">
+      <h2 class="section__title">参加すると、こんなことが起きます</h2>
+      <p class="section__subtitle">メリットというより、変化のイメージです</p>
+      <div class="benefit-list">
+        <div class="benefit-item">
+          <div class="benefit-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <div class="benefit-item__title">「同じ想いの人」と出会える</div>
+            <div class="benefit-item__desc">業種を超えた企業・NPO・研究者・市民が集まるコミュニティ。自分だけでは出会えなかった仲間と、具体的なプロジェクトが生まれることもあります。</div>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div class="benefit-item__title">取り組みが「見える」ようになる</div>
+            <div class="benefit-item__desc">会員の活動をポータルサイトで紹介。「やっているけど伝わらない」を解決し、CSRやESGのアピールにも活用できます。</div>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <div class="benefit-item__title">「何をすれば良いか」がわかる</div>
+            <div class="benefit-item__desc">ネイチャーポジティブの最新動向・政策情報・実践事例を定期的にお届け。勉強会や現地見学で、現場のノウハウを得られます。</div>
+          </div>
+        </div>
+        <!--<div class="benefit-item">
+          <div class="benefit-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <div>
+            <div class="benefit-item__title">施設・専門家とつながれる</div>
+            <div class="benefit-item__desc">響灘ビオトープ・いのちのたび博物館など10施設のプロとつながり、連携事業や社員研修・課外授業などの相談ができます。</div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </section>
   <!-- 会員特典 -->
-  <section class="section section--white">
+  <!--<section class="section section--white">
     <div class="container">
       <h2 class="section__title">会員になるメリット</h2>
       <p class="section__subtitle">アーバンネイチャー北九州の会員として、さまざまな特典をご利用いただけます</p>
@@ -189,7 +251,7 @@
         <div class="benefit-card">
           <div class="benefit-card__icon">&#x1F4E8;</div>
           <h3 class="benefit-card__title">ニュースレター配信</h3>
-          <p class="benefit-card__desc">北九州の自然に関する最新情報や活動レポートを定期的にお届けします。</p>
+          <p class="benefit-card__desc">北九州市の自然に関する最新情報や活動レポートを定期的にお届けします。</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-card__icon">&#x1F91D;</div>
@@ -199,7 +261,7 @@
         <div class="benefit-card">
           <div class="benefit-card__icon">&#x1F4F7;</div>
           <h3 class="benefit-card__title">フリー素材利用</h3>
-          <p class="benefit-card__desc">北九州の自然写真を自然啓発目的で無料でご利用いただけます。</p>
+          <p class="benefit-card__desc">北九州市の自然写真を自然啓発目的で無料でご利用いただけます。</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-card__icon">&#x1F3C5;</div>
@@ -213,23 +275,23 @@
         </div>
       </div>
     </div>
-  </section>
-
+  </section>-->
   <!-- 会員申込フォーム -->
   <section class="section section--gray">
     <div class="container">
       <h2 class="section__title">会員申込</h2>
-      <p class="section__subtitle">以下のフォームからお申し込みください</p>
-
+      <div style="text-align: center; margin-top: 40px">
+        <a href="https://ttzk.graffer.jp/city-kitakyushu/smart-apply/apply-procedure-alias/npnw/door" class="btn btn--primary btn--lg"
+          >お申込みはこちらから</a
+        >
+      </div>
+      <!--<p class="section__subtitle">以下のフォームからお申し込みください</p>
       <div style="max-width: 800px; margin: 0 auto;" class="form-card">
-        <!-- タブ：企業・団体・個人の順 -->
         <div class="member-tabs" role="tablist" aria-label="会員種別">
           <button class="member-tab active" role="tab" aria-selected="true"  aria-controls="corporate"  id="tab-corporate"  data-target="corporate">企業会員</button>
           <button class="member-tab"        role="tab" aria-selected="false" aria-controls="npo"        id="tab-npo"        data-target="npo">団体会員</button>
           <button class="member-tab"        role="tab" aria-selected="false" aria-controls="individual" id="tab-individual" data-target="individual">個人会員</button>
         </div>
-
-        <!-- 企業会員フォーム -->
         <form class="member-form active" id="corporate" role="tabpanel" aria-labelledby="tab-corporate">
           <div class="form-row">
             <div class="form-group">
@@ -306,8 +368,6 @@
           </div>
           <button type="submit" class="btn btn--primary btn--lg btn--block">企業会員に申し込む</button>
         </form>
-
-        <!-- 団体会員フォーム（NPO・大学・市民団体） -->
         <form class="member-form" id="npo" role="tabpanel" aria-labelledby="tab-npo">
           <div class="form-row">
             <div class="form-group">
@@ -384,8 +444,6 @@
           </div>
           <button type="submit" class="btn btn--primary btn--lg btn--block">団体会員に申し込む</button>
         </form>
-
-        <!-- 個人会員フォーム -->
         <form class="member-form" id="individual" role="tabpanel" aria-labelledby="tab-individual">
           <div class="form-row">
             <div class="form-group">
@@ -435,11 +493,9 @@
           </div>
           <button type="submit" class="btn btn--primary btn--lg btn--block">個人会員に申し込む</button>
         </form>
-      </div>
+      </div>-->
     </div>
   </section>
-
-  <!-- CTA -->
   <section class="cta-band" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/cta-bg.png'); background-size: cover; background-position: center;">
     <div class="container">
       <h2 class="cta-band__title">お気軽にお問合せください</h2>
@@ -448,15 +504,13 @@
       </div>
     </div>
   </section>
-
-
   <!-- フッター -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div>
           <span class="footer__brand-name">アーバンネイチャー北九州</span>
-          <p class="footer__desc">都市と自然が近接する北九州の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
+          <p class="footer__desc">都市と自然が近接する北九州市の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
         </div>
         <div>
           <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
@@ -469,17 +523,21 @@
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
             <a href="../network/">北九州NPネットワーク</a>
-            <a href="../network/cases/">活動実績</a>
-            <a href="../blog/">活動ブログ</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
+          <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
+          <div class="footer__links">
+            <a href="../network/cases/">NP実践事例</a>
+            <a href="../blog/">企業の活動ブログ</a>
+            <a href="../blog/">団体等の活動ブログ</a>
+          </div>
           <h3 class="footer__heading">活動拠点</h3>
           <div class="footer__links">
             <a href="../center/">拠点一覧</a>
             <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">グリーンパーク</a>
+            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
             <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
             <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
             <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
@@ -499,26 +557,18 @@
             <a href="../contact/">お問合せ</a>
             <a href="../privacy/">プライバシーポリシー</a>
           </div>
-          <h3 class="footer__heading" style="margin-top:24px">ソーシャル</h3>
-          <div class="footer__links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-          </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>&copy; 2026 アーバンネイチャー北九州</span>
+        <span>Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span>
         <a href="../privacy/">プライバシーポリシー</a>
       </div>
     </div>
   </footer>
-
   <script src="../js/main.js"></script>
   <script>
     // 会員タブ切り替え（aria-selected 同期）
     const memberTabs = Array.from(document.querySelectorAll('.member-tab'));
-
     function activateTab(tab) {
       memberTabs.forEach(t => {
         t.classList.remove('active');
@@ -531,7 +581,6 @@
       tab.setAttribute('tabindex', '0');
       document.getElementById(tab.dataset.target).classList.add('active');
     }
-
     memberTabs.forEach((tab, i) => {
       tab.setAttribute('tabindex', tab.classList.contains('active') ? '0' : '-1');
       tab.addEventListener('click', () => { activateTab(tab); tab.focus(); });
