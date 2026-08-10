@@ -48,6 +48,10 @@
     .event-card__target { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; background: rgba(2, 128, 144, 0.1); color: var(--accent); }
     .event-card__title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; line-height: 1.5; }
     .event-card__location { font-size: 0.8rem; color: var(--text-muted); margin-top: auto; }
+    .pagination { display: flex; justify-content: center; gap: 8px; margin-top: 48px; flex-wrap: wrap; }
+    .pagination__item { display: flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg-white); font-size: 0.9rem; color: var(--text-light); cursor: pointer; transition: all var(--transition); }
+    .pagination__item:hover:not(:disabled), .pagination__item.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .pagination__item:disabled { opacity: 0.4; cursor: default; }
   </style>
 </head>
 <body>
@@ -182,133 +186,456 @@
       <!-- イベントカード -->
       <h2 class="sr-only">イベント一覧</h2>
       <div class="card-grid" id="eventGrid">
-        <a href="hiraodai-kansatsukai.html" class="event-card" data-type="募集" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台シャボン玉-1-450x450.jpg" alt="平尾台 春の自然観察会" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">10</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">平尾台 春の自然観察会 〜カルスト台地の野草を楽しむ〜</h3>
-            <p class="event-card__location">平尾台自然の郷 集合</p>
-          </div>
-        </a>
-        <a href="sone-higata-cleanup.html" class="event-card" data-type="募集" data-category="循環・資源" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/Clap屋外マルシェの様子-450x450.jpg" alt="曽根干潟クリーンアップ" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">17</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">循環・資源</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">曽根干潟クリーンアップ大作戦 2026春</h3>
-            <p class="event-card__location">曽根干潟（小倉南区曽根新田）</p>
-          </div>
-        </a>
-        <a href="yamada-kodomo-kyoshitsu.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台フクロウ-450x450.jpg" alt="子ども自然教室" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">24</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">子ども自然教室「森の生きもの探検隊」</h3>
-            <p class="event-card__location">山田緑地（小倉北区山田町）</p>
-          </div>
-        </a>
-        <a href="biotope-kigyo.html" class="event-card" data-type="募集" data-category="生態系保全" data-target="企業">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/カルストジャングル冒険ツアー-2-1024x768-1-450x450.jpg" alt="企業向け生態系保全プログラム" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">6月</span>
-              <span class="event-card__date-day">7</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">生態系保全</span>
-              <span class="event-card__target">企業</span>
-            </div>
-            <h3 class="event-card__title">企業向け生態系保全体験プログラム ― ビオトープづくり</h3>
-            <p class="event-card__location">響灘ビオトープ（若松区響町）</p>
-          </div>
-        </a>
-        <a href="hiraodai-tuk-tuk.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台トゥクトゥク-450x450.jpg" alt="平尾台トゥクトゥクツアー" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">6月</span>
-              <span class="event-card__date-day">14</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">平尾台トゥクトゥクで巡る自然ツアー</h3>
-            <p class="event-card__location">平尾台（小倉南区平尾台）</p>
-          </div>
-        </a>
-        <a href="summer-camp.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台そば倶楽部2-1024x768-1-450x450.jpg" alt="夏休み自然体験キャンプ" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">7月</span>
-              <span class="event-card__date-day">26</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">夏休み自然体験キャンプ ― 2泊3日で学ぶ北九州の自然</h3>
-            <p class="event-card__location">畑貯水池周辺キャンプ場</p>
-          </div>
-        </a>
-        <a href="20260812-2.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="子ども">
+        <a href="event1.html" class="event-card">
           <div class="event-card__image-wrap">
             <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
             <div class="event-card__date-badge">
-              <span class="event-card__date-month">8月</span>
-              <span class="event-card__date-day">12</span>
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">子ども</span>
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event2.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
             </div>
-            <h3 class="event-card__title">ペルセウス座流星群鑑賞会</h3>
-            <p class="event-card__location">ソラランド平尾台</p>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event3.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event4.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event5.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event6.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event7.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event8.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event9.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event10.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event11.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event12.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event13.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event14.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event15.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event16.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event17.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event18.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event19.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event20.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event21.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event22.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event23.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event24.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event25.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event26.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event27.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event28.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event29.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event30.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event31.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
+          </div>
+        </a>
+        <a href="event32.html" class="event-card">
+          <div class="event-card__image-wrap">
+            <div class="event-card__image event-card__image--none" aria-hidden="true"></div>
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month"></span>
+              <span class="event-card__date-day"></span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags"></div>
+            <h3 class="event-card__title"></h3>
+            <p class="event-card__location"></p>
           </div>
         </a>
       </div>
+      <nav class="pagination" id="eventPagination" aria-label="イベント一覧のページ送り"></nav>
     </div>
   </section>
   <!-- CTA -->
@@ -370,45 +697,66 @@
   </footer>
   <script src="../js/main.js"></script>
   <script>
-    // イベントフィルタ
+    // イベントフィルタ + ページネーション（1ページ 9件）
     document.addEventListener('DOMContentLoaded', () => {
+      const PER_PAGE = 9;
       const grid = document.getElementById('eventGrid');
-      const cards = grid.querySelectorAll('.event-card');
-      let activeType = 'all';
-      let activeCat = 'all';
-      let activeTarget = 'all';
-      function filterCards() {
-        cards.forEach(card => {
-          const matchType = activeType === 'all' || card.dataset.type === activeType;
-          const matchCat = activeCat === 'all' || card.dataset.category === activeCat;
-          const matchTarget = activeTarget === 'all' || card.dataset.target === activeTarget;
-          card.style.display = (matchType && matchCat && matchTarget) ? '' : 'none';
-        });
+      const pager = document.getElementById('eventPagination');
+      const cards = [...grid.querySelectorAll('.event-card')];
+      let activeType = 'all', activeCat = 'all', activeTarget = 'all', page = 1;
+
+      const matches = () => cards.filter(c =>
+        (activeType === 'all' || c.dataset.type === activeType) &&
+        (activeCat === 'all' || c.dataset.category === activeCat) &&
+        (activeTarget === 'all' || c.dataset.target === activeTarget));
+
+      function render() {
+        const hit = matches();
+        const pages = Math.max(1, Math.ceil(hit.length / PER_PAGE));
+        if (page > pages) page = pages;
+        const from = (page - 1) * PER_PAGE;
+        cards.forEach(c => { c.style.display = 'none'; });
+        hit.slice(from, from + PER_PAGE).forEach(c => { c.style.display = ''; });
+        pager.innerHTML = '';
+        if (pages <= 1) return;
+        const btn = (label, target, opts = {}) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'pagination__item' + (opts.active ? ' active' : '');
+          b.textContent = label;
+          if (opts.disabled) b.disabled = true;
+          if (opts.active) b.setAttribute('aria-current', 'page');
+          if (opts.label) b.setAttribute('aria-label', opts.label);
+          b.addEventListener('click', () => {
+            page = target;
+            render();
+            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+          pager.appendChild(b);
+        };
+        btn('‹', page - 1, { disabled: page === 1, label: '前のページ' });
+        for (let i = 1; i <= pages; i++) btn(String(i), i, { active: i === page, label: i + 'ページ目' });
+        btn('›', page + 1, { disabled: page === pages, label: '次のページ' });
       }
-      document.querySelectorAll('[data-filter-type]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('[data-filter-type]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeType = btn.dataset.filterType;
-          filterCards();
+
+      const bind = (attr, set) => document.querySelectorAll('[' + attr + ']').forEach(b => {
+        b.addEventListener('click', () => {
+          document.querySelectorAll('[' + attr + ']').forEach(o => {
+            o.classList.remove('active');
+            if (o.hasAttribute('aria-pressed')) o.setAttribute('aria-pressed', 'false');
+          });
+          b.classList.add('active');
+          if (b.hasAttribute('aria-pressed')) b.setAttribute('aria-pressed', 'true');
+          set(b);
+          page = 1;
+          render();
         });
       });
-      document.querySelectorAll('[data-filter-cat]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('[data-filter-cat]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCat = btn.dataset.filterCat;
-          filterCards();
-        });
-      });
-      document.querySelectorAll('[data-filter-target]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('[data-filter-target]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeTarget = btn.dataset.filterTarget;
-          filterCards();
-        });
-      });
+      bind('data-filter-type', b => activeType = b.dataset.filterType);
+      bind('data-filter-cat', b => activeCat = b.dataset.filterCat);
+      bind('data-filter-target', b => activeTarget = b.dataset.filterTarget);
+
+      render();
     });
   </script>
 </body>
