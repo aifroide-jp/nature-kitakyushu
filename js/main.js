@@ -100,6 +100,80 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ===== パンくずのカテゴリ階層（#cat= の遷移元に追従）=====
+  // ハッシュを使う理由: ホストによっては .html → 拡張子なしへのリダイレクトで
+  // クエリ文字列が失われるため。ハッシュはリダイレクトを跨いでも保持される。
+  // ※Phase 1 で WordPress 化する際は PHP のサーバーサイド出力に置き換える
+  const photoCategories = {
+    sea: '海・干潟・ビオトープ', mountain: '山', river: '川', animal: '動物',
+    plant: '植物', urbannature: '街と自然', produce: '農産品',
+    etc: '昆虫・その他', contest: 'コンテスト作品'
+  };
+  // HTML側は主カテゴリを静的に出力済み。#cat= があればそれで上書きする
+  const catCrumb = document.querySelector('.breadcrumb__list .js-cat-crumb a');
+  if (catCrumb) {
+    const cat = new URLSearchParams(location.hash.slice(1)).get('cat')
+             || new URLSearchParams(location.search).get('cat');
+    if (photoCategories[cat]) {
+      catCrumb.href = cat + '.html';
+      catCrumb.textContent = photoCategories[cat];
+    }
+  }
+
+  // ===== 写真ライトボックス（拡大表示）=====
+  // HTMLには拡大表示専用のマークアップを一切置かず、ここで <img> をボタンで包む。
+  // レイアウト変更時にこの機能を意識せずに済み、やめるときはこのブロックを消すだけでよい。
+  // 対象は地域ページのグリッド（div.photo-item）のみ。カテゴリページは
+  // a.photo-item でリンクになっており、a の中に button は入れられないため除外する。
+  const zoomTargets = document.querySelectorAll('.photo-grid > div.photo-item > img');
+  if (zoomTargets.length) {
+    const box = document.createElement('div');
+    box.className = 'lightbox';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-label', '写真の拡大表示');
+    box.innerHTML = '<button type="button" class="lightbox__close" aria-label="閉じる">×</button>'
+                  + '<img class="lightbox__img" alt="">';
+    document.body.appendChild(box);
+
+    const boxImg = box.querySelector('.lightbox__img');
+    const closeBtn = box.querySelector('.lightbox__close');
+    let lastFocused = null;
+
+    function openLightbox(btn) {
+      const img = btn.querySelector('img');
+      lastFocused = btn;
+      boxImg.src = img.currentSrc || img.src;
+      boxImg.alt = img.alt;
+      box.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      box.classList.remove('active');
+      boxImg.removeAttribute('src');
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }
+
+    zoomTargets.forEach(img => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'photo-item__zoom';
+      btn.setAttribute('aria-label', `${img.alt || '写真'}を拡大表示`);
+      img.parentNode.insertBefore(btn, img);
+      btn.appendChild(img);
+      btn.addEventListener('click', () => openLightbox(btn));
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    // 背景のクリックで閉じる（画像自体のクリックでは閉じない）
+    box.addEventListener('click', (e) => { if (e.target === box) closeLightbox(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && box.classList.contains('active')) closeLightbox();
+    });
+  }
+
   // ===== スムーススクロール =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

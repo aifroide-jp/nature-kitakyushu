@@ -1083,6 +1083,9 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+  .footer__br {
+    display: none;
+  }
   .footer__bottom {
     flex-direction: column;
     gap: 8px;
@@ -1112,4 +1115,51 @@ tr:nth-child(even) {
   .urban-center-grid {
     grid-template-columns: 1fr !important;
   }
+}
+/* --- 写真ライトボックス（拡大表示） --- */
+.photo-item__zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+.lightbox__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.lightbox__close:hover,
+.lightbox__close:focus-visible {
+  background: rgba(255, 255, 255, 0.32);
 }

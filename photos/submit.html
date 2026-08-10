@@ -70,21 +70,36 @@
       font-weight: 700;
       margin-bottom: 4px;
     }
-    /* 同意チェックリスト */
-    .consent-fieldset {
-      border: none;
-      padding: 0;
+    .terms-lead {
+      font-size: 0.9rem;
+      line-height: 1.7;
       margin: 0;
-      min-width: 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-light);
     }
-    .consent-fieldset__legend {
-      font-size: 1.05rem;
+    .terms-item__text p {
+      margin: 0 0 6px;
+    }
+    .terms-item__text p:last-child {
+      margin-bottom: 0;
+    }
+    .terms-list {
+      margin: 0;
+      padding-left: 1.3em;
+      list-style: disc;
+    }
+    .terms-list li + li {
+      margin-top: 6px;
+    }
+    .terms-credit {
+      display: block;
+      margin-top: 6px;
+      padding: 8px 12px;
+      background: rgba(44,95,45,0.06);
+      border-radius: var(--radius);
       font-weight: 700;
-      color: var(--text);
-      margin-bottom: 16px;
-      padding: 0;
-      width: 100%;
     }
+    /* 同意チェック */
     .consent-list {
       display: flex;
       flex-direction: column;
@@ -290,9 +305,9 @@
           <ul class="dropdown">
             <li><a href="../about/">全体像</a></li>
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-            <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
-            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+            <li><a href="../about/strategy.html">北九州市の取組</a></li>
             <li><a href="../center/">活動拠点</a></li>
+            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
           </ul>
         </div>
         <div class="nav-item">
@@ -305,7 +320,7 @@
         <div class="nav-item">
           <a href="../network/cases/">活動紹介</a>
           <ul class="dropdown">
-            <li><a href="../network/cases/">NP実践事例</a></li>
+            <li><a href="../network/cases/">ネイチャーポジティブ実践事例</a></li>
             <li><a href="../blog/">企業の活動ブログ</a></li>
             <li><a href="../blog/">団体等の活動ブログ</a></li>
           </ul>
@@ -334,7 +349,7 @@
       <div class="mobile-nav__children">
         <a href="../about/">全体像</a>
         <a href="../about/biodiversity.html">生物多様性とは？</a>
-        <a href="../about/strategy.html">北九州市の取り組み</a>
+        <a href="../about/strategy.html">北九州市の取組</a>
         <a href="../about/spots.html">北九州市の自然スポット</a>
         <a href="../center/">活動拠点</a>
       </div>
@@ -359,7 +374,7 @@
         </button>
       </div>
       <div class="mobile-nav__children">
-        <a href="../network/cases/">NP実践事例</a>
+        <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
         <a href="../blog/">企業の活動ブログ</a>
         <a href="../blog/">団体等の活動ブログ</a>
       </div>
@@ -395,104 +410,94 @@
         <div class="terms-box" id="terms">
           <div class="terms-box__header">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            写真投稿に関する利用規約
+            利用規約
           </div>
           <div class="terms-box__body">
+            <p class="terms-lead">当サイトで配布されている写真素材（以下、「本素材」といいます）は、以下の利用規約に同意の上でご利用ください。素材をダウンロードまたは使用した時点で、下記の内容に同意したものとみなします。</p>
             <div class="terms-item">
               <div class="terms-item__num">1</div>
               <div class="terms-item__text">
-                <strong>著作権の帰属</strong>
-                投稿をもって著作権（著作者人格権を除く）は北九州市に帰属します。北九州市は許諾を要することなく投稿写真を利用できます。
+                <strong>著作権について</strong>
+                <ul class="terms-list">
+                  <li>本素材の著作権は 北九州市 に帰属します。</li>
+                  <li>本素材は、著作権を放棄するものではありません。</li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">2</div>
               <div class="terms-item__text">
-                <strong>利用の範囲</strong>
-                北九州市（アーバンネイチャー北九州）は、投稿写真を情報発信・広報活動などに広く利用します。その際、加工・トリミングを行う場合があります。また、一部はポータルサイトでフリー素材として公開することがあります。利用は無償かつ期間・地域の制限を設けません。
+                <strong>利用可能な範囲</strong>
+                <p>以下の用途で、本素材を無料でご利用いただけます</p>
+                <ul class="terms-list">
+                  <li>商用・非商用問わず使用可能</li>
+                  <li>印刷物（チラシ、ポスター、書籍など）での使用</li>
+                  <li>ウェブサイト、SNS、動画、テレビ放送、アプリ等での使用</li>
+                  <li>トリミングや色調補正などの加工も可能</li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">3</div>
               <div class="terms-item__text">
-                <strong>クレジット表記</strong>
-                写真をポータルサイトで公開する際は、「写真提供：(C)北九州市」または「(C)北九州市」または「(C)City of Kitakyushu」等のクレジットを写真に刷り込みます。
+                <strong>クレジット表記について（必須）</strong>
+                <ul class="terms-list">
+                  <li>ご利用の際は、必ず以下のクレジットを明記してください
+                    <span class="terms-credit">「写真提供：(C)北九州市」または「(C)北九州市」または「(C)City of Kitakyushu」</span>
+                  </li>
+                  <li>表記位置は、写真の近くまたは使用ページの下部など、第三者が認識できる場所としてください。</li>
+                  <li>表記が難しい場合は、事前にお問い合わせください。Eメール：<a href="mailto:kan-naturepositive@city.kitakyushu.lg.jp">kan-naturepositive@city.kitakyushu.lg.jp</a></li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">4</div>
               <div class="terms-item__text">
-                <strong>報酬・対価の不発生</strong>
-                写真の利用・著作権の譲渡に対して、報酬・対価・謝礼等は一切発生しません。
+                <strong>使用報告について（任意）</strong>
+                <ul class="terms-list">
+                  <li>使用報告は必須ではありませんが、どのようにご活用いただいたかご連絡いただけると、今後の活動の励みになります。よろしければ、Eメール：<a href="mailto:kan-naturepositive@city.kitakyushu.lg.jp">kan-naturepositive@city.kitakyushu.lg.jp</a>にご連絡ください。</li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">5</div>
               <div class="terms-item__text">
-                <strong>掲載取り下げについて</strong>
-                投稿後は取り消しができません。第三者の権利侵害等の合理的な理由がある場合はご相談ください。すでに印刷・配布された冊子・資料等からの取り下げは技術的に対応できない場合があります。
+                <strong>禁止事項</strong>
+                <p>以下の行為は禁止します</p>
+                <ul class="terms-list">
+                  <li>本素材自体の再配布、販売、譲渡（加工後も含む）</li>
+                  <li>本素材を公序良俗に反する目的で使用すること</li>
+                  <li>北九州市が特定の商品・サービスを推奨・保証しているかのように誤解を与える使用</li>
+                  <li>著作権表記の削除・隠蔽</li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">6</div>
               <div class="terms-item__text">
-                <strong>肖像権・第三者の権利</strong>
-                人物を被写体とした場合は、撮影者自らが本人に利用の旨を説明し、同意を得た上で投稿してください。投稿時点で同意を取得済みとみなします。万が一トラブルが生じた場合は、投稿者の責任において解決してください。投稿する写真が第三者の著作権・プライバシー権を侵害していないことも保証してください。
+                <strong>免責事項</strong>
+                <ul class="terms-list">
+                  <li>本素材の使用に関連して発生したいかなる損害やトラブルについても、北九州市は責任を負いません。</li>
+                  <li>本サイトの内容や利用規約は、予告なく変更されることがあります。</li>
+                </ul>
               </div>
             </div>
             <div class="terms-item">
               <div class="terms-item__num">7</div>
               <div class="terms-item__text">
-                <strong>未成年者が写っている場合</strong>
-                写真に未成年者が写っている場合は、保護者の同意を得た上で投稿してください。
-              </div>
-            </div>
-            <div class="terms-item">
-              <div class="terms-item__num">8</div>
-              <div class="terms-item__text">
-                <strong>掲載の可否</strong>
-                投稿いただいた写真は、内容・品質・テーマへの適合性などを考慮し、北九州市（アーバンネイチャー北九州）が掲載の可否を判断します。すべての投稿写真の掲載を保証するものではありません。
-              </div>
-            </div>
-            <div class="terms-item">
-              <div class="terms-item__num">9</div>
-              <div class="terms-item__text">
-                <strong>禁止事項</strong>
-                生成AIを使用した写真、合成処理（写真に映り込んだ被写体の削除を含む）を行った写真は対象外とします（色補正は可）。また、公序良俗に反する内容、禁止区域で撮影された写真、プライバシー・肖像権を侵害する写真、北九州市の自然とは無関係な写真の投稿もお断りします。
+                <strong>お問い合わせ</strong>
+                <p>利用に関するご質問・ご相談は、Eメール：<a href="mailto:kan-naturepositive@city.kitakyushu.lg.jp">kan-naturepositive@city.kitakyushu.lg.jp</a>にご連絡ください。</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- 同意チェックリスト -->
-        <fieldset class="consent-fieldset">
-          <legend class="consent-fieldset__legend">上記の規約に同意してください <span style="color:#e53e3e; font-size:0.85rem;">（全項目必須）</span></legend>
+        <!-- 同意チェック -->
         <div class="consent-list" id="consent-list">
           <div class="consent-item">
-            <input type="checkbox" id="c1" name="consent[]" value="著作権譲渡に同意" required>
-            <label for="c1">投稿した写真の著作権（著作者人格権を除く）が北九州市に帰属し、加工・トリミング・フリー素材公開を含む広報活動等に無償・無期限で利用されることに同意します（第1・2条）</label>
-          </div>
-          <div class="consent-item">
-            <input type="checkbox" id="c2" name="consent[]" value="クレジット表記に同意" required>
-            <label for="c2">ポータルサイト公開時に「(C)北九州市」等のクレジットが写真に刷り込まれることに同意します（第3条）</label>
-          </div>
-          <div class="consent-item">
-            <input type="checkbox" id="c3" name="consent[]" value="無償譲渡に同意" required>
-            <label for="c3">著作権の譲渡・写真の利用に対して報酬・対価が発生しないことに同意します（第4条）</label>
-          </div>
-          <div class="consent-item">
-            <input type="checkbox" id="c4" name="consent[]" value="取り下げ条件に同意" required>
-            <label for="c4">投稿後は取り消しができないことに同意します（第5条）</label>
-          </div>
-          <div class="consent-item">
-            <input type="checkbox" id="c5" name="consent[]" value="第三者権利保証" required>
-            <label for="c5">人物被写体については本人の同意を得ていること、また投稿写真が第三者の著作権・プライバシー権等を侵害していないことを保証します（第6・7条）</label>
-          </div>
-          <div class="consent-item">
-            <input type="checkbox" id="c6" name="consent[]" value="掲載可否に同意" required>
-            <label for="c6">掲載の可否は北九州市（アーバンネイチャー北九州）が判断することに同意します（第8条）</label>
+            <input type="checkbox" id="c1" name="consent[]" value="利用規約に同意" required>
+            <label for="c1"><strong>上記の利用規約（第1条〜第7条）の内容を確認し、同意します</strong> <span style="color:#e53e3e; font-size:0.85rem;">（必須）</span></label>
           </div>
         </div>
-        </fieldset>
         <!-- 投稿フォーム -->
         <!-- TODO: action属性にFormspree等のエンドポイントを設定してください -->
         <form id="photo-submit-form" action="#" method="POST" enctype="multipart/form-data" novalidate>
@@ -579,35 +584,22 @@
           <div class="footer__links">
             <a href="../about/">全体像</a>
             <a href="../about/biodiversity.html">生物多様性とは？</a>
-            <a href="../about/strategy.html">北九州市の取り組み</a>
+            <a href="../about/strategy.html">北九州市の取組</a>
+            <a href="../center/">活動拠点</a>
             <a href="../about/spots.html">北九州市の自然スポット</a>
           </div>
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
-            <a href="../network/">北九州NPネットワーク</a>
+            <a href="../network/">北九州ネイチャーポジティブ<br class="footer__br">ネットワーク</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
           <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
           <div class="footer__links">
-            <a href="../network/cases/">NP実践事例</a>
+            <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
             <a href="../blog/">企業の活動ブログ</a>
             <a href="../blog/">団体等の活動ブログ</a>
-          </div>
-          <h3 class="footer__heading">活動拠点</h3>
-          <div class="footer__links">
-            <a href="../center/">拠点一覧</a>
-            <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
-            <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-            <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-            <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-            <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-            <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-            <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-            <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-            <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
           </div>
         </div>
         <div>

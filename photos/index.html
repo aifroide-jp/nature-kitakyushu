@@ -27,6 +27,8 @@
   <style>
     .usage-note { background: rgba(44, 95, 45, 0.06); border-left: 4px solid var(--primary); padding: 20px 24px; border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 40px; font-size: 0.9rem; line-height: 1.7; color: var(--text-light); }
     .usage-note strong { color: var(--primary); }
+    .photo-item { display: block; background: var(--bg-white); }
+    .photo-item__label { display: block; padding: 12px 16px; font-size: 0.9rem; font-weight: 600; color: var(--primary); text-align: center; }
   </style>
 </head>
 <body>
@@ -44,9 +46,9 @@
           <ul class="dropdown">
             <li><a href="../about/">全体像</a></li>
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-            <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
-            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+            <li><a href="../about/strategy.html">北九州市の取組</a></li>
             <li><a href="../center/">活動拠点</a></li>
+            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
           </ul>
         </div>
         <div class="nav-item">
@@ -59,7 +61,7 @@
         <div class="nav-item">
           <a href="../network/cases/">活動紹介</a>
           <ul class="dropdown">
-            <li><a href="../network/cases/">NP実践事例</a></li>
+            <li><a href="../network/cases/">ネイチャーポジティブ実践事例</a></li>
             <li><a href="../blog/">企業の活動ブログ</a></li>
             <li><a href="../blog/">団体等の活動ブログ</a></li>
           </ul>
@@ -88,7 +90,7 @@
       <div class="mobile-nav__children">
         <a href="../about/">全体像</a>
         <a href="../about/biodiversity.html">生物多様性とは？</a>
-        <a href="../about/strategy.html">北九州市の取り組み</a>
+        <a href="../about/strategy.html">北九州市の取組</a>
         <a href="../about/spots.html">北九州市の自然スポット</a>
         <a href="../center/">活動拠点</a>
       </div>
@@ -113,7 +115,7 @@
         </button>
       </div>
       <div class="mobile-nav__children">
-        <a href="../network/cases/">NP実践事例</a>
+        <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
         <a href="../blog/">企業の活動ブログ</a>
         <a href="../blog/">団体等の活動ブログ</a>
       </div>
@@ -141,22 +143,49 @@
       <div class="usage-note">
         <strong>ご利用について：</strong> 当サイトの写真素材を利用する場合は、<a href="submit.html#terms">コチラ</a>の事項に同意していただく必要がございます。 同意いただけない場合は利用できませんのでご注意ください。
       </div>
-      <!-- カテゴリタブ -->
-      <div class="tabs">
-        <button class="tab active" data-category="all">すべて</button>
-        <button class="tab" data-category="海">海・干潟・ビオトープ</button>
-        <button class="tab" data-category="山">山</button>
-        <button class="tab" data-category="川">川</button>
-        <button class="tab" data-category="動物">動物</button>
-        <button class="tab" data-category="植物">植物</button>
-        <button class="tab" data-category="街と自然">街と自然</button>
-        <button class="tab" data-category="農産品">農産品</button>
-        <button class="tab" data-category="その他">昆虫・その他</button>
-        <button class="tab" data-category="コンテスト">コンテスト作品</button>
-      </div>
-      <!-- フォトグリッド -->
+      <!-- カテゴリグリッド -->
       <div class="photo-grid">
-        <!-- 海・干潟・ビオトープ -->
+        <a class="photo-item" href="sea.html">
+          <img src="../images/2025/04/20250419_031114641-450x450.jpg" alt="">
+          <span class="photo-item__label">海・干潟・ビオトープ</span>
+        </a>
+        <a class="photo-item" href="mountain.html">
+          <img src="../images/photos/hiraodai1/羊群原とキス岩-.jpg" alt="">
+          <span class="photo-item__label">山</span>
+        </a>
+        <a class="photo-item" href="river.html">
+          <img src="../images/2025/04/IMG_9012-450x450.jpg" alt="">
+          <span class="photo-item__label">川</span>
+        </a>
+        <a class="photo-item" href="animal.html">
+          <img src="../images/2025/04/カルガモ-450x450.jpg" alt="">
+          <span class="photo-item__label">動物</span>
+        </a>
+        <a class="photo-item" href="plant.html">
+          <img src="../images/2025/03/sagisou-450x450.jpg" alt="">
+          <span class="photo-item__label">植物</span>
+        </a>
+        <a class="photo-item" href="urbannature.html">
+          <img src="../images/2025/04/IMG_8716-450x450.jpg" alt="">
+          <span class="photo-item__label">街と自然</span>
+        </a>
+        <a class="photo-item" href="produce.html">
+          <img src="../images/2025/04/IMG_8956-450x450.jpg" alt="">
+          <span class="photo-item__label">農産品</span>
+        </a>
+        <a class="photo-item" href="etc.html">
+          <img src="../images/2025/04/20230517ハタケシメジ-450x450.jpg" alt="">
+          <span class="photo-item__label">昆虫・その他</span>
+        </a>
+        <a class="photo-item" href="contest.html">
+          <img src="../images/2025/08/IMG_4016-450x450.jpg" alt="">
+          <span class="photo-item__label">コンテスト作品</span>
+        </a>
+      </div>
+      <!--
+        旧フォトグリッド（38枚）: カテゴリ別下層ページへ移設するまで保管
+        海の6枚は photos/sea.html へ移設済み
+        [海・干潟・ビオトープ]
         <div class="photo-item" data-category="海">
           <img src="../images/2025/04/IMG_9308-450x450.jpg" alt="海・干潟の風景">
         </div>
@@ -175,7 +204,7 @@
         <div class="photo-item" data-category="海">
           <img src="../images/2025/08/APC_8523-450x450.jpg" alt="干潟の生き物">
         </div>
-        <!-- 山 -->
+        [山]
         <div class="photo-item" data-category="山">
           <img src="../images/2025/04/20250418_053344333-450x450.jpg" alt="平尾台カルスト">
         </div>
@@ -191,7 +220,7 @@
         <div class="photo-item" data-category="山">
           <img src="../images/2025/08/IMG_4016-450x450.jpg" alt="山頂からの眺め">
         </div>
-        <!-- 川 -->
+        [川]
         <div class="photo-item" data-category="川">
           <img src="../images/2025/04/IMG_9012-450x450.jpg" alt="紫川の風景">
         </div>
@@ -207,7 +236,7 @@
         <div class="photo-item" data-category="川">
           <img src="../images/2025/04/20250418_051733075-450x450.jpg" alt="渓谷の風景">
         </div>
-        <!-- 動物 -->
+        [動物]
         <div class="photo-item" data-category="動物">
           <img src="../images/2025/04/カルガモ-450x450.jpg" alt="カルガモ">
         </div>
@@ -217,7 +246,7 @@
         <div class="photo-item" data-category="動物">
           <img src="../images/2025/04/チュウヒ-450x450.jpg" alt="チュウヒ">
         </div>
-        <!-- 植物 -->
+        [植物]
         <div class="photo-item" data-category="植物">
           <img src="../images/2025/03/sagisou-450x450.jpg" alt="サギソウ">
         </div>
@@ -236,7 +265,7 @@
         <div class="photo-item" data-category="植物">
           <img src="../images/2025/04/IMG_2265-450x450.jpg" alt="草花">
         </div>
-        <!-- 街と自然 -->
+        [街と自然]
         <div class="photo-item" data-category="街と自然">
           <img src="../images/2025/04/IMG_8920-450x450.jpg" alt="街と自然の共生">
         </div>
@@ -249,7 +278,7 @@
         <div class="photo-item" data-category="街と自然">
           <img src="../images/2025/08/APC_6937-450x450.jpg" alt="街の中の自然">
         </div>
-        <!-- 農産品 -->
+        [農産品]
         <div class="photo-item" data-category="農産品">
           <img src="../images/2025/04/IMG_8956-450x450.jpg" alt="農産品">
         </div>
@@ -268,7 +297,7 @@
         <div class="photo-item" data-category="農産品">
           <img src="../images/2025/04/IMG_8982-450x450.jpg" alt="農産品">
         </div>
-        <!-- 昆虫・その他 -->
+        [昆虫・その他]
         <div class="photo-item" data-category="その他">
           <img src="../images/2025/04/20230517ハタケシメジ-450x450.jpg" alt="ハタケシメジ">
         </div>
@@ -278,7 +307,7 @@
         <div class="photo-item" data-category="その他">
           <img src="../images/2025/04/20241020キイボカサタケ-450x450.jpg" alt="キイボカサタケ">
         </div>
-      </div>
+      -->
     </div>
   </section>
   <!-- CTA -->
@@ -303,35 +332,22 @@
           <div class="footer__links">
             <a href="../about/">全体像</a>
             <a href="../about/biodiversity.html">生物多様性とは？</a>
-            <a href="../about/strategy.html">北九州市の取り組み</a>
+            <a href="../about/strategy.html">北九州市の取組</a>
+            <a href="../center/">活動拠点</a>
             <a href="../about/spots.html">北九州市の自然スポット</a>
           </div>
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
-            <a href="../network/">北九州NPネットワーク</a>
+            <a href="../network/">北九州ネイチャーポジティブ<br class="footer__br">ネットワーク</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
           <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
           <div class="footer__links">
-            <a href="../network/cases/">NP実践事例</a>
+            <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
             <a href="../blog/">企業の活動ブログ</a>
             <a href="../blog/">団体等の活動ブログ</a>
-          </div>
-          <h3 class="footer__heading">活動拠点</h3>
-          <div class="footer__links">
-            <a href="../center/">拠点一覧</a>
-            <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
-            <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-            <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-            <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-            <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-            <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-            <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-            <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-            <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
           </div>
         </div>
         <div>

@@ -54,7 +54,7 @@
 | 1 | `/` | アーバンネイチャー北九州 | **NO** | 問題1（動画キャプション） |
 | 2 | `/about/` | 全体像 | **NO** | 問題2（aria-label） |
 | 3 | `/about/biodiversity/` | 生物多様性とは？ | YES | |
-| 4 | `/about/strategy/` | 北九州市の取り組み | YES | |
+| 4 | `/about/strategy/` | 北九州市の取組 | YES | |
 | 5 | `/about/spots/` | 北九州市の自然スポット | YES | ページ自体は適合。ただしspot個別ページへのリンク5件が404（下記「実装未了の確認事項」参照） |
 | 6 | `/network/` | 地域との繋がり | YES | |
 | 7 | `/join/` | 会員募集 | YES | |

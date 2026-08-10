@@ -139,7 +139,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -191,7 +191,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -319,7 +319,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              「生物多様性」は私たちが守るべき自然そのもの。それを回復させる世界共通の目標が「ネイチャーポジティブ」です。そして「アーバンネイチャー北九州」は、都市と自然が近接する北九州の強みを活かしてその目標を実現するために北九州市が生み出した独自の言葉と取り組みです。
+              「生物多様性」は私たちが守るべき自然そのもの。それを回復させる世界共通の目標が「ネイチャーポジティブ」です。そして「アーバンネイチャー北九州」は、都市と自然が近接する北九州の強みを活かしてその目標を実現するために北九州市が生み出した独自の言葉と取組です。
           - element: h2
             field_name: section_white_title_2
             tab: section
@@ -445,7 +445,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              関わり方は3段階に整理できる。自然への関心を育てることから始め、活動・ネットワークへの参加を経て、最終的には企業のCSR・ESG・人材育成に組み込むことで取り組みが継続する。個人・市民団体・企業それぞれに対応した入口がある。
+              関わり方は3段階に整理できる。自然への関心を育てることから始め、活動・ネットワークへの参加を経て、最終的には企業のCSR・ESG・人材育成に組み込むことで取組が継続する。個人・市民団体・企業それぞれに対応した入口がある。
           - element: p
             field_name: about_cycle_text_2
             tab: section
@@ -500,7 +500,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -552,7 +552,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -717,7 +717,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -769,7 +769,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -889,7 +889,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -941,7 +941,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1053,7 +1053,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1105,7 +1105,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1217,7 +1217,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1269,7 +1269,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1381,7 +1381,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1433,7 +1433,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1545,7 +1545,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1597,7 +1597,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1688,7 +1688,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              北九州市最大の二級河川・紫川は、かつて水質悪化に悩まされた時代を乗り越え、地道な環境改善の取り組みによってアユやホタルが戻ってきた「再生の川」です。市街地を流れながら豊かな自然を感じられるのが最大の魅力です。
+              北九州市最大の二級河川・紫川は、かつて水質悪化に悩まされた時代を乗り越え、地道な環境改善の取組によってアユやホタルが戻ってきた「再生の川」です。市街地を流れながら豊かな自然を感じられるのが最大の魅力です。
           - element: p
             field_name: section_white_text_2
             tab: section
@@ -1709,7 +1709,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1761,7 +1761,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1873,7 +1873,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -1925,7 +1925,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -2037,7 +2037,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -2089,7 +2089,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -2201,7 +2201,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -2253,7 +2253,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../../about/spots.html
@@ -2305,7 +2305,7 @@ pages:
       title: 山田緑地 | アーバンネイチャー北九州
       description: 山田緑地｜「30世紀の森」をテーマに、手つかずの大自然を保全する140haの緑地公園
   - id: about_strategy
-    title: 北九州市の取り組み | アーバンネイチャー北九州
+    title: 北九州市の取組 | アーバンネイチャー北九州
     file: about/strategy.html
     sections:
       - id: page_header
@@ -2314,7 +2314,7 @@ pages:
             field_name: page_header_title
             tab: section
             type: text
-            default: 北九州市の取り組み
+            default: 北九州市の取組
           - element: p
             field_name: page_header_text
             tab: section
@@ -2362,7 +2362,7 @@ pages:
             field_name: section_white_text_3
             tab: section
             type: textarea
-            default: 3つの基本目標を実現するための具体的な取り組み
+            default: 3つの基本目標を実現するための具体的な取組
           - element: svg
             field_name: section_white_icon_4
             tab: section
@@ -2439,7 +2439,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -2491,7 +2491,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -2540,10 +2540,10 @@ pages:
     forms: []
     decoration: []
     meta:
-      title: 北九州市の取り組み | アーバンネイチャー北九州
+      title: 北九州市の取組 | アーバンネイチャー北九州
       description: 北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。アーバンネイチャー北九州が目指すネイチャーポジティブの実現。
       ogp:
-        og:title: 北九州市の取り組み | アーバンネイチャー北九州
+        og:title: 北九州市の取組 | アーバンネイチャー北九州
         og:description: 北九州市生物多様性戦略2025-2030の基本方針・3つの基本目標・主要施策と、市民にできる5つのアクション。
         og:type: website
         og:url: https://ai-yoshitani.github.io/nature-kitakyushu/about/strategy.html
@@ -2642,7 +2642,7 @@ pages:
             field_name: section_white_text_5
             tab: section
             type: textarea
-            default: 北九州の名産・合馬たけのこの竹林保全活動について、農家の方々と連携した取り組みをご紹介します。
+            default: 北九州の名産・合馬たけのこの竹林保全活動について、農家の方々と連携した取組をご紹介します。
           - element: img
             field_name: section_white_image_6
             tab: section
@@ -2667,7 +2667,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -2719,7 +2719,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -2873,7 +2873,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -2925,7 +2925,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3085,7 +3085,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3137,7 +3137,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3297,7 +3297,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3349,7 +3349,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3661,7 +3661,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3713,7 +3713,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3871,7 +3871,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -3923,7 +3923,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4083,7 +4083,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4135,7 +4135,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4294,7 +4294,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4346,7 +4346,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4507,7 +4507,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4559,7 +4559,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4720,7 +4720,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4772,7 +4772,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4897,7 +4897,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              タカミヤ環境ミュージアムは、環境について楽しく学べる体験型の施設です。北九州市の公害克服の歴史から、現在の環境への取り組み、そして未来の持続可能な社会づくりまで、幅広いテーマの展示を行っています。
+              タカミヤ環境ミュージアムは、環境について楽しく学べる体験型の施設です。北九州市の公害克服の歴史から、現在の環境への取組、そして未来の持続可能な社会づくりまで、幅広いテーマの展示を行っています。
           - element: p
             field_name: section_gray_text_2
             tab: section
@@ -4933,7 +4933,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -4985,7 +4985,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5146,7 +5146,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5198,7 +5198,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5350,7 +5350,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5402,7 +5402,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5779,7 +5779,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -5831,7 +5831,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6194,7 +6194,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6246,7 +6246,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6448,7 +6448,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6500,7 +6500,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6697,7 +6697,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6749,7 +6749,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -6960,7 +6960,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -7012,7 +7012,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -7362,7 +7362,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -7414,7 +7414,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -7770,7 +7770,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -7822,7 +7822,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -8026,7 +8026,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -8078,7 +8078,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -8175,7 +8175,7 @@ pages:
             field_name: persona_text_2
             tab: section
             type: textarea
-            default: 生物多様性保全はCSR・ESGの重要課題です。北九州での先進的な取り組み事例をご覧いただき、自社の活動のヒントにしてください。連携のご相談も歓迎します。
+            default: 生物多様性保全はCSR・ESGの重要課題です。北九州での先進的な取組事例をご覧いただき、自社の活動のヒントにしてください。連携のご相談も歓迎します。
           - element: p
             field_name: persona_text_3
             tab: section
@@ -8248,7 +8248,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              北九州市は、大都市の利便性と豊かな生態系が隣接する「アーバンネイチャー」という独自の魅力を発信しています。現在、世界的に生物多様性の損失が危惧される中、市は自然を再生させるネイチャーポジティブの実現を共通目標に掲げました。その具体的な施策として、環境保全活動を支援する拠点となるネイチャーポジティブセンターを新たに設立しています。この取り組みは、貴重な野生生物を守り育むことで、都市と自然が共生する価値をさらに高めることを目的としています。北九州市は、身近にある自然の面白さを伝えるとともに、持続可能な未来に向けた積極的な姿勢を強調しています。
+              北九州市は、大都市の利便性と豊かな生態系が隣接する「アーバンネイチャー」という独自の魅力を発信しています。現在、世界的に生物多様性の損失が危惧される中、市は自然を再生させるネイチャーポジティブの実現を共通目標に掲げました。その具体的な施策として、環境保全活動を支援する拠点となるネイチャーポジティブセンターを新たに設立しています。この取組は、貴重な野生生物を守り育むことで、都市と自然が共生する価値をさらに高めることを目的としています。北九州市は、身近にある自然の面白さを伝えるとともに、持続可能な未来に向けた積極的な姿勢を強調しています。
           - element: p
             field_name: home_content_text_5
             tab: section
@@ -8476,7 +8476,7 @@ pages:
             field_name: network_text_1
             tab: section
             type: textarea
-            default: 企業・団体と連携した取り組みをご紹介
+            default: 企業・団体と連携した取組をご紹介
           - element: img
             field_name: network_image
             tab: section
@@ -8657,7 +8657,7 @@ pages:
             href: about/
           - text: 生物多様性とは？
             href: about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: about/strategy.html
           - text: 北九州市の自然スポット
             href: about/spots.html
@@ -8709,7 +8709,7 @@ pages:
             href: about/
           - text: 生物多様性とは？
             href: about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: about/strategy.html
           - text: 北九州市の自然スポット
             href: about/spots.html
@@ -8927,7 +8927,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -8979,7 +8979,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -9222,7 +9222,7 @@ pages:
             field_name: main_content_text
             tab: main
             type: textarea
-            default: 環境省認定「自然共生サイト」と北九州市の取り組み
+            default: 環境省認定「自然共生サイト」と北九州市の取組
       - id: section_white
         fields:
           - element: h2
@@ -9235,7 +9235,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              「自然共生サイト」とは、環境省が認定する制度で、民間の取組等によって生物多様性の保全が図られている区域を認定するものです。自然保護区域（保護地域）以外で、企業の森、里地里山、都市の緑地など、多様な主体による生物多様性保全の取り組みが行われている場所が対象となります。
+              「自然共生サイト」とは、環境省が認定する制度で、民間の取組等によって生物多様性の保全が図られている区域を認定するものです。自然保護区域（保護地域）以外で、企業の森、里地里山、都市の緑地など、多様な主体による生物多様性保全の取組が行われている場所が対象となります。
           - element: p
             field_name: section_white_text_2
             tab: section
@@ -9297,7 +9297,7 @@ pages:
             field_name: section_white_text_11
             tab: section
             type: textarea
-            default: アーバンネイチャー北九州は、これらの自然共生サイトの保全活動を支援し、地域住民・企業・行政が一体となった取り組みを推進するプラットフォームとして機能しています。
+            default: アーバンネイチャー北九州は、これらの自然共生サイトの保全活動を支援し、地域住民・企業・行政が一体となった取組を推進するプラットフォームとして機能しています。
           - element: h2
             field_name: section_white_title_4
             tab: section
@@ -9317,7 +9317,7 @@ pages:
             field_name: section_white_title_5
             tab: section
             type: text
-            default: 認定に向けた取り組み
+            default: 認定に向けた取組
           - element: h3
             field_name: section_white_title_6
             tab: section
@@ -9367,7 +9367,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -9419,7 +9419,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -9695,7 +9695,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -9743,7 +9743,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -9963,7 +9963,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -10011,7 +10011,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -10130,7 +10130,7 @@ pages:
             field_name: section_white_title_2
             tab: section
             type: text
-            default: 主な取り組み
+            default: 主な取組
           - element: h3
             field_name: section_white_title_3
             tab: section
@@ -10182,13 +10182,13 @@ pages:
             tab: section
             type: textarea
             default: >-
-              地域社会への貢献と、企業のネイチャーポジティブな取り組みの具現化を目指し、株式会社ネイチャーの体験農園が、イオン九州株式会社の小中学生体験学習プログラム「イオンチアーズクラブ」の指定農園として認定されました。次世代を担う子どもたちに農業体験を通じて自然との共生を促し、食育にも貢献することを目的とした協創プロジェクトです。
+              地域社会への貢献と、企業のネイチャーポジティブな取組の具現化を目指し、株式会社ネイチャーの体験農園が、イオン九州株式会社の小中学生体験学習プログラム「イオンチアーズクラブ」の指定農園として認定されました。次世代を担う子どもたちに農業体験を通じて自然との共生を促し、食育にも貢献することを目的とした協創プロジェクトです。
           - element: p
             field_name: section_white_text_8
             tab: section
             type: textarea
             default: >-
-              2025年度には、ジャガイモの植え付けから収穫までを一貫して体験する試験的な取り組みを実施。子どもたちは自ら土に触れ、作物の成長を見守り、収穫したジャガイモをその場で調理して食べるという貴重な経験をしました。この一連の体験は、参加した子どもたちや保護者から非常に高い評価を受け、次年度に向けてはさらに内容を充実させる予定です。
+              2025年度には、ジャガイモの植え付けから収穫までを一貫して体験する試験的な取組を実施。子どもたちは自ら土に触れ、作物の成長を見守り、収穫したジャガイモをその場で調理して食べるという貴重な経験をしました。この一連の体験は、参加した子どもたちや保護者から非常に高い評価を受け、次年度に向けてはさらに内容を充実させる予定です。
           - element: img
             field_name: section_white_image_3
             tab: section
@@ -10241,17 +10241,17 @@ pages:
             tab: section
             type: textarea
             default: >-
-              株式会社ネイチャーでは、これまで培ってきた体験農園のノウハウを活かし、今後も地域や企業と連携した取り組みを継続・発展させていく予定です。体験農園という場を通じて、多様な立場の人々が自然と関わり、学び合う機会が広がることが期待されています。
+              株式会社ネイチャーでは、これまで培ってきた体験農園のノウハウを活かし、今後も地域や企業と連携した取組を継続・発展させていく予定です。体験農園という場を通じて、多様な立場の人々が自然と関わり、学び合う機会が広がることが期待されています。
           - element: p
             field_name: section_white_text_12
             tab: section
             type: textarea
-            default: 本ネットワークとしても、こうした実践事例を共有することで、ネイチャーポジティブな取り組みが地域全体へ波及していくことを目指しています。
+            default: 本ネットワークとしても、こうした実践事例を共有することで、ネイチャーポジティブな取組が地域全体へ波及していくことを目指しています。
           - element: p
             field_name: section_white_text_13
             tab: section
             type: textarea
-            default: ※取り組みに関心をお持ちの企業・団体の方は、北九州ネイチャーポジティブネットワーク事務局までお問い合わせください。
+            default: ※取組に関心をお持ちの企業・団体の方は、北九州ネイチャーポジティブネットワーク事務局までお問い合わせください。
     nav:
       - selector: nav.header__nav
         links:
@@ -10261,7 +10261,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -10309,7 +10309,7 @@ pages:
             href: ../../about/
           - text: 生物多様性とは？
             href: ../../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../../about/strategy.html
           - text: 活動拠点
             href: ../../center/
@@ -10405,7 +10405,7 @@ pages:
             field_name: section_white_text_2
             tab: section
             type: textarea
-            default: 「都市と自然との共生するまち」をビジョンに掲げ、工業都市・北九州の環境回復の歴史を体現する場として、市民・企業・行政が連携したネイチャーポジティブな取り組みを続けています。
+            default: 「都市と自然との共生するまち」をビジョンに掲げ、工業都市・北九州の環境回復の歴史を体現する場として、市民・企業・行政が連携したネイチャーポジティブな取組を続けています。
           - element: img
             field_name: section_white_image_1
             tab: section
@@ -10487,7 +10487,7 @@ pages:
             field_name: section_gray_text_1
             tab: section
             type: textarea
-            default: 響灘ビオトープ共同事業体は、北九州ネイチャーポジティブ北九州ネットワークの会員団体として、アーバンネイチャー北九州の取り組みを現場で体現する中核的拠点のひとつです。
+            default: 響灘ビオトープ共同事業体は、北九州ネイチャーポジティブ北九州ネットワークの会員団体として、アーバンネイチャー北九州の取組を現場で体現する中核的拠点のひとつです。
           - element: p
             field_name: section_gray_text_2
             tab: section
@@ -10500,14 +10500,14 @@ pages:
             type: textarea
             default: >-
               人・動植物・環境の健康を一体的に守る「One
-              Health」の理念のもと、生物多様性保全・自然とのふれあい機会提供・再生可能エネルギー導入など複合的な取り組みが福岡県に認定されています。
+              Health」の理念のもと、生物多様性保全・自然とのふれあい機会提供・再生可能エネルギー導入など複合的な取組が福岡県に認定されています。
       - id: cta_band
         fields:
           - element: h2
             field_name: cta_band_title
             tab: section
             type: text
-            default: ネイチャーポジティブの取り組みに参加しませんか
+            default: ネイチャーポジティブの取組に参加しませんか
       - id: footer
         fields:
           - element: p
@@ -10544,7 +10544,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -10596,7 +10596,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -10693,7 +10693,7 @@ pages:
             field_name: main_content_text
             tab: main
             type: textarea
-            default: 業種も規模も関係ない。自然を守る取り組みを、一緒に広げていきませんか。
+            default: 業種も規模も関係ない。自然を守る取組を、一緒に広げていきませんか。
       - id: section_white
         fields:
           - element: h2
@@ -10719,7 +10719,7 @@ pages:
             tab: section
             type: textarea
             default: |-
-              北九州ネイチャーポジティブネットワークは、そんな取り組みを持ち寄り、
+              北九州ネイチャーポジティブネットワークは、そんな取組を持ち寄り、
                       互いに刺激しながら広げていくためのコミュニティです。
                       参加費無料。登録は数分。退会も自由です。
           - element: svg
@@ -10793,7 +10793,7 @@ pages:
             field_name: section_gray_text_2
             tab: section
             type: textarea
-            default: 「うちにも同じような取り組みがある」と気づくはずです
+            default: 「うちにも同じような取組がある」と気づくはずです
       - id: members
         fields:
           - element: h2
@@ -10827,7 +10827,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -10879,7 +10879,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -10981,7 +10981,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11033,7 +11033,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11125,7 +11125,7 @@ pages:
             tab: section
             type: textarea
             default: >-
-              北九州市の豊かな自然資源や、市民・企業・行政が連携したネイチャーポジティブの取り組みを、より多くの方にわかりやすくお届けしたいという思いから、サイトデザインと情報構成を一新しました。
+              北九州市の豊かな自然資源や、市民・企業・行政が連携したネイチャーポジティブの取組を、より多くの方にわかりやすくお届けしたいという思いから、サイトデザインと情報構成を一新しました。
           - element: h2
             field_name: section_white_title_2
             tab: section
@@ -11160,7 +11160,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11212,7 +11212,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11498,7 +11498,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11550,7 +11550,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11680,7 +11680,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11732,7 +11732,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -11990,7 +11990,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html
@@ -12042,7 +12042,7 @@ pages:
             href: ../about/
           - text: 生物多様性とは？
             href: ../about/biodiversity.html
-          - text: 北九州市の取り組み
+          - text: 北九州市の取組
             href: ../about/strategy.html
           - text: 北九州市の自然スポット
             href: ../about/spots.html

@@ -1,598 +1,559 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ファビコン -->
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../favicon.svg">
-  <!-- OGP -->
-  <meta property="og:title" content="会員募集 | アーバンネイチャー北九州">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ai-yoshitani.github.io/nature-kitakyushu/join/">
-  <meta property="og:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_6257-450x450.jpg">
-  <meta property="og:site_name" content="アーバンネイチャー北九州">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="会員募集 | アーバンネイチャー北九州">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_6257-450x450.jpg">
-  <title>会員募集 | アーバンネイチャー北九州</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    /* 参加メリット */
-    .benefit-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-top: 40px;
-    }
-    .benefit-item {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      background: #fff;
-      border-radius: 16px;
-      padding: 28px 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-    .benefit-item__icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: var(--primary, #2C5F2D);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .benefit-item__icon svg {
-      width: 26px;
-      height: 26px;
-    }
-    .benefit-item__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary, #2C5F2D);
-      margin-bottom: 6px;
-    }
-    .benefit-item__desc {
-      font-size: 0.85rem;
-      color: var(--text-light, #666);
-      line-height: 1.7;
-    }
-    /* 会員タブ切り替え */
-    .member-tabs { display: flex; gap: 0; margin-bottom: 40px; border-bottom: 2px solid var(--border); }
-    .member-tab { padding: 14px 32px; font-size: 1rem; font-weight: 700; cursor: pointer; border: none; background: none; color: var(--text-light); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all var(--transition); }
-    .member-tab:hover { color: var(--primary); }
-    .member-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
-    .member-form { display: none; }
-    .member-form.active { display: block; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .checkbox-group { display: flex; flex-wrap: wrap; gap: 16px; }
-    .checkbox-group label { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer; }
-    .form-card { background: var(--bg-white); border-radius: var(--radius-lg); padding: 40px; box-shadow: 0 2px 12px var(--shadow); }
-    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .benefit-card { background: var(--bg-white); border-radius: var(--radius-lg); padding: 32px 24px; text-align: center; box-shadow: 0 2px 12px var(--shadow); }
-    .benefit-card__icon { font-size: 2.5rem; margin-bottom: 12px; }
-    .benefit-card__title { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
-    .benefit-card__desc { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
-    @media (max-width: 768px) {
-      .form-row { grid-template-columns: 1fr; }
-      .benefits-grid { grid-template-columns: 1fr; }
-      .member-tab { padding: 12px 20px; font-size: 0.9rem; }
-      .form-card { padding: 24px; }
-    }
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="header__inner">
-      <a href="../" class="header__logo">
-        <img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160" height="40"><span class="header__logo-sub" aria-hidden="true">北九州市生物多様性戦略 2025–2030</span>
-      </a>
-            <nav class="header__nav" aria-label="メインナビゲーション">
-        <a href="../news/" >お知らせ</a>
-        <div class="nav-item">
-          <a href="../about/" >アーバンネイチャー北九州とは？</a>
-          <ul class="dropdown">
-            <li><a href="../about/">全体像</a></li>
-            <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-            <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
-            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
-            <li><a href="../center/">活動拠点</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../favicon.svg" />
+    <!-- OGP -->
+    <meta property="og:title" content="会員募集 | アーバンネイチャー北九州" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/join/"
+    />
+    <meta
+      property="og:image"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_6257-450x450.jpg"
+    />
+    <meta property="og:site_name" content="アーバンネイチャー北九州" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="会員募集 | アーバンネイチャー北九州" />
+    <meta name="twitter:description" content="" />
+    <meta
+      name="twitter:image"
+      content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/08/APC_6257-450x450.jpg"
+    />
+    <title>会員募集 | アーバンネイチャー北九州</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* 参加メリット */
+      .benefit-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+      }
+      .benefit-item {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        background: #fff;
+        border-radius: 16px;
+        padding: 28px 24px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      }
+      .benefit-item__icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: var(--primary, #2c5f2d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .benefit-item__icon svg {
+        width: 26px;
+        height: 26px;
+      }
+      .benefit-item__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary, #2c5f2d);
+        margin-bottom: 6px;
+      }
+      .benefit-item__desc {
+        font-size: 0.85rem;
+        color: var(--text-light, #666);
+        line-height: 1.7;
+      }
+      /* 会員申込フォーム */
+      .mid-cta {
+        background: linear-gradient(135deg, #2c5f2d 0%, #3a7a3b 100%);
+        border-radius: 20px;
+        padding: 48px 40px;
+        text-align: center;
+        color: #fff;
+        margin: 48px 0 0;
+      }
+      .mid-cta__title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      .mid-cta__sub {
+        font-size: 0.95rem;
+        opacity: 0.85;
+        margin-bottom: 28px;
+        line-height: 1.7;
+      }
+      .mid-cta__note {
+        margin-top: 16px;
+        font-size: 0.8rem;
+        opacity: 0.7;
+      }
+      /* 会員タブ切り替え */
+      .member-tabs {
+        display: flex;
+        gap: 0;
+        margin-bottom: 40px;
+        border-bottom: 2px solid var(--border);
+      }
+      .member-tab {
+        padding: 14px 32px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: var(--text-light);
+        border-bottom: 3px solid transparent;
+        margin-bottom: -2px;
+        transition: all var(--transition);
+      }
+      .member-tab:hover {
+        color: var(--primary);
+      }
+      .member-tab.active {
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+      }
+      .member-form {
+        display: none;
+      }
+      .member-form.active {
+        display: block;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .checkbox-group label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+      .form-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        box-shadow: 0 2px 12px var(--shadow);
+      }
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .benefit-card {
+        background: var(--bg-white);
+        border-radius: var(--radius-lg);
+        padding: 32px 24px;
+        text-align: center;
+        box-shadow: 0 2px 12px var(--shadow);
+      }
+      .benefit-card__icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+      }
+      .benefit-card__title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 8px;
+      }
+      .benefit-card__desc {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      @media (max-width: 768px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+        .benefits-grid {
+          grid-template-columns: 1fr;
+        }
+        .member-tab {
+          padding: 12px 20px;
+          font-size: 0.9rem;
+        }
+        .form-card {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="../" class="header__logo">
+          <img
+            src="../images/2026/02/logo.png"
+            alt="アーバンネイチャー北九州"
+            width="160"
+            height="40"
+          /><span class="header__logo-sub" aria-hidden="true"
+            >北九州市生物多様性戦略 2025–2030</span
+          >
+        </a>
+        <nav class="header__nav" aria-label="メインナビゲーション">
+          <a href="../news/">お知らせ</a>
+          <div class="nav-item">
+            <a href="../about/">アーバンネイチャー北九州とは？</a>
+            <ul class="dropdown">
+              <li><a href="../about/">全体像</a></li>
+              <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
+              <li><a href="../about/strategy.html">北九州市の取組</a></li>
+              <li><a href="../center/">活動拠点</a></li>
+              <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <a href="../network/">地域との繋がり</a>
+            <ul class="dropdown">
+              <li>
+                <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
+              </li>
+              <li><a href="../join/">会員募集</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <a href="../network/cases/">活動紹介</a>
+            <ul class="dropdown">
+              <li><a href="../network/cases/">ネイチャーポジティブ実践事例</a></li>
+              <li><a href="../blog/">企業の活動ブログ</a></li>
+              <li><a href="../blog/">団体等の活動ブログ</a></li>
+            </ul>
+          </div>
+          <a href="../events/">イベントを探す</a>
+          <a href="../photos/">みんなの写真展</a>
+        </nav>
+        <div class="header__actions">
+          <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
+          <button
+            class="hamburger"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        <div class="nav-item">
-          <a href="../network/" >地域との繋がり</a>
-          <ul class="dropdown">
-            <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
-            <li><a href="../join/">会員募集</a></li>
-          </ul>
+      </div>
+    </header>
+    <!-- モバイルナビ -->
+    <nav class="mobile-nav" id="js-mobile-nav">
+      <a href="../news/">お知らせ</a>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
+          <a href="../about/">アーバンネイチャー北九州とは？</a>
+          <button
+            class="mobile-nav__toggle"
+            aria-expanded="false"
+            aria-label="サブメニューを開く"
+          >
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
         </div>
-        <div class="nav-item">
+        <div class="mobile-nav__children">
+          <a href="../about/">全体像</a>
+          <a href="../about/biodiversity.html">生物多様性とは？</a>
+          <a href="../about/strategy.html">北九州市の取組</a>
+          <a href="../about/spots.html">北九州市の自然スポット</a>
+          <a href="../center/">活動拠点</a>
+        </div>
+      </div>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
+          <a href="../network/">地域との繋がり</a>
+          <button
+            class="mobile-nav__toggle"
+            aria-expanded="false"
+            aria-label="サブメニューを開く"
+          >
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
+        </div>
+        <div class="mobile-nav__children">
+          <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
+          <a href="../join/">会員募集</a>
+        </div>
+      </div>
+      <div class="mobile-nav__group">
+        <div class="mobile-nav__parent">
           <a href="../network/cases/">活動紹介</a>
-          <ul class="dropdown">
-            <li><a href="../network/cases/">NP実践事例</a></li>
-            <li><a href="../blog/">企業の活動ブログ</a></li>
-            <li><a href="../blog/">団体等の活動ブログ</a></li>
-          </ul>
+          <button
+            class="mobile-nav__toggle"
+            aria-expanded="false"
+            aria-label="サブメニューを開く"
+          >
+            <span class="mobile-nav__toggle-icon"></span>
+          </button>
         </div>
-        <a href="../events/" >イベントを探す</a>
-        <a href="../photos/" >みんなの写真展</a>
-      </nav>
-      <div class="header__actions">
-        <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
-        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="mobile-nav__children">
+          <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
+          <a href="../blog/">企業の活動ブログ</a>
+          <a href="../blog/">団体等の活動ブログ</a>
+        </div>
+      </div>
+      <a href="../events/">イベントを探す</a>
+      <a href="../photos/">みんなの写真展</a>
+      <div class="mobile-nav__cta">
+        <a href="../join/" class="btn btn--primary btn--block">参加する</a>
+      </div>
+    </nav>
+    <!-- ページヘッダー -->
+    <div
+      class="page-header"
+      id="main-content"
+      style="
+        background-image: url(&quot;../images/2025/03/join-hero.jpg&quot;);
+        background-size: cover;
+        background-position: center center;
+      "
+    >
+      <div class="container">
+        <h1 class="page-header__title">会員募集</h1>
+        <p class="page-header__desc">
+          北九州市の自然と共に歩む仲間を募集しています
+        </p>
       </div>
     </div>
-  </header>
-  <!-- モバイルナビ -->
-  <nav class="mobile-nav" id="js-mobile-nav">
-    <a href="../news/">お知らせ</a>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../about/">アーバンネイチャー北九州とは？</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../about/">全体像</a>
-        <a href="../about/biodiversity.html">生物多様性とは？</a>
-        <a href="../about/strategy.html">北九州市の取り組み</a>
-        <a href="../about/spots.html">北九州市の自然スポット</a>
-        <a href="../center/">活動拠点</a>
-      </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../network/">地域との繋がり</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
-        <a href="../join/">会員募集</a>
-      </div>
-    </div>
-    <div class="mobile-nav__group">
-      <div class="mobile-nav__parent">
-        <a href="../network/cases/">活動紹介</a>
-        <button class="mobile-nav__toggle" aria-expanded="false" aria-label="サブメニューを開く">
-          <span class="mobile-nav__toggle-icon"></span>
-        </button>
-      </div>
-      <div class="mobile-nav__children">
-        <a href="../network/cases/">NP実践事例</a>
-        <a href="../blog/">企業の活動ブログ</a>
-        <a href="../blog/">団体等の活動ブログ</a>
-      </div>
-    </div>
-    <a href="../events/">イベントを探す</a>
-    <a href="../photos/">みんなの写真展</a>
-    <div class="mobile-nav__cta">
-      <a href="../join/" class="btn btn--primary btn--block">参加する</a>
-    </div>
-  </nav>
-  <!-- ページヘッダー -->
-  <div class="page-header" id="main-content" style="background-image: url('../images/2025/03/join-hero.jpg'); background-size: cover; background-position: center center;">
-    <div class="container">
-      <h1 class="page-header__title">会員募集</h1>
-      <p class="page-header__desc">北九州市の自然と共に歩む仲間を募集しています</p>
-    </div>
-  </div>
-  <!-- メリット -->
-  <section class="section section--gray">
-    <div class="container">
-      <h2 class="section__title">参加すると、こんなことが起きます</h2>
-      <p class="section__subtitle">メリットというより、変化のイメージです</p>
-      <div class="benefit-list">
-        <div class="benefit-item">
-          <div class="benefit-item__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div>
-            <div class="benefit-item__title">「同じ想いの人」と出会える</div>
-            <div class="benefit-item__desc">業種を超えた企業・NPO・研究者・市民が集まるコミュニティ。自分だけでは出会えなかった仲間と、具体的なプロジェクトが生まれることもあります。</div>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-item__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <div>
-            <div class="benefit-item__title">取り組みが「見える」ようになる</div>
-            <div class="benefit-item__desc">会員の活動をポータルサイトで紹介。「やっているけど伝わらない」を解決し、CSRやESGのアピールにも活用できます。</div>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-item__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          </div>
-          <div>
-            <div class="benefit-item__title">「何をすれば良いか」がわかる</div>
-            <div class="benefit-item__desc">ネイチャーポジティブの最新動向・政策情報・実践事例を定期的にお届け。勉強会や現地見学で、現場のノウハウを得られます。</div>
-          </div>
-        </div>
-        <!--<div class="benefit-item">
-          <div class="benefit-item__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-          </div>
-          <div>
-            <div class="benefit-item__title">施設・専門家とつながれる</div>
-            <div class="benefit-item__desc">響灘ビオトープ・いのちのたび博物館など10施設のプロとつながり、連携事業や社員研修・課外授業などの相談ができます。</div>
-          </div>
-        </div>-->
-      </div>
-    </div>
-  </section>
-  <!-- 会員特典 -->
-  <!--<section class="section section--white">
-    <div class="container">
-      <h2 class="section__title">会員になるメリット</h2>
-      <p class="section__subtitle">アーバンネイチャー北九州の会員として、さまざまな特典をご利用いただけます</p>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F331;</div>
-          <h3 class="benefit-card__title">イベント優先参加</h3>
-          <p class="benefit-card__desc">自然観察会やワークショップなど、会員限定イベントに優先的にご参加いただけます。</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F4E8;</div>
-          <h3 class="benefit-card__title">ニュースレター配信</h3>
-          <p class="benefit-card__desc">北九州市の自然に関する最新情報や活動レポートを定期的にお届けします。</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F91D;</div>
-          <h3 class="benefit-card__title">ネットワーク参加</h3>
-          <p class="benefit-card__desc">自然保全に取り組む団体や個人とのネットワークに参加でき、交流の機会が広がります。</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F4F7;</div>
-          <h3 class="benefit-card__title">フリー素材利用</h3>
-          <p class="benefit-card__desc">北九州市の自然写真を自然啓発目的で無料でご利用いただけます。</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F3C5;</div>
-          <h3 class="benefit-card__title">活動証明書発行</h3>
-          <p class="benefit-card__desc">ボランティア活動への参加実績に応じた活動証明書を発行いたします。</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-card__icon">&#x1F4DA;</div>
-          <h3 class="benefit-card__title">学習機会の提供</h3>
-          <p class="benefit-card__desc">専門家による講座やフィールドワークを通じて、自然環境について深く学べます。</p>
-        </div>
-      </div>
-    </div>
-  </section>-->
-  <!-- 会員申込フォーム -->
-  <section class="section section--gray">
-    <div class="container">
-      <h2 class="section__title">会員申込</h2>
-      <div style="text-align: center; margin-top: 40px">
-        <a href="https://ttzk.graffer.jp/city-kitakyushu/smart-apply/apply-procedure-alias/npnw/door" class="btn btn--primary btn--lg"
-          >お申込みはこちらから</a
-        >
-      </div>
-      <!--<p class="section__subtitle">以下のフォームからお申し込みください</p>
-      <div style="max-width: 800px; margin: 0 auto;" class="form-card">
-        <div class="member-tabs" role="tablist" aria-label="会員種別">
-          <button class="member-tab active" role="tab" aria-selected="true"  aria-controls="corporate"  id="tab-corporate"  data-target="corporate">企業会員</button>
-          <button class="member-tab"        role="tab" aria-selected="false" aria-controls="npo"        id="tab-npo"        data-target="npo">団体会員</button>
-          <button class="member-tab"        role="tab" aria-selected="false" aria-controls="individual" id="tab-individual" data-target="individual">個人会員</button>
-        </div>
-        <form class="member-form active" id="corporate" role="tabpanel" aria-labelledby="tab-corporate">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="c-company">企業名<span class="required">*必須</span></label>
-              <input type="text" id="c-company" class="form-input" name="company" required placeholder="例：株式会社〇〇" autocomplete="organization">
+    <!-- メリット -->
+    <section class="section section--gray">
+      <div class="container">
+        <h2 class="section__title">参加すると、こんなことが起きます</h2>
+        <p class="section__subtitle">メリットというより、変化のイメージです</p>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <div class="benefit-item__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
             </div>
-            <div class="form-group">
-              <label for="c-contact">担当者名<span class="required">*必須</span></label>
-              <input type="text" id="c-contact" class="form-input" name="contact_name" required placeholder="例：山田 太郎" autocomplete="name">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="c-email">メールアドレス<span class="required">*必須</span></label>
-              <input type="email" id="c-email" class="form-input" name="email" required placeholder="例：example@company.co.jp" autocomplete="email">
-            </div>
-            <div class="form-group">
-              <label for="c-phone">電話番号<span class="required">*必須</span></label>
-              <input type="tel" id="c-phone" class="form-input" name="phone" required placeholder="例：093-000-0000" autocomplete="tel">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="c-industry">業種<span class="required">*必須</span></label>
-              <select id="c-industry" class="form-select" name="industry" required>
-                <option value="">選択してください</option>
-                <option value="製造業">製造業</option>
-                <option value="建設業">建設業</option>
-                <option value="情報通信業">情報通信業</option>
-                <option value="運輸業">運輸業</option>
-                <option value="卸売・小売業">卸売・小売業</option>
-                <option value="金融・保険業">金融・保険業</option>
-                <option value="不動産業">不動産業</option>
-                <option value="サービス業">サービス業</option>
-                <option value="教育・学習支援">教育・学習支援</option>
-                <option value="医療・福祉">医療・福祉</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="c-employees">従業員数</label>
-              <select id="c-employees" class="form-select" name="employees">
-                <option value="">選択してください</option>
-                <option value="1-10">1〜10名</option>
-                <option value="11-50">11〜50名</option>
-                <option value="51-100">51〜100名</option>
-                <option value="101-300">101〜300名</option>
-                <option value="301-1000">301〜1,000名</option>
-                <option value="1001+">1,001名以上</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <fieldset style="border:none;padding:0;margin:0;">
-              <legend style="font-size:inherit;margin-bottom:8px;">関心のある分野（複数選択可）</legend>
-              <div class="checkbox-group">
-                <label><input type="checkbox" name="interest" value="生態系保全"> 生態系保全</label>
-                <label><input type="checkbox" name="interest" value="環境教育"> 環境教育</label>
-                <label><input type="checkbox" name="interest" value="CSR活動"> CSR活動</label>
-                <label><input type="checkbox" name="interest" value="社員研修"> 社員研修</label>
-                <label><input type="checkbox" name="interest" value="スポンサー"> スポンサー</label>
+            <div>
+              <div class="benefit-item__title">「同じ想いの人」と出会える</div>
+              <div class="benefit-item__desc">
+                業種を超えた企業・NPO・研究者・市民が集まるコミュニティ。自分だけでは出会えなかった仲間と、具体的なプロジェクトが生まれることもあります。
               </div>
-            </fieldset>
-          </div>
-          <div class="form-group">
-            <label for="c-message">メッセージ（任意）</label>
-            <textarea id="c-message" class="form-textarea" name="message" placeholder="ご質問やご要望があればご記入ください"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="form-checkbox">
-              <input type="checkbox" name="privacy" id="privacy-corporate" required>
-              <label for="privacy-corporate"><a href="../privacy/" target="_blank">プライバシーポリシー<span class="sr-only">（新しいタブで開きます）</span></a>に同意する<span class="required">*必須</span></label>
             </div>
           </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--block">企業会員に申し込む</button>
-        </form>
-        <form class="member-form" id="npo" role="tabpanel" aria-labelledby="tab-npo">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="n-org">団体名<span class="required">*必須</span></label>
-              <input type="text" id="n-org" class="form-input" name="org_name" required placeholder="例：〇〇自然保護の会" autocomplete="organization">
+          <div class="benefit-item">
+            <div class="benefit-item__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
             </div>
-            <div class="form-group">
-              <label for="n-furigana">フリガナ<span class="required">*必須</span></label>
-              <input type="text" id="n-furigana" class="form-input" name="org_furigana" required placeholder="例：マルマルシゼンホゴノカイ">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="n-type">団体種別<span class="required">*必須</span></label>
-              <select id="n-type" class="form-select" name="org_type" required>
-                <option value="">選択してください</option>
-                <option value="NPO法人">NPO法人</option>
-                <option value="大学・研究機関">大学・研究機関</option>
-                <option value="市民団体・ボランティア団体">市民団体・ボランティア団体</option>
-                <option value="自治会・町内会">自治会・町内会</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="n-members">構成員数</label>
-              <select id="n-members" class="form-select" name="members">
-                <option value="">選択してください</option>
-                <option value="1-10">1〜10名</option>
-                <option value="11-30">11〜30名</option>
-                <option value="31-100">31〜100名</option>
-                <option value="101+">101名以上</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="n-contact">担当者名<span class="required">*必須</span></label>
-              <input type="text" id="n-contact" class="form-input" name="contact_name" required placeholder="例：山田 太郎" autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label for="n-phone">電話番号<span class="required">*必須</span></label>
-              <input type="tel" id="n-phone" class="form-input" name="phone" required placeholder="例：093-000-0000" autocomplete="tel">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="n-email">メールアドレス<span class="required">*必須</span></label>
-            <input type="email" id="n-email" class="form-input" name="email" required placeholder="例：info@example.org" autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="n-address">所在地<span class="required">*必須</span></label>
-            <input type="text" id="n-address" class="form-input" name="address" required placeholder="例：福岡県北九州市〇〇区..." autocomplete="street-address">
-          </div>
-          <div class="form-group">
-            <fieldset style="border:none;padding:0;margin:0;">
-              <legend style="font-size:inherit;margin-bottom:8px;">関心のある分野（複数選択可）</legend>
-              <div class="checkbox-group">
-                <label><input type="checkbox" name="interest" value="生態系保全"> 生態系保全</label>
-                <label><input type="checkbox" name="interest" value="環境教育"> 環境教育</label>
-                <label><input type="checkbox" name="interest" value="調査・研究"> 調査・研究</label>
-                <label><input type="checkbox" name="interest" value="地域活動"> 地域活動</label>
-                <label><input type="checkbox" name="interest" value="ボランティア"> ボランティア</label>
+            <div>
+              <div class="benefit-item__title">
+                取組が「見える」ようになる
               </div>
-            </fieldset>
-          </div>
-          <div class="form-group">
-            <label for="n-message">メッセージ（任意）</label>
-            <textarea id="n-message" class="form-textarea" name="message" placeholder="活動内容や連携希望などをご記入ください"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="form-checkbox">
-              <input type="checkbox" name="privacy" id="privacy-npo" required>
-              <label for="privacy-npo"><a href="../privacy/" target="_blank">プライバシーポリシー<span class="sr-only">（新しいタブで開きます）</span></a>に同意する<span class="required">*必須</span></label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--block">団体会員に申し込む</button>
-        </form>
-        <form class="member-form" id="individual" role="tabpanel" aria-labelledby="tab-individual">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="i-name">氏名<span class="required">*必須</span></label>
-              <input type="text" id="i-name" class="form-input" name="name" required placeholder="例：山田 太郎" autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label for="i-furigana">フリガナ<span class="required">*必須</span></label>
-              <input type="text" id="i-furigana" class="form-input" name="furigana" required placeholder="例：ヤマダ タロウ">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="i-email">メールアドレス<span class="required">*必須</span></label>
-              <input type="email" id="i-email" class="form-input" name="email" required placeholder="例：example@email.com" autocomplete="email">
-            </div>
-            <div class="form-group">
-              <label for="i-phone">電話番号<span class="required">*必須</span></label>
-              <input type="tel" id="i-phone" class="form-input" name="phone" required placeholder="例：093-000-0000" autocomplete="tel">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="i-address">住所<span class="required">*必須</span></label>
-            <input type="text" id="i-address" class="form-input" name="address" required placeholder="例：福岡県北九州市小倉北区..." autocomplete="street-address">
-          </div>
-          <div class="form-group">
-            <fieldset style="border:none;padding:0;margin:0;">
-              <legend style="font-size:inherit;margin-bottom:8px;">関心のある分野（複数選択可）</legend>
-              <div class="checkbox-group">
-                <label><input type="checkbox" name="interest" value="生態系保全"> 生態系保全</label>
-                <label><input type="checkbox" name="interest" value="環境教育"> 環境教育</label>
-                <label><input type="checkbox" name="interest" value="体験・レジャー"> 体験・レジャー</label>
-                <label><input type="checkbox" name="interest" value="ボランティア"> ボランティア</label>
-                <label><input type="checkbox" name="interest" value="写真"> 写真</label>
+              <div class="benefit-item__desc">
+                会員の活動をポータルサイトで紹介。「やっているけど伝わらない」を解決し、CSRやESGのアピールにも活用できます。
               </div>
-            </fieldset>
-          </div>
-          <div class="form-group">
-            <label for="i-message">メッセージ（任意）</label>
-            <textarea id="i-message" class="form-textarea" name="message" placeholder="ご質問やご要望があればご記入ください"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="form-checkbox">
-              <input type="checkbox" name="privacy" id="privacy-individual" required>
-              <label for="privacy-individual"><a href="../privacy/" target="_blank">プライバシーポリシー<span class="sr-only">（新しいタブで開きます）</span></a>に同意する<span class="required">*必須</span></label>
             </div>
           </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--block">個人会員に申し込む</button>
-        </form>
-      </div>-->
-    </div>
-  </section>
-  <section class="cta-band" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/cta-bg.png'); background-size: cover; background-position: center;">
-    <div class="container">
-      <h2 class="cta-band__title">お気軽にお問合せください</h2>
-      <div class="cta-band__buttons">
-        <a href="../contact/" class="btn btn--solid-white btn--lg">お問合せ</a>
-      </div>
-    </div>
-  </section>
-  <!-- フッター -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <span class="footer__brand-name">アーバンネイチャー北九州</span>
-          <p class="footer__desc">都市と自然が近接する北九州市の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。</p>
-        </div>
-        <div>
-          <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
-          <div class="footer__links">
-            <a href="../about/">全体像</a>
-            <a href="../about/biodiversity.html">生物多様性とは？</a>
-            <a href="../about/strategy.html">北九州市の取り組み</a>
-            <a href="../about/spots.html">北九州市の自然スポット</a>
-          </div>
-          <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
-          <div class="footer__links">
-            <a href="../network/">北九州NPネットワーク</a>
-            <a href="../join/">会員募集</a>
+          <div class="benefit-item">
+            <div class="benefit-item__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="benefit-item__title">
+                「何をすれば良いか」がわかる
+              </div>
+              <div class="benefit-item__desc">
+                ネイチャーポジティブの最新動向・政策情報・実践事例を定期的にお届け。勉強会や現地見学で、現場のノウハウを得られます。
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
-          <div class="footer__links">
-            <a href="../network/cases/">NP実践事例</a>
-            <a href="../blog/">企業の活動ブログ</a>
-            <a href="../blog/">団体等の活動ブログ</a>
+        <!-- 会員申込フォーム -->
+        <div class="mid-cta">
+          <div class="mid-cta__title">会員申込</div>
+          <div class="mid-cta__sub">
+            企業・団体・個人を問わず、どなたでもご参加いただけます
           </div>
-          <h3 class="footer__heading">活動拠点</h3>
-          <div class="footer__links">
-            <a href="../center/">拠点一覧</a>
-            <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
-            <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-            <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-            <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-            <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-            <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-            <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-            <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-            <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
-          </div>
-        </div>
-        <div>
-          <h3 class="footer__heading">その他</h3>
-          <div class="footer__links">
-            <a href="../events/">イベントを探す</a>
-            <a href="../news/">お知らせ</a>
-            <a href="../photos/">みんなの写真展</a>
-            <a href="../contact/">お問合せ</a>
-            <a href="../privacy/">プライバシーポリシー</a>
+          <a
+            href="https://ttzk.graffer.jp/city-kitakyushu/smart-apply/apply-procedure-alias/npnw/door"
+            class="btn btn--solid-white btn--lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >エントリーフォームへ</a
+          >
+          <div class="mid-cta__note">
+            参加費無料 ／ 所要時間3分 ／ いつでも退会可
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span>
-        <a href="../privacy/">プライバシーポリシー</a>
+    </section>
+    <section
+      class="cta-band"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url(&quot;../images/cta-bg.png&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container">
+        <h2 class="cta-band__title">お気軽にお問合せください</h2>
+        <div class="cta-band__buttons">
+          <a href="../contact/" class="btn btn--solid-white btn--lg"
+            >お問合せ</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="../js/main.js"></script>
-  <script>
-    // 会員タブ切り替え（aria-selected 同期）
-    const memberTabs = Array.from(document.querySelectorAll('.member-tab'));
-    function activateTab(tab) {
-      memberTabs.forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-        t.setAttribute('tabindex', '-1');
+    </section>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <span class="footer__brand-name">アーバンネイチャー北九州</span>
+            <p class="footer__desc">
+              都市と自然が近接する北九州市の強みを活かし、市民・企業・行政が一体となってネイチャーポジティブの実現を目指すプラットフォームです。
+            </p>
+          </div>
+          <div>
+            <h3 class="footer__heading">アーバンネイチャー北九州とは？</h3>
+            <div class="footer__links">
+              <a href="../about/">全体像</a>
+              <a href="../about/biodiversity.html">生物多様性とは？</a>
+              <a href="../about/strategy.html">北九州市の取組</a>
+              <a href="../center/">活動拠点</a>
+              <a href="../about/spots.html">北九州市の自然スポット</a>
+            </div>
+            <h3 class="footer__heading" style="margin-top: 24px">
+              地域との繋がり
+            </h3>
+            <div class="footer__links">
+              <a href="../network/">北九州ネイチャーポジティブ<br class="footer__br">ネットワーク</a>
+              <a href="../join/">会員募集</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer__heading" style="margin-top: 24px">活動紹介</h3>
+            <div class="footer__links">
+              <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
+              <a href="../blog/">企業の活動ブログ</a>
+              <a href="../blog/">団体等の活動ブログ</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer__heading">その他</h3>
+            <div class="footer__links">
+              <a href="../events/">イベントを探す</a>
+              <a href="../news/">お知らせ</a>
+              <a href="../photos/">みんなの写真展</a>
+              <a href="../contact/">お問合せ</a>
+              <a href="../privacy/">プライバシーポリシー</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span
+            >Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span
+          >
+          <a href="../privacy/">プライバシーポリシー</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+      // 会員タブ切り替え（aria-selected 同期）
+      const memberTabs = Array.from(document.querySelectorAll(".member-tab"));
+      function activateTab(tab) {
+        memberTabs.forEach((t) => {
+          t.classList.remove("active");
+          t.setAttribute("aria-selected", "false");
+          t.setAttribute("tabindex", "-1");
+        });
+        document
+          .querySelectorAll(".member-form")
+          .forEach((f) => f.classList.remove("active"));
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+        tab.setAttribute("tabindex", "0");
+        document.getElementById(tab.dataset.target).classList.add("active");
+      }
+      memberTabs.forEach((tab, i) => {
+        tab.setAttribute(
+          "tabindex",
+          tab.classList.contains("active") ? "0" : "-1",
+        );
+        tab.addEventListener("click", () => {
+          activateTab(tab);
+          tab.focus();
+        });
+        tab.addEventListener("keydown", (e) => {
+          let next;
+          if (e.key === "ArrowRight")
+            next = memberTabs[(i + 1) % memberTabs.length];
+          else if (e.key === "ArrowLeft")
+            next = memberTabs[(i - 1 + memberTabs.length) % memberTabs.length];
+          else if (e.key === "Home") next = memberTabs[0];
+          else if (e.key === "End") next = memberTabs[memberTabs.length - 1];
+          if (next) {
+            e.preventDefault();
+            activateTab(next);
+            next.focus();
+          }
+        });
       });
-      document.querySelectorAll('.member-form').forEach(f => f.classList.remove('active'));
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected', 'true');
-      tab.setAttribute('tabindex', '0');
-      document.getElementById(tab.dataset.target).classList.add('active');
-    }
-    memberTabs.forEach((tab, i) => {
-      tab.setAttribute('tabindex', tab.classList.contains('active') ? '0' : '-1');
-      tab.addEventListener('click', () => { activateTab(tab); tab.focus(); });
-      tab.addEventListener('keydown', (e) => {
-        let next;
-        if (e.key === 'ArrowRight') next = memberTabs[(i + 1) % memberTabs.length];
-        else if (e.key === 'ArrowLeft') next = memberTabs[(i - 1 + memberTabs.length) % memberTabs.length];
-        else if (e.key === 'Home') next = memberTabs[0];
-        else if (e.key === 'End') next = memberTabs[memberTabs.length - 1];
-        if (next) { e.preventDefault(); activateTab(next); next.focus(); }
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

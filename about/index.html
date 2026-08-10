@@ -238,6 +238,20 @@
       font-size: 0.98rem;
       line-height: 1.85;
     }
+    /* 新たに追加 */
+    .about-intro__lead span{
+      font-size: 1.2rem;
+      line-height: 1.85;
+    }
+    .marker-underline {
+      background-image: linear-gradient(to bottom, transparent 70%, rgb(184, 217, 198) 70%);
+      background-repeat: no-repeat;
+      /* テキストの折り返しに対応させるために必須 */
+      display: inline;
+      /* 線と文字の重なりを調整したい場合、わずかにパディングを入れる */
+      padding-bottom: 11px; 
+    }
+    /* ここまで */
     .about-intro__mayor {
       display: flex;
       gap: 36px;
@@ -366,7 +380,7 @@
       .world-context { grid-template-columns: 1fr; }
     }
     /* =========================================
-       about-cycle: 取り組みサイクル（3ステップ）
+       about-cycle: 取組サイクル（3ステップ）
        ========================================= */
     .cycle-cards {
       display: flex;
@@ -474,9 +488,9 @@
           <ul class="dropdown">
             <li><a href="../about/">全体像</a></li>
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-            <li><a href="../about/strategy.html">北九州市の取り組み</a></li>
-            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+            <li><a href="../about/strategy.html">北九州市の取組</a></li>
             <li><a href="../center/">活動拠点</a></li>
+            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
           </ul>
         </div>
         <div class="nav-item">
@@ -489,7 +503,7 @@
         <div class="nav-item">
           <a href="../network/cases/">活動紹介</a>
           <ul class="dropdown">
-            <li><a href="../network/cases/">NP実践事例</a></li>
+            <li><a href="../network/cases/">ネイチャーポジティブ実践事例</a></li>
             <li><a href="../blog/">企業の活動ブログ</a></li>
             <li><a href="../blog/">団体等の活動ブログ</a></li>
           </ul>
@@ -520,7 +534,7 @@
       <div class="mobile-nav__children">
         <a href="../about/">全体像</a>
         <a href="../about/biodiversity.html">生物多様性とは？</a>
-        <a href="../about/strategy.html">北九州市の取り組み</a>
+        <a href="../about/strategy.html">北九州市の取組</a>
         <a href="../about/spots.html">北九州市の自然スポット</a>
         <a href="../center/">活動拠点</a>
       </div>
@@ -545,7 +559,7 @@
         </button>
       </div>
       <div class="mobile-nav__children">
-        <a href="../network/cases/">NP実践事例</a>
+        <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
         <a href="../blog/">企業の活動ブログ</a>
         <a href="../blog/">団体等の活動ブログ</a>
       </div>
@@ -580,7 +594,7 @@
         <!-- 見出し＋本文 -->
         <div class="about-intro__body">
           <h2 class="about-intro__heading">アーバンネイチャー北九州とは？</h2>
-          <p class="about-intro__lead">アーバンネイチャー北九州とは、北九州市の特徴である<strong>「都市と近接した豊かな自然」</strong>を表す言葉です。<br><br>北九州市は、市街地と豊かな自然が近接した全国でも特色ある都市です。鉄鋼・化学工業の街として発展してきた一方で、市域面積の約4割を森林が占め、響灘・周防灘・関門海峡の3つの海に囲まれるなど、豊かな自然環境に恵まれています。<br>このような<strong>「都市と近接した豊かな自然」</strong>を<strong>「アーバンネイチャー北九州」</strong>と名付け、都市と自然が近接する北九州市ならではの強みを活かし、世界目標「ネイチャーポジティブ」を市民・企業とともに実現することを目指しています。</p>
+          <p class="about-intro__lead"><span class="marker-underline">アーバンネイチャー北九州とは、北九州市の特徴である<strong>「都市と近接した豊かな自然」</strong>を表す言葉です。</span><br><br>北九州市は、市街地と豊かな自然が近接した全国でも特色ある都市です。鉄鋼・化学工業の街として発展してきた一方で、市域面積の約4割を森林が占め、響灘・周防灘・関門海峡の3つの海に囲まれるなど、豊かな自然環境に恵まれています。<br>このような<strong>「都市と近接した豊かな自然」</strong>を<strong>「アーバンネイチャー北九州」</strong>と名付け、都市と自然が近接する北九州市ならではの強みを活かし、世界目標「ネイチャーポジティブ」を市民・企業とともに実現することを目指しています。</p>
         </div>
         <!-- 市長メッセージ -->
         <!-- TODO: 公式マスコット画像が入手できた場合は figure 内に追加する -->
@@ -660,11 +674,11 @@
           <h2><a href="strategy.html" class="hover-underline">北九州市生物多様性戦略 2025–2030</a></h2>
           <p>北九州市では、「北九州市生物多様性戦略2025-2030」に基づき、生物多様性の保全と回復を通じてネイチャーポジティブの実現を目指しています。</p>
           <p>「都市と近接した豊かな自然」＝「アーバンネイチャー北九州」という北九州市ならではの特徴を生かし、人と自然が共生する持続可能なまちづくりに、市民、企業、教育・研究機関、行政など多様な主体が連携しながら取り組みます。</p>
-          <p>この取組を推進する推進体制として<strong>「北九州ネイチャーポジティブセンター」</strong>と<strong>「北九州ネイチャーポジティブネットワーク」</strong>を構築しました。</p>
+          <p>この取組を推進する中核組織として<strong>「北九州ネイチャーポジティブセンター」</strong>と<strong>「北九州ネイチャーポジティブネットワーク」</strong>を構築しました。</p>
         </div>
       </div>
     </section>
-    <!-- 取り組みサイクル -->
+    <!-- 取組サイクル -->
     <section class="section section--white about-cycle" id="about-cycle">
       <div class="container">
         <h2 class="section__title">当サイトの活用方法</h2>
@@ -699,7 +713,7 @@
             </div>
             <p class="cycle-card__subtitle">活動する</p>
             <h3 class="cycle-card__title">
-              <a href="/network/" class="hover-underline">参加する・つながる</a>
+              <a href="../network/index.html" class="hover-underline">参加する・つながる</a>
             </h3>
             <p class="cycle-card__desc">イベントや保全活動、勉強会への参加。<br>ネットワークへの加入など。</p>
           </div>
@@ -721,7 +735,7 @@
             </div>
             <p class="cycle-card__subtitle">継続する</p>
             <h3 class="cycle-card__title">
-              <a href="/network/cases/" class="hover-underline">発信する・創出する</a>
+              <a href="../network/cases/index.html" class="hover-underline">発信する・創出する</a>
             </h3>
             <p class="cycle-card__desc">取組や活動の紹介。ネットワークを活用した各主体間の連携事業の創出など。</p>
           </div>
@@ -770,35 +784,22 @@
           <div class="footer__links">
             <a href="../about/">全体像</a>
             <a href="../about/biodiversity.html">生物多様性とは？</a>
-            <a href="../about/strategy.html">北九州市の取り組み</a>
+            <a href="../about/strategy.html">北九州市の取組</a>
+            <a href="../center/">活動拠点</a>
             <a href="../about/spots.html">北九州市の自然スポット</a>
           </div>
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
-            <a href="../network/">北九州NPネットワーク</a>
+            <a href="../network/">北九州ネイチャーポジティブ<br class="footer__br">ネットワーク</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
           <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
           <div class="footer__links">
-            <a href="../network/cases/">NP実践事例</a>
+            <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
             <a href="../blog/">企業の活動ブログ</a>
             <a href="../blog/">団体等の活動ブログ</a>
-          </div>
-          <h3 class="footer__heading">活動拠点</h3>
-          <div class="footer__links">
-            <a href="../center/">拠点一覧</a>
-            <a class="nav-sub" href="../center/biotope.html">響灘ビオトープ</a>
-            <a class="nav-sub" href="../center/greenpark.html">響灘緑地グリーンパーク</a>
-            <a class="nav-sub" href="../center/hotarukan.html">北九州市ほたる館</a>
-            <a class="nav-sub" href="../center/inochi.html">いのちのたび博物館</a>
-            <a class="nav-sub" href="../center/itouzu.html">到津の森公園</a>
-            <a class="nav-sub" href="../center/katsuki-hotaru.html">香月・黒川ほたる館</a>
-            <a class="nav-sub" href="../center/mizukankyokan.html">水環境館</a>
-            <a class="nav-sub" href="../center/soraland.html">ソラランド平尾台</a>
-            <a class="nav-sub" href="../center/takamiya.html">タカミヤ環境ミュージアム</a>
-            <a class="nav-sub" href="../center/yamada.html">山田緑地</a>
           </div>
         </div>
         <div>

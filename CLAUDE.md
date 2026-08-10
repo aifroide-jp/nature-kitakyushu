@@ -21,7 +21,7 @@
 - 皿倉山 | アーバンネイチャー北九州 (about/spots/sarakurayama.html)
 - 曽根干潟 | アーバンネイチャー北九州 (about/spots/sone-higata.html)
 - 山田緑地 | アーバンネイチャー北九州 (about/spots/yamada.html)
-- 北九州市の取り組み | アーバンネイチャー北九州 (about/strategy.html)
+- 北九州市の取組 | アーバンネイチャー北九州 (about/strategy.html)
 - 活動ブログ | アーバンネイチャー北九州 (blog/index.html)
 - 北九州市響灘ビオトープ | アーバンネイチャー北九州 (center/biotope.html)
 - 響灘緑地グリーンパーク | アーバンネイチャー北九州 (center/greenpark.html)
