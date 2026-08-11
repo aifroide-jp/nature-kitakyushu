@@ -1036,6 +1036,11 @@ tr:nth-child(even) {
   .hamburger {
     display: flex;
   }
+  /* ロゴ(262px)＋ハンバーガーで横幅が埋まるため、ヘッダーのお問合せボタンは隠す。
+     お問合せの導線はモバイルナビ内に用意されている */
+  .header__actions .btn {
+    display: none;
+  }
   .persona-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1109,6 +1114,12 @@ tr:nth-child(even) {
   .stats-grid {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+  }
+}
+@media (max-width: 360px) {
+  /* 320px幅ではロゴ(262px)だけでも収まらないため縮小する */
+  .header__logo img {
+    height: 32px;
   }
 }
 @media (max-width: 640px) {
