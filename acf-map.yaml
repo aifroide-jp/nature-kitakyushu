@@ -5300,7 +5300,7 @@ pages:
             field_name: section_gray_text_2
             tab: section
             type: textarea
-            default: IGES北九州アーバンセンター（公益財団法人 地球環境戦略研究機関）
+            default: 公益財団法人 地球環境戦略研究機関（IGES）北九州アーバンセンター
           - element: p
             field_name: section_gray_text_3
             tab: section
@@ -5330,7 +5330,7 @@ pages:
             field_name: section_gray_text_8
             tab: section
             type: textarea
-            default: 平日 9:00〜17:00（土日祝日・年末年始を除く）
+            default: 平日 9:section_white_image_30〜17:00（土日祝日・年末年始を除く）
           - element: p
             field_name: section_gray_text_9
             tab: section

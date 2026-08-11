@@ -40,6 +40,7 @@
     .event-card__type-tag { position: absolute; top: 12px; right: 12px; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; }
     .event-card__type-tag--募集中 { background: #e8f5e9; color: #2e7d32; }
     .event-card__type-tag--告知 { background: #e3f2fd; color: #1565c0; }
+    .event-card__type-tag--プロジェクト { background: #fff3e0; color: #e65100; }
     .event-card__body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
     .event-card__tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
     .event-card__category { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; background: rgba(44, 95, 45, 0.1); color: var(--primary); }
@@ -79,6 +80,7 @@
           <a href="../network/" >地域との繋がり</a>
           <ul class="dropdown">
             <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
+            <li><a href="../network/projects/">企業参加型プロジェクト</a></li>
             <li><a href="../join/">会員募集</a></li>
           </ul>
         </div>
@@ -128,6 +130,7 @@
       </div>
       <div class="mobile-nav__children">
         <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
+        <a href="../network/projects/">企業参加型プロジェクト</a>
         <a href="../join/">会員募集</a>
       </div>
     </div>
@@ -167,6 +170,7 @@
           <button class="filter-btn active" aria-pressed="true" data-filter-type="all">すべて</button>
           <button class="filter-btn" aria-pressed="false" data-filter-type="募集">双方向募集型</button>
           <button class="filter-btn" aria-pressed="false" data-filter-type="告知">告知型</button>
+          <button class="filter-btn" aria-pressed="false" data-filter-type="プロジェクト">企業参加型プロジェクト</button>
         </div>
         <div class="filter-row">
           <p class="filter-section__label">カテゴリ：</p>
@@ -187,43 +191,55 @@
       <!-- イベントカード -->
       <h2 class="sr-only">イベント一覧</h2>
       <div class="card-grid" id="eventGrid">
-        <a href="aroma-matsuri-2026.html" class="event-card" data-type="募集" data-category="体験・レジャー" data-target="企業">
+        <a href="np-keiei-kanousei.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="個人,企業">
+          <div class="event-card__image-wrap">
+            <img src="../images/2026/07/IMG_8984-scaled.jpg" alt="自然との共生を企業の力に― ネイチャーポジティブ経営の可能性" class="event-card__image">
+            <div class="event-card__date-badge">
+              <span class="event-card__date-month">7月</span>
+              <span class="event-card__date-day">8</span>
+            </div>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
+          </div>
+          <div class="event-card__body">
+            <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
+              <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">個人</span>
+              <span class="event-card__target">企業</span>
+            </div>
+            <h3 class="event-card__title">自然との共生を企業の力に― ネイチャーポジティブ経営の可能性</h3>
+            <p class="event-card__location">北九州メッセ</p>
+          </div>
+        </a>
+        <a href="aroma-matsuri-2026.html" class="event-card" data-type="プロジェクト" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/aroma_page_4-1.jpg" alt="アロマ祭りプロジェクト2026" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">11月</span>
               <span class="event-card__date-day">3</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--プロジェクト">プロジェクト</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">企業</span>
-            </div>
             <h3 class="event-card__title">アロマ祭りプロジェクト2026 ～香りからはじまるネイチャーポジティブ～</h3>
             <p class="event-card__location">響灘緑地（グリーンパーク）</p>
           </div>
         </a>
-        <a href="gashamoku-hozen.html" class="event-card" data-type="募集" data-category="生態系保全" data-target="企業">
+        <a href="gashamoku-hozen.html" class="event-card" data-type="プロジェクト" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/水中のガシャモク.jpg" alt="ガシャモクの域外保全" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">7月</span>
               <span class="event-card__date-day">15</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--プロジェクト">プロジェクト</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">生態系保全</span>
-              <span class="event-card__target">企業</span>
-            </div>
             <h3 class="event-card__title">希少水生植物「ガシャモク」の域外保全～ガシャモクを未来へつなぐために～</h3>
             <p class="event-card__location">お糸池（小倉南区）</p>
           </div>
         </a>
-        <a href="gnps-nature-tech.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="企業">
+        <a href="gnps-nature-tech.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="個人,企業">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/グローバルネイチャーポジティブサミット_Flyer.jpg" alt="NATURE TECH!" class="event-card__image">
             <div class="event-card__date-badge">
@@ -234,14 +250,16 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
               <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">個人</span>
               <span class="event-card__target">企業</span>
             </div>
             <h3 class="event-card__title">【最新技術が集結】Global Nature Positive Summit「NATURE TECH!」開催</h3>
             <p class="event-card__location">熊本市</p>
           </div>
         </a>
-        <a href="gnps-umitsunagi-side.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
+        <a href="gnps-umitsunagi-side.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="個人,企業">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/うみつなぎサイドイベント_Flyer.jpg" alt="うみつなぎ主催 GNPS2026 サイドイベント" class="event-card__image">
             <div class="event-card__date-badge">
@@ -252,32 +270,36 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
               <span class="event-card__category">教育・啓発</span>
               <span class="event-card__target">個人</span>
+              <span class="event-card__target">企業</span>
             </div>
             <h3 class="event-card__title">【熊本開催】一般社団法人うみつなぎ主催 Global Nature Positive Summit 2026 サイドイベント</h3>
             <p class="event-card__location">熊本市</p>
           </div>
         </a>
-        <a href="np-benkyokai-20260708.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="個人">
+        <a href="np-benkyokai-20260708.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="個人,企業">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/260708_第2回ネイチャーポジティブ勉強会.jpg" alt="公開勉強会（ネイチャーポジティブの地域経済での主流化と展開）" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">7月</span>
               <span class="event-card__date-day">8</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
               <span class="event-card__category">教育・啓発</span>
               <span class="event-card__target">個人</span>
+              <span class="event-card__target">企業</span>
             </div>
             <h3 class="event-card__title">【参加者募集】公開勉強会「ネイチャーポジティブの地域経済での主流化と展開～九州・沖縄の役割と可能性～」を開催します</h3>
             <p class="event-card__location">福岡市</p>
           </div>
         </a>
-        <a href="perseids-kanshokai.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
+        <a href="perseids-kanshokai.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/20260620夏チラシウラ.jpg" alt="ペルセウス座流星群鑑賞会" class="event-card__image">
             <div class="event-card__date-badge">
@@ -288,14 +310,15 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">ペルセウス座流星群鑑賞会</h3>
             <p class="event-card__location">ソラランド平尾台</p>
           </div>
         </a>
-        <a href="hiraodai-picnic-concert.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
+        <a href="hiraodai-picnic-concert.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2026/07/20260620夏チラシオモテ.jpg" alt="HIRAODAI ピクニックコンサート" class="event-card__image">
             <div class="event-card__date-badge">
@@ -307,229 +330,51 @@
           <div class="event-card__body">
             <div class="event-card__tags">
               <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">HIRAODAI ピクニックコンサート</h3>
             <p class="event-card__location">ソラランド平尾台 ヴィレッジゾーン</p>
           </div>
         </a>
-        <a href="shokubutsu-hyohon.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="子ども">
+        <a href="shokubutsu-hyohon.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2026/06/植物標本.jpg" alt="植物標本づくり" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">6月</span>
               <span class="event-card__date-day">25</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
               <span class="event-card__category">教育・啓発</span>
               <span class="event-card__target">子ども</span>
+              <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">植物標本づくり</h3>
             <p class="event-card__location">響灘ビオトープ（若松区）</p>
           </div>
         </a>
-        <a href="photo-contest-season3.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="個人">
+        <a href="photo-contest-season3.html" class="event-card" data-type="告知" data-category="すべて" data-target="個人">
           <div class="event-card__image-wrap">
             <img src="../images/2026/06/A4チラシ_season3.jpg" alt="アーバンネイチャーフォトコンテストSeason3" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">6月</span>
               <span class="event-card__date-day">1</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">北九州市アーバンネイチャーフォトコンテストSeason3</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="hiraodai-challenge-marche.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/Clap屋外マルシェの様子.jpg" alt="平尾台チャレンジマルシェ" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">5</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『平尾台チャレンジマルシェ』5/5（火）5/6（水）</h3>
-            <p class="event-card__location">ヴィレッジゾーン芝生広場</p>
-          </div>
-        </a>
-        <a href="hiraodai-soba-matsuri.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台そば倶楽部2.jpg" alt="第一回平尾台そば祭り" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">2</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『第一回平尾台そば祭り』5/2（土）5/3（日）</h3>
-            <p class="event-card__location">ソラランド平尾台 食工房</p>
-          </div>
-        </a>
-        <a href="hiraodai-tuktuk-gw.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台トゥクトゥク.jpg" alt="GW特別トゥクトゥクガイドツアー" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">2</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『GW特別トゥクトゥクガイドツアー（ショートコース）』5/2（土）～5/6（水）</h3>
-            <p class="event-card__location">ソラランド平尾台</p>
-          </div>
-        </a>
-        <a href="hiraodai-arcquest.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/アルクエスト_メインロゴ.png" alt="謎解きウォーキングアルクエスト" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">2</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『謎解きウォーキングアルクエスト』5/2（土）～5/6（水）</h3>
-            <p class="event-card__location">ソラランド平尾台</p>
-          </div>
-        </a>
-        <a href="hiraodai-karst-tour.html" class="event-card" data-type="募集" data-category="体験・レジャー" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/カルストジャングル冒険ツアー-2.jpg" alt="平尾台カルストツアー" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">3</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『平尾台カルストツアー』5/3(日)</h3>
-            <p class="event-card__location">ソラランド平尾台</p>
-          </div>
-        </a>
-        <a href="hiraodai-mokinya.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台フクロウ.jpg" alt="猛禽屋ゆくはし" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">2</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『猛禽屋ゆくはし』5/2（土）~5/6（水）</h3>
-            <p class="event-card__location">ソラランド平尾台</p>
-          </div>
-        </a>
-        <a href="hiraodai-picnica-zoo.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台ふれあい動物園.jpg" alt="ピクニカ共和国ふれあい動物園" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">5</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『ピクニカ共和国ふれあい動物園』5/5(火)</h3>
-            <p class="event-card__location">ソラランド平尾台 ヴィレッジゾーン</p>
-          </div>
-        </a>
-        <a href="hiraodai-shabondama-show.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/04/平尾台シャボン玉.jpg" alt="シャボン玉隊長HIDEのシャボン玉ショー" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">4</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">ソラランド平尾台『シャボン玉隊長HIDEのシャボン玉ショー』5/4（月）</h3>
-            <p class="event-card__location">ソラランド平尾台 ヴィレッジゾーン</p>
-          </div>
-        </a>
-        <a href="events-202604.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2025/04/5450456.jpg" alt="2026年4月のイベント一覧" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">3月</span>
-              <span class="event-card__date-day">25</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">2026年4月のイベント一覧</h3>
-            <p class="event-card__location">北九州市内</p>
-          </div>
-        </a>
-        <a href="hotaru-aigo-koryukai.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2026/01/20260113.jpg" alt="ほたるの愛護交流会" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">1月</span>
-              <span class="event-card__date-day">28</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">ほたるの愛護交流会</h3>
-            <p class="event-card__location">ムーブ（小倉北区）</p>
-          </div>
-        </a>
-        <a href="events-202601.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
+        <a href="events-202601.html" class="event-card" data-type="募集,告知" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2025/04/5450456.jpg" alt="2026年1月のイベント一覧" class="event-card__image">
             <div class="event-card__date-badge">
@@ -539,15 +384,11 @@
             <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
             <h3 class="event-card__title">2026年1月のイベント一覧</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="np-keiei-symposium.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="企業">
+        <a href="np-keiei-symposium.html" class="event-card" data-type="募集,告知" data-category="すべて" data-target="個人,企業">
           <div class="event-card__image-wrap">
             <img src="../images/2025/11/20251104-1.jpg" alt="北九州ネイチャーポジティブ経営シンポジウム" class="event-card__image">
             <div class="event-card__date-badge">
@@ -558,14 +399,14 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">個人</span>
               <span class="event-card__target">企業</span>
             </div>
             <h3 class="event-card__title">北九州ネイチャーポジティブ経営シンポジウムを開催しました</h3>
             <p class="event-card__location">北九州市</p>
           </div>
         </a>
-        <a href="events-202510-11.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
+        <a href="events-202510-11.html" class="event-card" data-type="募集,告知" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2025/04/5450456.jpg" alt="2025年10〜11月のイベント一覧" class="event-card__image">
             <div class="event-card__date-badge">
@@ -575,69 +416,48 @@
             <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
             <h3 class="event-card__title">2025年10～11月のイベント一覧</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="araiguma-koshukai.html" class="event-card" data-type="募集" data-category="生態系保全" data-target="個人">
-          <div class="event-card__image-wrap">
-            <img src="../images/2025/09/20250911-1o.jpg" alt="福岡県アライグマ防除講習会" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">9月</span>
-              <span class="event-card__date-day">11</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">生態系保全</span>
-              <span class="event-card__target">個人</span>
-            </div>
-            <h3 class="event-card__title">福岡県アライグマ防除講習会</h3>
-            <p class="event-card__location">福岡県</p>
-          </div>
-        </a>
-        <a href="bird-festival.html" class="event-card" data-type="募集" data-category="体験・レジャー" data-target="個人">
+        <a href="bird-festival.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2025/09/20250902.jpg" alt="バードフェスティバル in 北九州" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">9月</span>
               <span class="event-card__date-day">2</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__category">生態系保全</span>
+              <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">バードフェスティバル in 北九州</h3>
             <p class="event-card__location">高塔山・響灘ビオトープ</p>
           </div>
         </a>
-        <a href="photo-contest-season2.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="個人">
+        <a href="photo-contest-season2.html" class="event-card" data-type="告知" data-category="すべて" data-target="個人">
           <div class="event-card__image-wrap">
             <img src="../images/2025/08/20250801-1.jpg" alt="アーバンネイチャーフォトコンテスト Season2" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">8月</span>
               <span class="event-card__date-day">1</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">北九州市アーバンネイチャーフォトコンテスト Season2</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="mizukankyokan-4million.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
+        <a href="mizukankyokan-4million.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2025/07/o-20250711.jpg" alt="水環境館400万人達成記念イベント" class="event-card__image">
             <div class="event-card__date-badge">
@@ -648,32 +468,16 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
-              <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__category">生態系保全</span>
+              <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">水環境館400万人達成記念イベント</h3>
             <p class="event-card__location">水環境館（小倉北区）</p>
           </div>
         </a>
-        <a href="sekai-no-hebi-ten.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2025/06/Gtiu6_8bEAABXcN.jpg" alt="世界のヘビ展～魅惑のハンターたち～" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">7月</span>
-              <span class="event-card__date-day">19</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">7月19日～8月31日「世界のヘビ展～魅惑のハンターたち～」</h3>
-            <p class="event-card__location">北九州市ほたる館</p>
-          </div>
-        </a>
-        <a href="events-202507-08.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
+        <a href="events-202507-08.html" class="event-card" data-type="募集,告知" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2025/04/5645656.jpg" alt="2025年7〜8月のイベント一覧" class="event-card__image">
             <div class="event-card__date-badge">
@@ -683,33 +487,32 @@
             <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
             <h3 class="event-card__title">2025年7～8月のイベント一覧</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="ikimono-quest-biome.html" class="event-card" data-type="募集" data-category="教育・啓発" data-target="個人">
+        <a href="ikimono-quest-biome.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発,体験・レジャー" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2025/05/20250530.jpg" alt="アーバンネイチャー北九州いきものクエスト" class="event-card__image">
             <div class="event-card__date-badge">
               <span class="event-card__date-month">6月</span>
               <span class="event-card__date-day">1</span>
             </div>
-            <span class="event-card__type-tag event-card__type-tag--募集中">募集中</span>
+            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
               <span class="event-card__category">教育・啓発</span>
+              <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">アーバンネイチャー北九州いきものクエスト（Biome）を実施します！</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
         </a>
-        <a href="yamada-hotaru-matsuri-2025.html" class="event-card" data-type="告知" data-category="体験・レジャー" data-target="個人">
+        <a href="yamada-hotaru-matsuri-2025.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発,体験・レジャー" data-target="子ども,個人">
           <div class="event-card__image-wrap">
             <img src="../images/2025/05/i-2.jpg" alt="山田ほたる祭り2025" class="event-card__image">
             <div class="event-card__date-badge">
@@ -720,32 +523,17 @@
           </div>
           <div class="event-card__body">
             <div class="event-card__tags">
+              <span class="event-card__category">生態系保全</span>
+              <span class="event-card__category">教育・啓発</span>
               <span class="event-card__category">体験・レジャー</span>
+              <span class="event-card__target">子ども</span>
               <span class="event-card__target">個人</span>
             </div>
             <h3 class="event-card__title">夜間特別開園！「山田ほたる祭り2025」開催！</h3>
             <p class="event-card__location">山田緑地（小倉北区）</p>
           </div>
         </a>
-        <a href="mirai-hotaru-day-2025.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="子ども">
-          <div class="event-card__image-wrap">
-            <img src="../images/2025/05/i-1.jpg" alt="未来ホタルデー2025" class="event-card__image">
-            <div class="event-card__date-badge">
-              <span class="event-card__date-month">5月</span>
-              <span class="event-card__date-day">21</span>
-            </div>
-            <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-          </div>
-          <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">子ども</span>
-            </div>
-            <h3 class="event-card__title">今年も、環境ミュージアムでお祭りだ！「未来ホタルデー2025」</h3>
-            <p class="event-card__location">タカミヤ環境ミュージアム</p>
-          </div>
-        </a>
-        <a href="events-202505-06.html" class="event-card" data-type="告知" data-category="教育・啓発" data-target="個人">
+        <a href="events-202505-06.html" class="event-card" data-type="募集,告知" data-category="すべて" data-target="すべて">
           <div class="event-card__image-wrap">
             <img src="../images/2025/03/main1.jpg" alt="2025年5〜6月のイベント一覧" class="event-card__image">
             <div class="event-card__date-badge">
@@ -755,10 +543,6 @@
             <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
           </div>
           <div class="event-card__body">
-            <div class="event-card__tags">
-              <span class="event-card__category">教育・啓発</span>
-              <span class="event-card__target">個人</span>
-            </div>
             <h3 class="event-card__title">2025年5～6月のイベント一覧</h3>
             <p class="event-card__location">北九州市内</p>
           </div>
@@ -797,11 +581,12 @@
           <h3 class="footer__heading" style="margin-top:24px">地域との繋がり</h3>
           <div class="footer__links">
             <a href="../network/">北九州ネイチャーポジティブ<br class="footer__br">ネットワーク</a>
+            <a href="../network/projects/">企業参加型プロジェクト</a>
             <a href="../join/">会員募集</a>
           </div>
         </div>
         <div>
-          <h3 class="footer__heading" style="margin-top:24px">活動紹介</h3>
+          <h3 class="footer__heading">活動紹介</h3>
           <div class="footer__links">
             <a href="../network/cases/">ネイチャーポジティブ実践事例</a>
             <a href="../blog/">企業の活動ブログ</a>
@@ -837,11 +622,17 @@
       let activeCat = 'all';
       let activeTarget = 'all';
       let currentPage = 1;
+      // data 属性はカンマ区切りの多値。「すべて」はどの絞り込みにもヒットさせる
+      function matchesValue(raw, active) {
+        if (active === 'all') return true;
+        if (!raw) return false;
+        const values = raw.split(',').map(v => v.trim());
+        return values.includes('すべて') || values.includes(active);
+      }
       function matchesFilter(card) {
-        const matchType = activeType === 'all' || card.dataset.type === activeType;
-        const matchCat = activeCat === 'all' || card.dataset.category === activeCat;
-        const matchTarget = activeTarget === 'all' || card.dataset.target === activeTarget;
-        return matchType && matchCat && matchTarget;
+        return matchesValue(card.dataset.type, activeType)
+          && matchesValue(card.dataset.category, activeCat)
+          && matchesValue(card.dataset.target, activeTarget);
       }
       // 表示するページ番号を組み立てる（多ページ時は前後1ページ＋先頭・末尾）
       function pageItems(totalPages) {
