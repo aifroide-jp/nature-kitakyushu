@@ -107,6 +107,31 @@
       .ev-apply__btn { max-width: 100%; }
       .ev-schedule__time { flex-shrink: 0; }
     }
+    @media (max-width: 425px) {
+      .ev-share { 
+        display: grid; 
+        align-items: center; 
+        text-align: center;
+        gap: 12px; 
+        padding: 24px 0; 
+        border-top: 1px solid var(--border); 
+        border-bottom: 1px solid var(--border); 
+        margin: 48px 0 40px;
+        grid-template-columns: 1fr;
+      }
+      .ev-share__btn--x { 
+        display: flex;
+        justify-content: center;
+      }
+      .ev-share__btn--fb { 
+        display: flex;
+        justify-content: center;
+      }
+      .ev-share__btn--line { 
+        display: flex;
+        justify-content: center; 
+      }
+    }
   </style>
 </head>
 <body>

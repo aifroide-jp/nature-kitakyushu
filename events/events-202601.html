@@ -95,6 +95,31 @@
       .ev-apply { padding: 28px 20px; }
       .ev-apply__btn { font-size: 1rem; padding: 16px 28px; }
     }
+    @media (max-width: 425px) {
+      .ev-share { 
+        display: grid; 
+        align-items: center; 
+        text-align: center;
+        gap: 12px; 
+        padding: 24px 0; 
+        border-top: 1px solid var(--border); 
+        border-bottom: 1px solid var(--border); 
+        margin: 48px 0 40px;
+        grid-template-columns: 1fr;
+      }
+      .ev-share__btn--x { 
+        display: flex;
+        justify-content: center;
+      }
+      .ev-share__btn--fb { 
+        display: flex;
+        justify-content: center;
+      }
+      .ev-share__btn--line { 
+        display: flex;
+        justify-content: center; 
+      }
+    }
     /* SP: ヒーローの高さを画像とテキストの高い方に合わせ、タグ・タイトルのはみ出しを防ぐ */
     @media (max-width: 900px) {
       .ev-hero { display: grid; }
