@@ -60,6 +60,13 @@
       .apply-event-card__img { width: 100%; height: 140px; }
     }
 
+    /* SP: 送信ボタンが画面幅を超えないようにする */
+    @media (max-width: 600px) {
+      .apply-submit .btn { min-width: min(280px, 100%); }
+    }
+    @media (max-width: 375px) {
+      .apply-submit .btn { padding-left: 20px; padding-right: 20px; }
+    }
   </style>
 </head>
 <body>
