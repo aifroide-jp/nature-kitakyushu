@@ -34,6 +34,8 @@
     /* 戦略ページ固有スタイル */
     /* ---- 概要バナー ---- */
     .strategy-summary {
+      display: block;
+      text-decoration: none;
       background: linear-gradient(135deg,
           var(--primary-dark) 0%,
           var(--primary) 60%,
@@ -43,6 +45,17 @@
       color: #fff;
       text-align: center;
       margin-bottom: 0;
+      transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    }
+    .strategy-summary:hover,
+    .strategy-summary:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--shadow-md);
+      /* グローバルの a:hover（色変化・下線）を打ち消す */
+      color: #fff;
+      text-decoration: none;
     }
     .strategy-summary__label {
       display: inline-block;
@@ -81,6 +94,20 @@
       padding: 6px 16px;
       font-size: 0.85rem;
       font-weight: 600;
+    }
+    .strategy-summary__more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      transition: gap 0.2s;
+    }
+    .strategy-summary:hover .strategy-summary__more,
+    .strategy-summary:focus-visible .strategy-summary__more {
+      gap: 12px;
     }
     /* ---- サイクル図エリア ---- */
     .cycle-intro {
@@ -547,63 +574,30 @@
   <a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
   <!-- ヘッダー -->
   <header class="header">
-      <div class="header__inner">
-        <a href="../" class="header__logo">
-          <img
-            src="../images/2026/02/logo.png"
-            alt="アーバンネイチャー北九州"
-            width="160"
-            height="40"
-          /><span class="header__logo-sub" aria-hidden="true"
-            >北九州市生物多様性戦略 2025–2030</span
+    <div class="header__inner">
+      <a href="../" class="header__logo">
+        <img
+          src="../images/2026/02/logo.png"
+          alt="アーバンネイチャー北九州"
+          width="160"
+          height="40"
+        /><span class="header__logo-sub" aria-hidden="true"
+          >北九州市生物多様性戦略 2025–2030</span
+        >
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="../news/">お知らせ</a>
+        <div class="nav-item">
+          <a href="../about/" class="active"
+            >アーバンネイチャー北九州とは？</a
           >
-        </a>
-        <nav class="header__nav" aria-label="メインナビゲーション">
-          <a href="../news/">お知らせ</a>
-          <div class="nav-item">
-            <a href="../about/" class="active"
-              >アーバンネイチャー北九州とは？</a
-            >
-            <ul class="dropdown">
-              <li><a href="../about/">全体像</a></li>
-              <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
-              <li><a href="../about/strategy.html">北九州市の取組</a></li>
-              <li><a href="../center/">活動拠点</a></li>
-              <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
-            </ul>
-          </div>
-          <div class="nav-item">
-            <a href="../network/">地域との繋がり</a>
-            <ul class="dropdown">
-              <li>
-                <a href="../network/">北九州ネイチャーポジティブネットワーク</a>
-              </li>
-              <li><a href="../network/projects/">企業参加型プロジェクト</a></li>
-              <li><a href="../join/">会員募集</a></li>
-            </ul>
-          </div>
-          <div class="nav-item">
-            <a href="../network/cases/">活動紹介</a>
-            <ul class="dropdown">
-              <li><a href="../network/cases/">ネイチャーポジティブ実践事例</a></li>
-              <li><a href="../blog/">企業の活動ブログ</a></li>
-              <li><a href="../blog/organization.html">団体等の活動ブログ</a></li>
-            </ul>
-          </div>
-          <a href="../events/">イベントを探す</a>
-          <a href="../photos/">みんなの写真展</a>
-        </nav>
-        <div class="header__actions">
-          <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
-          <button
-            class="hamburger"
-            aria-label="メニューを開く"
-            aria-expanded="false"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <ul class="dropdown">
+            <li><a href="../about/">全体像</a></li>
+            <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
+            <li><a href="../about/strategy.html">北九州市の取組</a></li>
+            <li><a href="../center/">活動拠点</a></li>
+            <li><a href="../about/spots.html">北九州市の自然スポット</a></li>
+          </ul>
         </div>
         <div class="nav-item">
           <a href="../network/">地域との繋がり</a>
@@ -628,7 +622,11 @@
       </nav>
       <div class="header__actions">
         <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
-        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <button
+          class="hamburger"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -715,7 +713,7 @@
     <!-- 戦略の概要 -->
     <section class="section section--white">
       <div class="container">
-        <div class="strategy-summary">
+        <a href="https://www.city.kitakyushu.lg.jp/contents/924_02006.html" class="strategy-summary" target="_blank" rel="noopener">
           <div class="strategy-summary__label">令和7年5月策定</div>
           <div class="strategy-summary__title">
             北九州市生物多様性戦略 2025–2030
@@ -728,7 +726,8 @@
             <span class="strategy-summary__tag">生物多様性基本法 第13条第1項に基づく地域戦略</span>
             <span class="strategy-summary__tag">生物多様性国家戦略 2023-2030 と連動</span>
           </div>
-        </div>
+          <div class="strategy-summary__more">詳しく見る（北九州市のサイトが開きます） <span aria-hidden="true">&rarr;</span></div>
+        </a>
       </div>
     </section>
     <!-- 3つの基本目標 -->
