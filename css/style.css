@@ -1146,6 +1146,15 @@ tr:nth-child(even) {
   background: none;
   cursor: zoom-in;
 }
+.photo-save-note {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin: -16px 0 32px;
+}
+.photo-save-note strong {
+  color: var(--primary);
+}
 .lightbox {
   position: fixed;
   inset: 0;
