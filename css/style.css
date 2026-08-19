@@ -74,7 +74,11 @@
 }
 /* --- インタラクティブカード（hover lift）--- */
 .spot-card-link {
-  display: block;
+  /* グリッド行の高さに合わせて伸びた分をテキスト面で埋め、
+     カード下部にセクション背景が覗くのを防ぐ */
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-white);
   text-decoration: none;
   color: inherit;
   border-radius: 12px;
@@ -83,6 +87,9 @@
   transition:
     transform 0.3s,
     box-shadow 0.3s;
+}
+.spot-card-link > *:last-child {
+  flex: 1;
 }
 .spot-card-link:hover,
 .spot-card-link:focus-visible {
@@ -1056,6 +1063,10 @@ tr:nth-child(even) {
   :root {
     --header-height: 60px;
   }
+  /* SPではヘッダーのお問合せボタンを出さない（モバイルナビ内の項目で代替） */
+  .header__actions .btn {
+    display: none;
+  }
   .section {
     padding: 48px 0;
   }
@@ -1103,6 +1114,10 @@ tr:nth-child(even) {
   }
 }
 @media (max-width: 480px) {
+  /* 狭幅ではロゴ下のサブ文字の左詰めを解除し、ヘッダーの横溢れを防ぐ */
+  .header__logo-sub {
+    padding-left: 0;
+  }
   .persona-grid {
     grid-template-columns: 1fr;
   }
@@ -1116,6 +1131,12 @@ tr:nth-child(even) {
     grid-template-columns: 1fr !important;
   }
 }
+/* 極狭幅（iPhone SE 等 320px）ではロゴを縮めてヘッダーの横溢れを防ぐ */
+@media (max-width: 360px) {
+  .header__logo img {
+    height: 32px;
+  }
+}
 /* --- 写真ライトボックス（拡大表示） --- */
 .photo-item__zoom {
   display: block;
@@ -1124,6 +1145,15 @@ tr:nth-child(even) {
   border: none;
   background: none;
   cursor: zoom-in;
+}
+.photo-save-note {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin: -16px 0 32px;
+}
+.photo-save-note strong {
+  color: var(--primary);
 }
 .lightbox {
   position: fixed;
