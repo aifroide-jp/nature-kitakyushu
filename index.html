@@ -693,6 +693,19 @@
           grid-template-columns: repeat(3, 1fr);
         }
       }
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+      }
+      /* SP: 3列のままだと1枚94px幅になりテキスト版が読めないため縦1列にする */
+      @media (max-width: 768px) {
+        .video-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
       .video-transcript {
         margin-top: 6px;
       }
@@ -1152,14 +1165,7 @@
           <p class="section-subtitle">
             北九州市の自然とネイチャーポジティブを映像でご覧ください
           </p>
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              gap: 24px;
-              margin-top: 40px;
-            "
-          >
+          <div class="video-grid">
             <div>
               <div
                 style="
