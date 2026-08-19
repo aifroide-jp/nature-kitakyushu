@@ -368,6 +368,8 @@
     @media (max-width: 900px) {
       .ev-layout { grid-template-columns: 1fr; }
       .ev-summary { position: static; }
+      /* SP: 開催概要を本文より前に出す。order はグリッド直下の子(aside)に効かせる */
+      .ev-layout > aside { order: -1; }
       .ev-hero__title { font-size: 1.6rem; }
     }
     @media (max-width: 600px) {
