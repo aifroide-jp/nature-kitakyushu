@@ -33,6 +33,8 @@
     .contact-sidebar__value { font-size: 0.9rem; line-height: 1.7; }
     .contact-form-wrap { background: var(--bg-white); border-radius: var(--radius-lg); padding: 40px; box-shadow: 0 2px 12px var(--shadow); }
     .contact-form-wrap__title { font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 24px; }
+    .contact-layout--single { grid-template-columns: minmax(0, 640px); justify-content: center; }
+    .contact-layout--single .contact-sidebar { position: static; }
     @media (max-width: 768px) {
       .contact-layout { grid-template-columns: 1fr; }
       .contact-sidebar { position: static; order: -1; }
@@ -148,8 +150,8 @@
   <!-- お問合せフォーム -->
   <section class="section section--gray">
     <div class="container">
-      <div class="contact-layout">
-        <!-- フォーム -->
+      <div class="contact-layout contact-layout--single">
+        <!--
         <div class="contact-form-wrap">
           <h2 class="contact-form-wrap__title">お問合せフォーム</h2>
           <form>
@@ -189,6 +191,7 @@
             <button type="submit" class="btn btn--primary btn--lg btn--block">送信する</button>
           </form>
         </div>
+        -->
         <!-- サイドバー -->
         <aside class="contact-sidebar">
           <h3 class="contact-sidebar__title">事務局情報</h3>
@@ -206,7 +209,7 @@
           </div>
           <div class="contact-sidebar__item">
             <p class="contact-sidebar__label">メール</p>
-            <p class="contact-sidebar__value">kitakyushu-info@iges.or.jp</p>
+            <p class="contact-sidebar__value"><a href="mailto:kitakyushu-info@iges.or.jp">kitakyushu-info@iges.or.jp</a></p>
           </div>
         </aside>
       </div>
