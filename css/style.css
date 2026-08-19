@@ -74,7 +74,11 @@
 }
 /* --- インタラクティブカード（hover lift）--- */
 .spot-card-link {
-  display: block;
+  /* グリッド行の高さに合わせて伸びた分をテキスト面で埋め、
+     カード下部にセクション背景が覗くのを防ぐ */
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-white);
   text-decoration: none;
   color: inherit;
   border-radius: 12px;
@@ -83,6 +87,9 @@
   transition:
     transform 0.3s,
     box-shadow 0.3s;
+}
+.spot-card-link > *:last-child {
+  flex: 1;
 }
 .spot-card-link:hover,
 .spot-card-link:focus-visible {
