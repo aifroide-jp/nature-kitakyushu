@@ -1056,6 +1056,10 @@ tr:nth-child(even) {
   :root {
     --header-height: 60px;
   }
+  /* SPではヘッダーのお問合せボタンを出さない（モバイルナビ内の項目で代替） */
+  .header__actions .btn {
+    display: none;
+  }
   .section {
     padding: 48px 0;
   }
@@ -1103,6 +1107,10 @@ tr:nth-child(even) {
   }
 }
 @media (max-width: 480px) {
+  /* 狭幅ではロゴ下のサブ文字の左詰めを解除し、ヘッダーの横溢れを防ぐ */
+  .header__logo-sub {
+    padding-left: 0;
+  }
   .persona-grid {
     grid-template-columns: 1fr;
   }
@@ -1114,6 +1122,12 @@ tr:nth-child(even) {
 @media (max-width: 640px) {
   .urban-center-grid {
     grid-template-columns: 1fr !important;
+  }
+}
+/* 極狭幅（iPhone SE 等 320px）ではロゴを縮めてヘッダーの横溢れを防ぐ */
+@media (max-width: 360px) {
+  .header__logo img {
+    height: 32px;
   }
 }
 /* --- 写真ライトボックス（拡大表示） --- */

@@ -2126,7 +2126,6 @@
         </div>
         <div class="footer__bottom">
           <span>Copyright (C) 2026 CITY OF KITAKYUSHU All Rights Reserved.</span>
-          <a href="privacy/">プライバシーポリシー</a>
         </div>
       </div>
     </footer>
@@ -2187,27 +2186,8 @@
         activateSlide(slides[0]);
         startTimer();
       })();
-      // モバイルナビ サブメニューアコーディオン
-      document
-        .querySelectorAll("#js-mobile-nav .mobile-nav__toggle")
-        .forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const children = btn.closest(
-              ".mobile-nav__parent",
-            ).nextElementSibling;
-            const isOpen = children.classList.contains("is-open");
-            document
-              .querySelectorAll("#js-mobile-nav .mobile-nav__children")
-              .forEach((el) => el.classList.remove("is-open"));
-            document
-              .querySelectorAll("#js-mobile-nav .mobile-nav__toggle")
-              .forEach((el) => el.setAttribute("aria-expanded", "false"));
-            if (!isOpen) {
-              children.classList.add("is-open");
-              btn.setAttribute("aria-expanded", "true");
-            }
-          });
-        });
+      // モバイルナビのサブメニュー開閉は js/main.js が担当する。
+      // ここに同じ処理を書くと二重に発火して開閉が打ち消し合うため置かない。
     </script>
   </body>
 </html>
