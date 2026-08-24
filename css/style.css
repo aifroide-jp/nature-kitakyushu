@@ -1193,3 +1193,55 @@ tr:nth-child(even) {
 .lightbox__close:focus-visible {
   background: rgba(255, 255, 255, 0.32);
 }
+/* --- 写真 個別保存ボタン・一括DL --- */
+.photo-item {
+  position: relative; /* 個別保存ボタンの基準点 */
+}
+.photo-item__save {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.62);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: auto;
+}
+.photo-item:hover .photo-item__save,
+.photo-item__save:focus-visible {
+  opacity: 1;
+}
+.photo-bulk-dl {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.photo-bulk-dl__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.photo-bulk-dl__btn:hover {
+  background: var(--primary-light);
+}
+.photo-bulk-dl__btn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}

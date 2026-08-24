@@ -165,6 +165,14 @@ document.addEventListener('DOMContentLoaded', () => {
       img.parentNode.insertBefore(btn, img);
       btn.appendChild(img);
       btn.addEventListener('click', () => openLightbox(btn));
+      // 個別保存ボタン（ホバーで表示、クリックしても拡大が発火しない）
+      const saveBtn = document.createElement('a');
+      saveBtn.className = 'photo-item__save';
+      saveBtn.textContent = '保存';
+      saveBtn.href = img.src;
+      saveBtn.download = decodeURIComponent(img.src.split('/').pop());
+      saveBtn.addEventListener('click', (e) => e.stopPropagation());
+      btn.parentElement.appendChild(saveBtn);
     });
     closeBtn.addEventListener('click', closeLightbox);
     // 背景のクリックで閉じる（画像自体のクリックでは閉じない）
@@ -172,6 +180,60 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && box.classList.contains('active')) closeLightbox();
     });
+
+    // ===== 一括ダウンロードボタン =====
+    const photoGrid = document.querySelector('.photo-grid');
+    if (photoGrid) {
+      const bar = document.createElement('div');
+      bar.className = 'photo-bulk-dl';
+      const bulkBtn = document.createElement('button');
+      bulkBtn.type = 'button';
+      bulkBtn.className = 'photo-bulk-dl__btn';
+      bulkBtn.textContent = 'すべての写真をまとめてDL';
+      bar.appendChild(bulkBtn);
+      photoGrid.parentElement.insertBefore(bar, photoGrid);
+
+      bulkBtn.addEventListener('click', async () => {
+        bulkBtn.disabled = true;
+        bulkBtn.textContent = '準備中...';
+        // JSZipを初回のみ動的ロード
+        if (!window.JSZip) {
+          await new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = new URL('../js/jszip.min.js', location.href).href;
+            s.onload = resolve;
+            s.onerror = () => reject(new Error('JSZipの読み込みに失敗しました'));
+            document.head.appendChild(s);
+          });
+        }
+        const zip = new JSZip();
+        const imgs = Array.from(photoGrid.querySelectorAll('div.photo-item img'));
+        let done = 0;
+        await Promise.all(imgs.map(async (img) => {
+          try {
+            const src = img.currentSrc || img.src;
+            const res = await fetch(src);
+            const blob = await res.blob();
+            const filename = decodeURIComponent(src.split('/').pop());
+            zip.file(filename, blob);
+          } catch (err) {
+            console.warn('画像の取得に失敗:', img.src, err);
+          }
+          done++;
+          bulkBtn.textContent = `準備中... ${done}/${imgs.length}枚`;
+        }));
+        const content = await zip.generateAsync({ type: 'blob' });
+        const pageTitle = (document.querySelector('h1')?.textContent?.trim() || 'photos')
+          .replace(/[\\/:*?"<>|]/g, '_');
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(content);
+        link.download = `${pageTitle}.zip`;
+        link.click();
+        URL.revokeObjectURL(link.href);
+        bulkBtn.disabled = false;
+        bulkBtn.textContent = 'すべての写真をまとめてDL';
+      });
+    }
   }
 
   // ===== スムーススクロール =====
