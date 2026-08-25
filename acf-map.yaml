@@ -11297,8 +11297,7 @@ pages:
             tab: section
             type: textarea
             default: |-
-              市民参加型の写真アーカイブです。無料素材としてお使いいただけます。
-                      写真をご提供いただける方は写真投稿フォームへ。
+              写真アーカイブです。無料素材としてお使いいただけます。
           - element: img
             field_name: section_white_image_1
             tab: section
