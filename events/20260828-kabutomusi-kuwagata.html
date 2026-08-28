@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月29日(土)、香月・黒川ほたる館が特別な姿に。普段は見ることのできない夜の生き物たちの世界をのぞいてみませんか？入館無料。">
+  <meta name="description" content="世界のカブトムシ・クワガタたちがこの夏、北九州市ほたる館へ集結！ヘラクレスオオカブトなど世界各地に暮らす王者たちの素顔に迫ります。7月18日(土)～9月23日(祝水)、入館無料。">
   <title>夏の企画展「世界のカブトムシ・クワガタ展～王者たちの素顔～」 | アーバンネイチャー北九州</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../favicon.svg">
   <meta property="og:title" content="夏の企画展「世界のカブトムシ・クワガタ展～王者たちの素顔～」 | アーバンネイチャー北九州">
-  <meta property="og:description" content="世界のカブトムシ・クワガタたちがこの夏、ほたる館へ集結！ 夜の生き物たちの世界をのぞいてみませんか？入館無料。">
+  <meta property="og:description" content="世界のカブトムシ・クワガタたちがこの夏、北九州市ほたる館へ集結！世界各地に暮らす王者たちの素顔に迫ります。入館無料。">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/03/main1-scaled.jpg">
+  <meta property="og:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2026/08/20260828-kabutomusi-kuwagata.jpg">
   <meta property="og:site_name" content="アーバンネイチャー北九州">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
@@ -43,6 +43,14 @@
     .article-nav { display: flex; justify-content: flex-start; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--border); }
     .article-nav a { font-size: 0.875rem; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
     .article-nav a:hover { text-decoration: underline; }
+    /* 開催概要：他のイベントページと同じ表組み（記事内に置くため sticky は外している） */
+    .ev-summary { background: var(--bg-white); border-radius: var(--radius-lg); box-shadow: 0 2px 16px var(--shadow); overflow: hidden; margin: 28px 0 32px; }
+    .ev-summary__head { background: var(--primary); color: #fff; padding: 16px 20px; font-weight: 700; font-size: 0.95rem; }
+    .ev-summary__table { width: 100%; border-collapse: collapse; }
+    .ev-summary__table th, .ev-summary__table td { padding: 13px 16px; font-size: 0.875rem; border-bottom: 1px solid var(--border); vertical-align: top; text-align: left; }
+    .ev-summary__table tr:last-child th, .ev-summary__table tr:last-child td { border-bottom: none; }
+    .ev-summary__table th { width: 38%; color: var(--text-light); font-weight: 600; background: rgba(0,0,0,0.02); white-space: nowrap; }
+    .ev-summary__table td { color: var(--text); line-height: 1.6; }
     @media (max-width: 640px) {
       .article-title { font-size: 1.35rem; }
     }
@@ -174,14 +182,32 @@
               <img src="../images/2026/08/20260828-kabutomusi-kuwagata.jpg" alt="夏の企画展2026 Summer ポスター" width="800" loading="lazy" style="width:100%;max-width:600px;height:auto;">
             </figure>
             <p>ギラファノコギリクワガタ・ニジイロクワガタ　他<br>※都合により予告なく中止・内容変更をする場合がございます。ご了承ください。</p>
-<h2>開催概要</h2>
-            <ul>
-              <li><strong>期間：</strong>7月18日(土)～9月23日（祝水）</li>
-              <li><strong>時間：</strong>9：00～16：00</li>
-              <li><strong>入館料：</strong>無料</li>
-              <li><strong>場所：</strong>北九州市ほたる館</li>
-              <li><strong>お問合せ：</strong>093-561-0800</li>
-            </ul>
+            <div class="ev-summary">
+              <div class="ev-summary__head">📋 開催概要</div>
+              <table class="ev-summary__table">
+                <caption class="sr-only">開催概要</caption>
+                <tr>
+                  <th scope="row">期間</th>
+                  <td>7月18日(土)～9月23日（祝水）</td>
+                </tr>
+                <tr>
+                  <th scope="row">時間</th>
+                  <td>9：00～16：00</td>
+                </tr>
+                <tr>
+                  <th scope="row">入館料</th>
+                  <td>無料</td>
+                </tr>
+                <tr>
+                  <th scope="row">場所</th>
+                  <td>北九州市ほたる館</td>
+                </tr>
+                <tr>
+                  <th scope="row">お問合せ</th>
+                  <td>093-561-0800</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <nav class="article-nav">
             <a href="../events/">

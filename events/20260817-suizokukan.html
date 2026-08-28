@@ -43,6 +43,14 @@
     .article-nav { display: flex; justify-content: flex-start; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--border); }
     .article-nav a { font-size: 0.875rem; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
     .article-nav a:hover { text-decoration: underline; }
+    /* 開催概要：他のイベントページと同じ表組み（記事内に置くため sticky は外している） */
+    .ev-summary { background: var(--bg-white); border-radius: var(--radius-lg); box-shadow: 0 2px 16px var(--shadow); overflow: hidden; margin: 28px 0 32px; }
+    .ev-summary__head { background: var(--primary); color: #fff; padding: 16px 20px; font-weight: 700; font-size: 0.95rem; }
+    .ev-summary__table { width: 100%; border-collapse: collapse; }
+    .ev-summary__table th, .ev-summary__table td { padding: 13px 16px; font-size: 0.875rem; border-bottom: 1px solid var(--border); vertical-align: top; text-align: left; }
+    .ev-summary__table tr:last-child th, .ev-summary__table tr:last-child td { border-bottom: none; }
+    .ev-summary__table th { width: 38%; color: var(--text-light); font-weight: 600; background: rgba(0,0,0,0.02); white-space: nowrap; }
+    .ev-summary__table td { color: var(--text); line-height: 1.6; }
     @media (max-width: 640px) {
       .article-title { font-size: 1.35rem; }
     }
@@ -174,13 +182,28 @@
                         <figure class="article-figure">
               <img src="../images/2026/08/20280829-night-aquarium.jpg" alt="夜の水族館2026 Summer ポスター" width="800" loading="lazy" style="width:100%;max-width:600px;height:auto;">
             </figure>
-<h2>開催概要</h2>
-            <ul>
-              <li><strong>日時：</strong>令和8年8月29日（土）20時まで開館</li>
-              <li><strong>入館料：</strong>無料</li>
-              <li><strong>場所：</strong>香月・黒川ほたる館（北九州市八幡西区香月西4-6-1）</li>
-              <li><strong>お問合せ：</strong>093-618-2727</li>
-            </ul>
+            <div class="ev-summary">
+              <div class="ev-summary__head">📋 開催概要</div>
+              <table class="ev-summary__table">
+                <caption class="sr-only">開催概要</caption>
+                <tr>
+                  <th scope="row">日時</th>
+                  <td>令和8年8月29日（土）20時まで開館</td>
+                </tr>
+                <tr>
+                  <th scope="row">入館料</th>
+                  <td>無料</td>
+                </tr>
+                <tr>
+                  <th scope="row">場所</th>
+                  <td>香月・黒川ほたる館（北九州市八幡西区香月西4-6-1）</td>
+                </tr>
+                <tr>
+                  <th scope="row">お問合せ</th>
+                  <td>093-618-2727</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <nav class="article-nav">
             <a href="../events/">
