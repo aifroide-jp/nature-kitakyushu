@@ -43,14 +43,23 @@
     .article-nav { display: flex; justify-content: flex-start; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--border); }
     .article-nav a { font-size: 0.875rem; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
     .article-nav a:hover { text-decoration: underline; }
-    /* 開催概要：他のイベントページと同じ表組み（記事内に置くため sticky は外している） */
-    .ev-summary { background: var(--bg-white); border-radius: var(--radius-lg); box-shadow: 0 2px 16px var(--shadow); overflow: hidden; margin: 28px 0 32px; }
+    /* 開催概要：他のイベントページと同じ2カラム＋サイドバーの表組み */
+    .ev-layout { display: grid; grid-template-columns: 1fr 360px; gap: 40px; align-items: start; }
+    .ev-summary { background: var(--bg-white); border-radius: var(--radius-lg); box-shadow: 0 2px 16px var(--shadow); overflow: hidden; position: sticky; top: 80px; }
     .ev-summary__head { background: var(--primary); color: #fff; padding: 16px 20px; font-weight: 700; font-size: 0.95rem; }
     .ev-summary__table { width: 100%; border-collapse: collapse; }
     .ev-summary__table th, .ev-summary__table td { padding: 13px 16px; font-size: 0.875rem; border-bottom: 1px solid var(--border); vertical-align: top; text-align: left; }
     .ev-summary__table tr:last-child th, .ev-summary__table tr:last-child td { border-bottom: none; }
     .ev-summary__table th { width: 38%; color: var(--text-light); font-weight: 600; background: rgba(0,0,0,0.02); white-space: nowrap; }
     .ev-summary__table td { color: var(--text); line-height: 1.6; }
+    @media (max-width: 900px) {
+      .ev-layout { grid-template-columns: 1fr; }
+      .ev-summary { position: static; }
+      /* SP: 開催概要を本文より前に出す。order はグリッド直下の子(aside)に効かせる */
+      .ev-layout > aside { order: -1; }
+      /* SP: グリッド項目が中身の最小幅に押し広げられ、横にはみ出すのを防ぐ */
+      .ev-layout > * { min-width: 0; }
+    }
     @media (max-width: 640px) {
       .article-title { font-size: 1.35rem; }
     }
@@ -167,21 +176,31 @@
   <main id="main-content">
     <section class="section section--white">
       <div class="container">
-        <div class="article-wrap">
-          <header class="article-header">
-            <span class="article-tag article-tag--event">イベント</span>
-            <h1 class="article-title">8/29(土) 一夜限りの「夜の水族館」開館！</h1>
-            <p class="article-meta">2026年8月17日</p>
-          </header>
-          <div class="article-body">
-            <p>8月29日(土)、香月・黒川ほたる館が特別な姿に変わります。</p>
-            <p>普段は見ることのできない、夜の生き物たちの世界をのぞいてみませんか？</p>
-            <p>小学生以下のお子様には、夜の探検を楽しく彩る<strong>光るブレスレット</strong>をプレゼント！</p>
-            <p>他にも、この日だけの特別な催しものをご用意しています。</p>
-            <p>普段は閉館している夜の時間帯に、いつもとは違う雰囲気の館内をお楽しみいただける貴重な機会です。夏休みの締めくくりに、ご家族で素敵な思い出を作りませんか？</p>
-                        <figure class="article-figure">
-              <img src="../images/2026/08/20280829-night-aquarium.jpg" alt="夜の水族館2026 Summer ポスター" width="800" loading="lazy" style="width:100%;max-width:600px;height:auto;">
-            </figure>
+        <div class="ev-layout">
+          <div class="ev-content">
+            <header class="article-header">
+              <span class="article-tag article-tag--event">イベント</span>
+              <h1 class="article-title">8/29(土) 一夜限りの「夜の水族館」開館！</h1>
+              <p class="article-meta">2026年8月17日</p>
+            </header>
+            <div class="article-body">
+              <p>8月29日(土)、香月・黒川ほたる館が特別な姿に変わります。</p>
+              <p>普段は見ることのできない、夜の生き物たちの世界をのぞいてみませんか？</p>
+              <p>小学生以下のお子様には、夜の探検を楽しく彩る<strong>光るブレスレット</strong>をプレゼント！</p>
+              <p>他にも、この日だけの特別な催しものをご用意しています。</p>
+              <p>普段は閉館している夜の時間帯に、いつもとは違う雰囲気の館内をお楽しみいただける貴重な機会です。夏休みの締めくくりに、ご家族で素敵な思い出を作りませんか？</p>
+              <figure class="article-figure">
+                <img src="../images/2026/08/20280829-night-aquarium.jpg" alt="夜の水族館2026 Summer ポスター" width="800" loading="lazy" style="width:100%;max-width:600px;height:auto;">
+              </figure>
+            </div>
+            <nav class="article-nav">
+              <a href="../events/">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                イベント一覧に戻る
+              </a>
+            </nav>
+          </div>
+          <aside>
             <div class="ev-summary">
               <div class="ev-summary__head">📋 開催概要</div>
               <table class="ev-summary__table">
@@ -204,13 +223,7 @@
                 </tr>
               </table>
             </div>
-          </div>
-          <nav class="article-nav">
-            <a href="../events/">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-              イベント一覧に戻る
-            </a>
-          </nav>
+          </aside>
         </div>
       </div>
     </section>
