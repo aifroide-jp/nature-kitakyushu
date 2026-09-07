@@ -31,7 +31,7 @@ common:
         field_name: footer_title_2
         tab: section
         type: text
-        default: 地域との繋がり
+        default: ネットワーク
       - element: h3
         field_name: footer_title_3
         tab: section
@@ -167,7 +167,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -219,7 +219,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -528,7 +528,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -580,7 +580,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -745,7 +745,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -797,7 +797,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -917,7 +917,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -969,7 +969,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1081,7 +1081,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1133,7 +1133,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1245,7 +1245,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1297,7 +1297,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1409,7 +1409,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1461,7 +1461,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1573,7 +1573,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1625,7 +1625,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1737,7 +1737,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1789,7 +1789,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1901,7 +1901,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -1953,7 +1953,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -2065,7 +2065,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -2117,7 +2117,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -2229,7 +2229,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -2281,7 +2281,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -2467,7 +2467,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -2519,7 +2519,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -2695,7 +2695,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -2747,7 +2747,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -2901,7 +2901,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -2953,7 +2953,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3113,7 +3113,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3165,7 +3165,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3325,7 +3325,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3377,7 +3377,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3689,7 +3689,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3741,7 +3741,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3899,7 +3899,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -3951,7 +3951,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4111,7 +4111,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4163,7 +4163,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4322,7 +4322,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4374,7 +4374,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4535,7 +4535,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4587,7 +4587,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4748,7 +4748,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4800,7 +4800,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -4961,7 +4961,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5013,7 +5013,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5174,7 +5174,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5226,7 +5226,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5378,7 +5378,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5430,7 +5430,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5807,7 +5807,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -5859,7 +5859,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6222,7 +6222,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6274,7 +6274,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6476,7 +6476,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6528,7 +6528,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6725,7 +6725,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6777,7 +6777,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -6988,7 +6988,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -7040,7 +7040,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -7390,7 +7390,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -7442,7 +7442,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -7798,7 +7798,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -7850,7 +7850,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -8054,7 +8054,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -8106,7 +8106,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -8471,7 +8471,7 @@ pages:
             field_name: network_title_1
             tab: section
             type: text
-            default: 地域との繋がり
+            default: ネットワーク
           - element: p
             field_name: network_text_1
             tab: section
@@ -8685,7 +8685,7 @@ pages:
             href: center/takamiya.html
           - text: 山田緑地
             href: center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: network/
@@ -8737,7 +8737,7 @@ pages:
             href: center/takamiya.html
           - text: 山田緑地
             href: center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: network/
@@ -8955,7 +8955,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -9007,7 +9007,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -9395,7 +9395,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -9447,7 +9447,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -9721,7 +9721,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -9769,7 +9769,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -9789,7 +9789,7 @@ pages:
         links:
           - text: トップ
             href: ../../
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../
     forms: []
     decoration: []
@@ -9989,7 +9989,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -10037,7 +10037,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -10057,7 +10057,7 @@ pages:
         links:
           - text: トップ
             href: ../../
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../
           - text: 活動実績
             href: ./
@@ -10287,7 +10287,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -10335,7 +10335,7 @@ pages:
             href: ../../center/takamiya.html
           - text: 山田緑地
             href: ../../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../../network/
@@ -10355,7 +10355,7 @@ pages:
         links:
           - text: トップ
             href: ../../
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../
           - text: 活動実績
             href: ./
@@ -10524,7 +10524,7 @@ pages:
             field_name: footer_title_2
             tab: section
             type: text
-            default: 地域との繋がり
+            default: ネットワーク
           - element: h3
             field_name: footer_title_3
             tab: section
@@ -10572,7 +10572,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -10624,7 +10624,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -10679,7 +10679,7 @@ pages:
         og:site_name: アーバンネイチャー北九州
         og:locale: ja_JP
   - id: network
-    title: 地域との繋がり | アーバンネイチャー北九州
+    title: ネットワーク | アーバンネイチャー北九州
     file: network/index.html
     sections:
       - id: main_content
@@ -10855,7 +10855,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -10907,7 +10907,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -10934,7 +10934,7 @@ pages:
       - selector: svg.member-item__external-icon
         reason: aria-hidden="true"
     meta:
-      title: 地域との繋がり | アーバンネイチャー北九州
+      title: ネットワーク | アーバンネイチャー北九州
       description: 企業・団体・教育機関・個人がつながり、ネイチャーポジティブの取組を広げるネットワーク。参加費無料。
       ogp:
         og:title: ネットワーク | アーバンネイチャー北九州
@@ -11009,7 +11009,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11061,7 +11061,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11188,7 +11188,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11240,7 +11240,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11525,7 +11525,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11577,7 +11577,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11707,7 +11707,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -11759,7 +11759,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -12017,7 +12017,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
@@ -12069,7 +12069,7 @@ pages:
             href: ../center/takamiya.html
           - text: 山田緑地
             href: ../center/yamada.html
-          - text: 地域との繋がり
+          - text: ネットワーク
             href: ../network/
           - text: 北九州ネイチャーポジティブネットワーク
             href: ../network/
