@@ -54,7 +54,7 @@
 - 株式会社マイン | 実践事例 | アーバンネイチャー北九州 (network/cases/mine.html)
 - 株式会社ネイチャー | 実践事例 | アーバンネイチャー北九州 (network/cases/nature.html)
 - 響灘ビオトープ共同事業体 | アーバンネイチャー北九州 (network/hibikinadabiotope.html)
-- ネットワーク | アーバンネイチャー北九州 (network/index.html)
+- 地域との繋がり | アーバンネイチャー北九州 (network/index.html)
 - お知らせ | アーバンネイチャー北九州 (news/index.html)
 - アーバンネイチャー北九州のサイトをリニューアルしました | お知らせ | アーバンネイチャー北九州 (news/site-renewal.html)
 - みんなの写真展 | アーバンネイチャー北九州 (photos/index.html)
