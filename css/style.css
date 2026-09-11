@@ -324,6 +324,9 @@ h6 {
   height: 40px;
   width: auto;
 }
+.header__logo-link {
+  display: block;
+}
 .header__logo-sub {
   font-size: 0.62rem;
   font-weight: 500;
@@ -331,6 +334,15 @@ h6 {
   letter-spacing: 0.02em;
   line-height: 1;
   padding-left: 66px;
+}
+/* 戦略名は外部リンク。文字色は変えず、ホバー時のみ下線を出す（既存の .hover-underline と同じ挙動） */
+a.header__logo-sub:hover {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+/* ロゴ画像のリンクはホバーで変化させない */
+.header__logo-link:hover {
+  text-decoration: none;
 }
 .header__nav {
   display: flex;
