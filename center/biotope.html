@@ -20,31 +20,125 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="北九州市響灘ビオトープ | アーバンネイチャー北九州">
   <meta name="twitter:description" content="北九州市響灘ビオトープ - 日本最大級41ヘクタールのビオトープ。希少な動植物が生息する自然再生エリア。">
-  <meta name="twitter:image" content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/03/b-2-1-450x450.jpg">
+  <meta name="twitter:image"
+    content="https://ai-yoshitani.github.io/nature-kitakyushu/images/2025/03/b-2-1-450x450.jpg">
   <title>北九州市響灘ビオトープ | アーバンネイチャー北九州</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .event-card { background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 2px 12px var(--shadow); transition: all var(--transition); text-decoration: none; color: var(--text); display: flex; flex-direction: column; }
-    .event-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px var(--shadow-md); }
-    .event-card__image-wrap { position: relative; }
-    .event-card__image { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
-    .event-card__date-badge { position: absolute; top: 12px; left: 12px; background: var(--primary); color: #fff; border-radius: var(--radius); padding: 8px 12px; text-align: center; line-height: 1; }
-    .event-card__date-month { font-size: 0.7rem; display: block; margin-bottom: 2px; }
-    .event-card__date-day { font-size: 1.4rem; font-weight: 800; display: block; }
-    .event-card__type-tag { position: absolute; top: 12px; right: 12px; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; }
-    .event-card__type-tag--募集中 { background: #e8f5e9; color: #2e7d32; }
-    .event-card__type-tag--告知 { background: #e3f2fd; color: #1565c0; }
-    .event-card__type-tag--プロジェクト { background: #fff3e0; color: #e65100; }
-    .event-card__type-tag--すべて { background: #eceff1; color: #455a64; }
-    .event-card__body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
-    .event-card__tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
-    .event-card__category { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; background: rgba(44, 95, 45, 0.1); color: var(--primary); }
-    .event-card__target { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; background: rgba(2, 128, 144, 0.1); color: var(--accent); }
-    .event-card__title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; line-height: 1.5; }
-    .event-card__location { font-size: 0.8rem; color: var(--text-muted); margin-top: auto; }
+    .event-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 2px 12px var(--shadow);
+      transition: all var(--transition);
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+    }
+    .event-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px var(--shadow-md);
+    }
+    .event-card__image-wrap {
+      position: relative;
+    }
+    .event-card__image {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+    .event-card__date-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 8px 12px;
+      text-align: center;
+      line-height: 1;
+    }
+    .event-card__date-month {
+      font-size: 0.7rem;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .event-card__date-day {
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: block;
+    }
+    .event-card__type-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+    .event-card__type-tag--募集中 {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+    .event-card__type-tag--告知 {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+    .event-card__type-tag--プロジェクト {
+      background: #fff3e0;
+      color: #e65100;
+    }
+    .event-card__type-tag--すべて {
+      background: #eceff1;
+      color: #455a64;
+    }
+    .event-card__body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-card__tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .event-card__category {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: rgba(44, 95, 45, 0.1);
+      color: var(--primary);
+    }
+    .event-card__target {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: rgba(2, 128, 144, 0.1);
+      color: var(--accent);
+    }
+    .event-card__title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .event-card__location {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
   </style>
 </head>
 <body>
@@ -53,12 +147,15 @@
   <header class="header">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="../" class="header__logo-link"><img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160" height="40"></a><a class="header__logo-sub" href="https://www.city.kitakyushu.lg.jp/contents/924_02006.html" target="_blank" rel="noopener noreferrer">北九州市生物多様性戦略 2025–2030<span class="sr-only">（北九州市公式サイト・新しいタブで開きます）</span></a>
+        <a href="../" class="header__logo-link"><img src="../images/2026/02/logo.png" alt="アーバンネイチャー北九州" width="160"
+            height="40"></a><a class="header__logo-sub" href="https://www.city.kitakyushu.lg.jp/contents/924_02006.html"
+          target="_blank" rel="noopener noreferrer">北九州市生物多様性戦略 2025–2030<span
+            class="sr-only">（北九州市公式サイト・新しいタブで開きます）</span></a>
       </div>
-            <nav class="header__nav" aria-label="メインナビゲーション">
-        <a href="../news/" >お知らせ</a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="../news/">お知らせ</a>
         <div class="nav-item">
-          <a href="../about/" class="active" >アーバンネイチャー北九州とは？</a>
+          <a href="../about/" class="active">アーバンネイチャー北九州とは？</a>
           <ul class="dropdown">
             <li><a href="../about/">全体像</a></li>
             <li><a href="../about/biodiversity.html">生物多様性とは？</a></li>
@@ -68,7 +165,7 @@
           </ul>
         </div>
         <div class="nav-item">
-          <a href="../network/" >ネットワーク</a>
+          <a href="../network/">ネットワーク</a>
           <ul class="dropdown">
             <li><a href="../network/">北九州ネイチャーポジティブネットワーク</a></li>
             <li><a href="../network/projects/">企業参加型プロジェクト</a></li>
@@ -82,15 +179,15 @@
             <li><a href="../blog/organization.html">団体等の活動ブログ</a></li>
           </ul>
         </div>
-        <a href="../events/" >イベントを探す</a>
-        <a href="../photos/" >みんなの写真展</a>
+        <a href="../events/">イベントを探す</a>
+        <a href="../photos/">みんなの写真展</a>
       </nav>
       <div class="header__actions">
         <a href="../contact/" class="btn btn--primary btn--sm">お問合せ</a>
         <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
@@ -150,13 +247,14 @@
     <div class="container">
       <ol class="breadcrumb__list">
         <li><a href="../">トップ</a></li>
-          <li><a href="../center/">活動拠点</a></li>
+        <li><a href="../center/">活動拠点</a></li>
         <li>北九州市響灘ビオトープ</li>
       </ol>
     </div>
   </nav>
   <!-- ページヘッダー -->
-  <section id="main-content" class="page-header" style="background-image: url('../images/2025/03/biotope.jpg'); background-size: cover; background-position: center center;">
+  <section id="main-content" class="page-header"
+    style="background-image: url('../images/2025/03/biotope.jpg'); background-size: cover; background-position: center center;">
     <div class="container">
       <h1 class="page-header__title">北九州市響灘ビオトープ</h1>
     </div>
@@ -176,7 +274,8 @@
             <dt>電話</dt>
             <dd>093-751-2023</dd>
             <dt>URL</dt>
-            <dd><a href="https://www.hibikinadabiotope.com/" target="_blank" rel="noopener noreferrer">https://www.hibikinadabiotope.com/</a></dd>
+            <dd><a href="https://www.hibikinadabiotope.com/" target="_blank"
+                rel="noopener noreferrer">https://www.hibikinadabiotope.com/</a></dd>
             <dt>開園時間</dt>
             <dd>9:00〜17:00（入園は16:00まで）</dd>
             <dt>休園日</dt>
@@ -210,90 +309,16 @@
       <div style="border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.1); margin-top:24px;">
         <iframe
           src="https://maps.google.com/maps?q=%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E8%8B%A5%E6%9D%BE%E5%8C%BA%E9%9F%BF%E7%94%BA1-126-1&output=embed&hl=ja"
-          width="100%" height="420" style="border:0; display:block;"
-          allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="施設の地図"></iframe>
+          width="100%" height="420" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="施設の地図"></iframe>
       </div>
     </div>
   </section>
-  <!-- イベント（プレースホルダ） -->
-  <section class="section section--white">
-    <div class="container">
-      <h2 class="section__title">この施設のイベント</h2>
-      <p class="section__subtitle">響灘ビオトープで開催予定のイベント</p>
-        <div class="card-grid" id="eventGrid">
-          <a href="../events/20261012-hibikinada-gekirea.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
-            <div class="event-card__image-wrap">
-              <img src="../images/2026/09/20261012-hibikinada-gekirea.jpg" alt="「響灘の激レア生きもの大捜索」～発見！湿地の水中ヒーローズ～ チラシ" class="event-card__image">
-              <div class="event-card__date-badge">
-                <span class="event-card__date-month">10月</span>
-                <span class="event-card__date-day">12</span>
-              </div>
-              <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-            </div>
-            <div class="event-card__body">
-              <div class="event-card__tags">
-                <span class="event-card__category">生態系保全</span>
-                <span class="event-card__category">教育・啓発</span>
-                <span class="event-card__target">子ども</span>
-                <span class="event-card__target">個人</span>
-              </div>
-              <h3 class="event-card__title">「響灘の激レア生きもの大捜索」～発見！湿地の水中ヒーローズ～</h3>
-              <p class="event-card__location">響灘ビオトープ（若松区）</p>
-            </div>
-          </a>
-          <a href="../events/shokubutsu-hyohon.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
-            <div class="event-card__image-wrap">
-              <img src="../images/2026/06/植物標本.jpg" alt="植物標本づくり" class="event-card__image">
-              <div class="event-card__date-badge">
-                <span class="event-card__date-month">6月</span>
-                <span class="event-card__date-day">25</span>
-              </div>
-              <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-            </div>
-            <div class="event-card__body">
-              <div class="event-card__tags">
-                <span class="event-card__category">生態系保全</span>
-                <span class="event-card__category">教育・啓発</span>
-                <span class="event-card__target">子ども</span>
-                <span class="event-card__target">個人</span>
-              </div>
-              <h3 class="event-card__title">植物標本づくり</h3>
-              <p class="event-card__location">響灘ビオトープ（若松区）</p>
-            </div>
-          </a>
-          <a href="../events/bird-festival.html" class="event-card" data-type="告知" data-category="生態系保全,教育・啓発" data-target="子ども,個人">
-            <div class="event-card__image-wrap">
-              <img src="../images/2025/09/20250902.jpg" alt="バードフェスティバル in 北九州" class="event-card__image">
-              <div class="event-card__date-badge">
-                <span class="event-card__date-month">9月</span>
-                <span class="event-card__date-day">2</span>
-              </div>
-              <span class="event-card__type-tag event-card__type-tag--告知">告知</span>
-            </div>
-            <div class="event-card__body">
-              <div class="event-card__tags">
-                <span class="event-card__category">生態系保全</span>
-                <span class="event-card__category">教育・啓発</span>
-                <span class="event-card__target">子ども</span>
-                <span class="event-card__target">個人</span>
-              </div>
-              <h3 class="event-card__title">バードフェスティバル in 北九州</h3>
-              <p class="event-card__location">高塔山・響灘ビオトープ</p>
-            </div>
-          </a>
-        </div>
-        <div style="text-align:center; padding:40px; color:var(--text-muted);">
-          <a href="../events/" class="btn btn--outline btn--sm" style="margin-top:16px;">全てのイベントを見る</a>
-        </div> 
-      </div>
-    </section>
-    <!-- 戻るリンク -->
-    <section class="section section--white" style="padding: 32px 0">
-      <div class="container" style="text-align: center">
-        <a href="../center/" class="btn btn--outline">← センター一覧に戻る</a>
-      </div>
+  <!-- 戻るリンク -->
+  <section class="section section--white" style="padding: 32px 0">
+    <div class="container" style="text-align: center">
+      <a href="../center/" class="btn btn--outline">← センター一覧に戻る</a>
+    </div>
   </section>
   <!-- フッター -->
   <footer class="footer">
