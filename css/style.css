@@ -875,6 +875,212 @@ a.header__logo-sub:hover {
   margin-bottom: 8px;
   line-height: 1.7;
 }
+/* --- 実践事例（PDF 転記用） --- */
+.case-title {
+  margin-bottom: 32px;
+}
+.case-title p {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.case-title__pair {
+  display: inline-block;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--primary);
+}
+.case-lead {
+  margin: -8px 0 16px;
+  font-weight: 700;
+}
+.case-box {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+.case-box p:last-child {
+  margin-bottom: 0;
+}
+/* 囲みの中の小見出し（PDF の「●」見出し） */
+.case-box h3 {
+  margin: 24px 0 8px;
+}
+.case-box h3:first-child {
+  margin-top: 0;
+}
+.case-box h4 {
+  font-size: 1rem;
+  margin: 20px 0 8px;
+}
+.case-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.case-media__figure {
+  flex: 0 1 240px;
+  margin: 0 auto;
+  text-align: center;
+}
+.case-media__figure img {
+  width: 100%;
+}
+.case-media__figure figcaption {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 16px;
+  border: 1px solid var(--text);
+  font-size: 0.875rem;
+}
+.case-media .case-box {
+  flex: 1 1 320px;
+  margin-bottom: 0;
+}
+.case-photos {
+  margin: 32px 0;
+}
+.case-photos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+/* 写真1枚を中央に置き、キャプション枠を文字幅にする */
+.case-photos--center {
+  text-align: center;
+}
+.case-photos--center img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.case-photos--center figcaption {
+  display: inline-block;
+  margin-top: 12px;
+}
+/* 写真を横に2枚並べ、それぞれに枠付きキャプションを付ける */
+.case-figs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 32px 0;
+}
+.case-figs figure {
+  margin: 0;
+  text-align: center;
+}
+.case-figs img {
+  width: 100%;
+}
+/* 縦長と横長の写真を並べるときは高さをそろえ、切り取らずに収める */
+.case-figs--same-height img {
+  height: 280px;
+  object-fit: contain;
+}
+.case-figs figcaption {
+  margin-top: 8px;
+  padding: 4px 12px;
+  border: 1px solid var(--text);
+  font-size: 0.875rem;
+}
+/* 写真を3枚並べる */
+.case-figs--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* キャプションを写真の下部に重ねる */
+.case-figs--overlay figure {
+  position: relative;
+}
+.case-figs--overlay img {
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.case-figs--overlay figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 16px 8px 6px;
+  border: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* 左に文章、右に写真を縦に並べる2段組み */
+.case-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: start;
+}
+/* 見出しから始まる2段組み（見出しと写真の上端をそろえる） */
+.case-split--heading {
+  margin-top: 48px;
+  align-items: center;
+}
+.case-split--heading h2 {
+  margin-top: 0;
+}
+.case-split > .case-figs {
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+/* 写真の横にキャプション枠を置く */
+.case-fig-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 0;
+}
+.case-fig-side img {
+  width: 200px;
+  max-width: 60%;
+}
+.case-fig-side figcaption {
+  padding: 4px 12px;
+  border: 1px solid var(--text);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.case-photos__grid img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.case-photos figcaption,
+.case-callout {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--text);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.case-callout {
+  margin-top: 32px;
+}
+@media (max-width: 480px) {
+  .case-box {
+    padding: 16px;
+  }
+  .case-figs {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .case-split {
+    grid-template-columns: 1fr;
+  }
+  .case-figs--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.case-callout p {
+  margin: 0;
+}
 /* --- テーブル --- */
 .table-wrap {
   overflow-x: auto;
