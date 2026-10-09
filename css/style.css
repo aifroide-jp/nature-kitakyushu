@@ -623,6 +623,10 @@ a.header__logo-sub:hover {
 .card__image--square {
   aspect-ratio: 1;
 }
+/* 事例一覧：会社バナー（663×269）をそのままの比率で見せ、ロゴ・文字が切れないようにする */
+.card__image--banner {
+  aspect-ratio: 663 / 269;
+}
 .card__body {
   padding: 20px;
 }
