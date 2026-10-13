@@ -1284,10 +1284,6 @@ tr:nth-child(even) {
   :root {
     --header-height: 60px;
   }
-  /* SPではヘッダーのお問合せボタンを出さない（モバイルナビ内の項目で代替） */
-  .header__actions .btn {
-    display: none;
-  }
   .section {
     padding: 48px 0;
   }
