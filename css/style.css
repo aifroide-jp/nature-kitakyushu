@@ -1253,6 +1253,8 @@ tr:nth-child(even) {
   margin-bottom: 16px;
   font-size: 0.9rem;
   padding-left: 0;
+  /* 長いURLが折り返されずSPで横にはみ出すため、途中で折り返す */
+  overflow-wrap: anywhere;
 }
 /* --- レスポンシブ --- */
 @media (max-width: 1024px) {
