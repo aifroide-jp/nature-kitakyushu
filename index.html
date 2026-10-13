@@ -269,6 +269,11 @@
         }
       }
       /* ===== お知らせ ===== */
+      .news-item-link {
+        display: flex;
+        gap: 16px;
+        padding: 12px 0;
+      }
       .news-item-date {
         flex-shrink: 0;
         font-size: 0.82rem;
@@ -340,6 +345,44 @@
         font-weight: 600;
         color: var(--color-text);
         line-height: 1.4;
+      }
+      /* 425px以下のレスポンシブ設定 */
+      @media (max-width: 425px) {
+        .news-item-title {
+          word-break: break-all;
+        }
+      }
+      /* 大きい画面サイズ時（377px以上）は改行タグを非表示にする設定
+      「企業の活動ブログ」と「団体等の活動ブログ」タグ適用時のみ、お知らせタグのテキストを「企業の<br class="sp-br">活動ブログ」「団体等の<br class="sp-br">活動ブログ」とすることで、
+      小さな画面サイズ（376px以下）でのみ<br class="sp-br">コマンド改行でタグが改行され表示崩れが発生しなくなります。 */
+      .sp-br {
+        display: none;
+      }
+      /* 376px以下のレスポンシブ設定 */
+      @media (max-width: 376px) {
+        .news-item-tag-info,
+        .news-item-tag-event,
+        .news-item-tag-blog,
+        .news-item-tag-project,
+        .news-item-tag-case {
+          width: 96px;
+          white-space: normal; /* 折り返しを許可 */
+          line-height: 1.25;    /* 2行になった際の行間調整 */
+        }
+        /* 376px以下でのみお知らせタグの<br class="sp-br">コマンド改行を実行する設定 */
+        .sp-br {
+          display: inline;
+        }
+      }
+      /* 321px以下調整 */
+      @media (max-width: 321px) {
+        .news-item-link {
+          gap:12px;
+          padding: 8px 0;
+        }
+        .news-item-date {
+          min-width: auto;
+        }
       }
       /* ===== ペルソナ選択 ===== */
       .persona {
