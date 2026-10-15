@@ -353,16 +353,16 @@
         popupAnchor: [0, -16]
       });
       var spots = [
-        { name: 'タカミヤ環境ミュージアム',  lat: 33.8693, lng: 130.8145, url: 'takamiya.html' },
-        { name: 'いのちのたび博物館',         lat: 33.8700, lng: 130.8160, url: 'inochi.html' },
-        { name: '山田緑地',                   lat: 33.9022, lng: 130.8644, url: 'yamada.html' },
-        { name: '北九州市響灘ビオトープ',      lat: 33.9056, lng: 130.7253, url: 'biotope.html' },
-        { name: '響灘緑地グリーンパーク',      lat: 33.8972, lng: 130.7561, url: 'greenpark.html' },
-        { name: '北九州市ほたる館',           lat: 33.8847, lng: 130.8776, url: 'hotarukan.html' },
-        { name: '香月・黒川ほたる館',         lat: 33.8297, lng: 130.7486, url: 'katsuki-hotaru.html' },
-        { name: '到津の森公園',              lat: 33.8851, lng: 130.8593, url: 'itouzu.html' },
-        { name: '水環境館',                  lat: 33.8822, lng: 130.8798, url: 'mizukankyokan.html' },
-        { name: 'ソラランド平尾台',           lat: 33.7933, lng: 130.9139, url: 'soraland.html' }
+        { name: 'タカミヤ環境ミュージアム',  lat: 33.8682, lng: 130.8077, url: 'takamiya.html' },
+        { name: 'いのちのたび博物館',         lat: 33.8692, lng: 130.8085, url: 'inochi.html' },
+        { name: '山田緑地',                   lat: 33.8532, lng: 130.8569, url: 'yamada.html' },
+        { name: '北九州市響灘ビオトープ',      lat: 33.9379, lng: 130.7993, url: 'biotope.html' },
+        { name: '響灘緑地グリーンパーク',      lat: 33.9184, lng: 130.7283, url: 'greenpark.html' },
+        { name: '北九州市ほたる館',           lat: 33.8582, lng: 130.8661, url: 'hotarukan.html' },
+        { name: '香月・黒川ほたる館',         lat: 33.8000, lng: 130.7214, url: 'katsuki-hotaru.html' },
+        { name: '到津の森公園',              lat: 33.8746, lng: 130.8462, url: 'itouzu.html' },
+        { name: '水環境館',                  lat: 33.8843, lng: 130.8776, url: 'mizukankyokan.html' },
+        { name: 'ソラランド平尾台',           lat: 33.7594, lng: 130.8888, url: 'soraland.html' }
       ];
       spots.forEach(function (s) {
         L.marker([s.lat, s.lng], { icon: icon })
@@ -374,6 +374,8 @@
             '</div>'
           );
       });
+      // 画面幅にかかわらず全拠点が収まるように表示範囲を合わせる
+      map.fitBounds(spots.map(function (s) { return [s.lat, s.lng]; }), { padding: [30, 30] });
     })();
   </script>
 </body>
