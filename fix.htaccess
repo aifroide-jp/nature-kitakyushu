@@ -115,19 +115,19 @@ RewriteRule ^shop_category/コンテスト作品/?$ /photos/contest.html [R=301,
 # --- カスタム投稿タイプ（実ファイル優先）---
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^events/([^/]+)/?$ /events/$1.html [R=301,L]
+RewriteRule ^events/([^/.]+)/?$ /events/$1.html [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^news/([^/]+)/?$ /news/$1.html [R=301,L]
+RewriteRule ^news/([^/.]+)/?$ /news/$1.html [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^center/([^/]+)/?$ /center/$1.html [R=301,L]
+RewriteRule ^center/([^/.]+)/?$ /center/$1.html [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^network/cases/([^/]+)/?$ /cases/$1.html [R=301,L]
+RewriteRule ^network/cases/([^/.]+)/?$ /cases/$1.html [R=301,L]
 
 </IfModule>
 # END HTML版
