@@ -1,0 +1,133 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+
+# BEGIN HTML版
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# http -> https、www あり -> www なし に統一
+RewriteCond %{HTTPS} !on [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://nature-kitakyushu.com/$1 [R=301,L]
+
+# 404ページ
+ErrorDocument 404 /404.html
+
+# ============================================================
+# 旧WordPress → 新HTML 301リダイレクト
+# ============================================================
+
+# --- カテゴリ（旧） ---
+RewriteRule ^category/info(/.*)?$ /events/ [R=301,L]
+RewriteRule ^category/business/?$ /center/ [R=301,L]
+RewriteRule ^category/etc/?$ /news/ [R=301,L]
+RewriteRule ^category/network/?$ /network/ [R=301,L]
+
+# --- 固定ページ: ASCIIスラッグ ---
+RewriteRule ^about-biodiversity/?$ /about/biodiversity.html [R=301,L]
+RewriteRule ^about-strategy/?$ /about/strategy.html [R=301,L]
+RewriteRule ^blog-organization/?$ /blog/organization.html [R=301,L]
+RewriteRule ^network-projects/?$ /network/projects/ [R=301,L]
+RewriteRule ^network-hibikinadabiotope/?$ /network/ [R=301,L]
+RewriteRule ^photos-([^/]+)/?$ /photos/$1.html [R=301,L]
+RewriteRule ^events-202[0-9]+-[0-9]+/?$ /events/ [R=301,L]
+RewriteRule ^events-202[0-9]+/?$ /events/ [R=301,L]
+RewriteRule ^events-biotope-kigyo-apply/?$ /events/ [R=301,L]
+RewriteRule ^events-summer-camp-apply/?$ /events/ [R=301,L]
+RewriteRule ^events-hiraodai-kansatsukai-apply/?$ /events/ [R=301,L]
+RewriteRule ^events-sone-higata-cleanup-apply/?$ /events/ [R=301,L]
+RewriteRule ^nature-symbiosis/?$ / [R=301,L]
+RewriteRule ^sample-page/?$ / [R=301,L]
+RewriteRule ^site-options/?$ / [R=301,L]
+RewriteRule ^case-archive-settings/?$ /cases/ [R=301,L]
+RewriteRule ^center-archive-settings/?$ /center/ [R=301,L]
+RewriteRule ^event-archive-settings/?$ /events/ [R=301,L]
+RewriteRule ^news-archive-settings/?$ /news/ [R=301,L]
+RewriteRule ^spot-archive-settings/?$ /about/spots.html [R=301,L]
+RewriteRule ^find/?$ /center/ [R=301,L]
+RewriteRule ^learn/?$ /about/spots.html [R=301,L]
+RewriteRule ^shop/?$ /photos/ [R=301,L]
+RewriteRule ^front-page/?$ / [R=301,L]
+RewriteRule ^policy/?$ /privacy/ [R=301,L]
+
+# --- 固定ページ: 日本語スラッグ ---
+# /ネイチャーポジティブネットワーク/ → /network/
+RewriteRule ^ネイチャーポジティブネットワーク/?$ /network/ [R=301,L]
+# /戦略/ → /about/strategy.html
+RewriteRule ^戦略/?$ /about/strategy.html [R=301,L]
+# /生物多様性/ → /about/biodiversity.html
+RewriteRule ^生物多様性/?$ /about/biodiversity.html [R=301,L]
+# /生物多様性の危機/ → /about/biodiversity.html
+RewriteRule ^生物多様性の危機/?$ /about/biodiversity.html [R=301,L]
+# /ブログ一覧ページ/ → /blog/
+RewriteRule ^ブログ一覧ページ/?$ /blog/ [R=301,L]
+# /ネイチャーポジティブセンター/ → /center/
+RewriteRule ^ネイチャーポジティブセンター/?$ /center/ [R=301,L]
+# /北九州市生物多様性戦略-資料/ → /about/strategy.html
+RewriteRule ^北九州市生物多様性戦略-資料/?$ /about/strategy.html [R=301,L]
+# /フォトコンテスト作品-利用規約/ → /privacy/
+RewriteRule ^フォトコンテスト作品-利用規約/?$ /privacy/ [R=301,L]
+# /アーバンネイチャー北九州-ビデオ/ → /
+RewriteRule ^アーバンネイチャー北九州-ビデオ/?$ / [R=301,L]
+# /イベント情報登録申請フォーム/ → /contact/
+RewriteRule ^イベント情報登録申請フォーム/?$ /contact/ [R=301,L]
+# /北九州ネイチャーポジティブセンター屋内施設編/ → /center/
+RewriteRule ^北九州ネイチャーポジティブセンター屋内施設編/?$ /center/ [R=301,L]
+# /ネットワークについてお問合せ/ → /contact/
+RewriteRule ^ネットワークについてお問合せ/?$ /contact/ [R=301,L]
+# /カレンダー/ → /events/
+RewriteRule ^カレンダー/?$ /events/ [R=301,L]
+
+# --- /find/{slug}/ → /center/{slug}.html ---
+RewriteRule ^find/ソラランド平尾台/?$ /center/soraland.html [R=301,L]
+RewriteRule ^find/水環境館/?$ /center/mizukankyokan.html [R=301,L]
+RewriteRule ^find/響灘緑地グリーンパーク/?$ /center/greenpark.html [R=301,L]
+RewriteRule ^find/北九州市響灘ビオトープ/?$ /center/biotope.html [R=301,L]
+RewriteRule ^find/山田緑地/?$ /center/yamada.html [R=301,L]
+RewriteRule ^find/北九州ネイチャーポジティブセンターとは/?$ /center/ [R=301,L]
+RewriteRule ^find/ほたる/?$ /center/hotarukan.html [R=301,L]
+RewriteRule ^find/いのちのたび博物館/?$ /center/inochi.html [R=301,L]
+RewriteRule ^find/タカミヤ環境ミュージアム/?$ /center/takamiya.html [R=301,L]
+RewriteRule ^find/香月・黒川ほたる館/?$ /center/katsuki-hotaru.html [R=301,L]
+RewriteRule ^find/到津の森公園/?$ /center/itouzu.html [R=301,L]
+
+# --- /learn/{slug}/ → /about/spots/{slug}.html ---
+RewriteRule ^learn/皿倉山/?$ /about/spots/sarakurayama.html [R=301,L]
+RewriteRule ^learn/関門海峡/?$ /about/spots/kanmon.html [R=301,L]
+RewriteRule ^learn/若松北海岸/?$ /about/spots/genkai.html [R=301,L]
+RewriteRule ^learn/曽根干潟/?$ /about/spots/sone-higata.html [R=301,L]
+RewriteRule ^learn/合馬の竹林/?$ /about/spots/auma.html [R=301,L]
+
+# --- /shop_category/{slug}/ → /photos/{slug}.html ---
+RewriteRule ^shop_category/sea/?$ /photos/sea.html [R=301,L]
+RewriteRule ^shop_category/mountain/?$ /photos/mountain.html [R=301,L]
+RewriteRule ^shop_category/river/?$ /photos/river.html [R=301,L]
+RewriteRule ^shop_category/animal/?$ /photos/animal.html [R=301,L]
+RewriteRule ^shop_category/plant/?$ /photos/plant.html [R=301,L]
+RewriteRule ^shop_category/urbannature/?$ /photos/urbannature.html [R=301,L]
+RewriteRule ^shop_category/etc/?$ /photos/etc.html [R=301,L]
+RewriteRule ^shop_category/produce/?$ /photos/produce.html [R=301,L]
+RewriteRule ^shop_category/コンテスト作品/?$ /photos/contest.html [R=301,L]
+
+# --- カスタム投稿タイプ（実ファイル優先）---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^events/([^/]+)/?$ /events/$1.html [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^news/([^/]+)/?$ /news/$1.html [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^center/([^/]+)/?$ /center/$1.html [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^network/cases/([^/]+)/?$ /cases/$1.html [R=301,L]
+
+</IfModule>
+# END HTML版
