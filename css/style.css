@@ -959,6 +959,13 @@ a.header__logo-sub:hover {
   display: inline-block;
   margin-top: 12px;
 }
+/* 囲みの外に置く、薄緑の帯の強調行 */
+.case-band {
+  padding: 8px 16px;
+  background: #e9f7f0;
+  font-weight: 700;
+  text-align: center;
+}
 /* 写真を横に2枚並べ、それぞれに枠付きキャプションを付ける */
 .case-figs {
   display: grid;
